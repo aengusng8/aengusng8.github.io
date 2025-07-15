@@ -14,7 +14,10 @@ footer_text: >
 keywords: Anh Nguyen, machine learning, AI, artificial intelligence, deep learning, generative models, creative models, diffusion models  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: aengus.ico  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+# -----------------------------------------------------------------------------
+# Favicon
+# -----------------------------------------------------------------------------
+icon: 𝓐 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://aengusng8.github.io/ # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
@@ -66,7 +69,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # -----------------------------------------------------------------------------
 
 email: aengusng8@gmail.com
-github_username: yang-song # your GitHub user name
+github_username: aengusng8 # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: aengusng8 # your Twitter handle
 linkedin_username: # your LinkedIn user name
@@ -101,7 +104,7 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Generative Space # blog_name will be displayed in your blog page
-blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
+blog_nav_title: # your blog must have a title for it to be displayed in the nav bar
 blog_description: 
 permalink: /blog/:year/:title/
 
