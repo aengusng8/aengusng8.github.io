@@ -2,21 +2,21 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Yang Song # the website title (if blank, full name will be used instead)
-first_name: Yang
+title: Anh Nguyen # the website title (if blank, full name will be used instead)
+first_name: Anh
 middle_name: 
-last_name: Song
-email: thusongyang@gmail.com
+last_name: Nguyen
+email: aengusng8@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  The personal website of Yang Song.
+  The personal website of Anh Nguyen.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-keywords: Yang Song, machine learning, AI, artificial intelligence  # add your own keywords or leave empty
+keywords: Anh Nguyen, machine learning, AI, artificial intelligence, deep learning, generative models, creative models, diffusion models  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: caltech.ico  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: aengus.ico  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://yang-song.net # the base hostname & protocol for your site
+url: https://aengusng8.github.io/ # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
