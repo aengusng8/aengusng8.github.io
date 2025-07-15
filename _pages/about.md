@@ -2,7 +2,9 @@
 layout: about
 title: about
 permalink: /
-subtitle: AI Research Resident at <a href="https://www.qualcomm.com/research/artificial-intelligence">Qualcomm AI Research</a><br><br>
+subtitle: |+
+  AI Research Resident at <a href="https://www.qualcomm.com/research/artificial-intelligence">Qualcomm AI Research</a><br><br>
+  I am actively pursuing a PhD position in Computer Science for the Fall 2026 intake and excited to collaborate on impactful research! 🚀
 
 profile:
   image: profile.png
