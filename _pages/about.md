@@ -5,8 +5,8 @@ permalink: /
 subtitle: AI Research Resident at <a href="https://www.qualcomm.com/research/artificial-intelligence">Qualcomm AI Research</a><br><br>
 
 profile:
-  image: profile.jpg
-  image_cicular: false # crops the image to make it circular
+  image: profile.png
+  image_cicular: true # crops the image to make it circular
   address: false
 
 news: false # includes a list of news items
