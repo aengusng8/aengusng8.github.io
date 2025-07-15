@@ -3,10 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: |+
-  Leading Strategic Explorations team at <a href="https://openai.com/">OpenAI</a><br><br>
-  AI Research Resident, <br>
-  Electrical Engineering and Computing + Mathematical Sciences, <br>
-  <a href="https://www.caltech.edu">California Institute of Technology (Caltech)</a>.
+  AI Research Resident at <a href="https://www.qualcomm.com/research/artificial-intelligence">Qualcomm AI Research</a><br><br>
 
 profile:
   image: profile.jpg
