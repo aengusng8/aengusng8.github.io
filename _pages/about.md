@@ -2,8 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: |+
-  AI Research Resident at <a href="https://www.qualcomm.com/research/artificial-intelligence">Qualcomm AI Research</a><br><br>
+subtitle: AI Research Resident at <a href="https://www.qualcomm.com/research/artificial-intelligence">Qualcomm AI Research</a><br><br>
 
 profile:
   image: profile.jpg
