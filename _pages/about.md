@@ -37,3 +37,33 @@ social: true  # includes social icons at the bottom of the page
   }
 </style>
 <hr class="custom-hr">
+
+<div class="news">
+  <h2>news</h2>
+  {% if site.news != blank -%}
+    {%- assign news_by_year = site.news | where_exp: "item", "item.published != false" | group_by_exp:"item", "item.date | date: '%Y'" -%}
+    {%- for year in news_by_year -%}
+      <h3 class="year">{{ year.name }}</h3>
+      {%- assign news_by_month = year.items | group_by_exp:"item", "item.date | date: '%B'" -%}
+      {%- for month in news_by_month -%}
+        <h4>{{ month.name }}</h4>
+        <ul class="news-list">
+        {%- for item in month.items -%}
+          <li>
+            <div class="date">{{ item.date | date: '%b %d' }}</div>
+            <div class="title-and-content">
+              <div class="title">{{ item.title }}</div>
+              <div class="content">{{ item.content | remove: '<p>' | remove: '</p>' | strip }}</div>
+            </div>
+          </li>
+        {%- endfor %}
+        </ul>
+      {%- endfor %}
+    {%- endfor %}
+  {%- endif %}
+</div>
+  
+{% if site.selected_papers %}
+  <h2>selected publications</h2>
+  {% bibliography -f papers -q @*[selected=true]* %}
+{% endif %}
