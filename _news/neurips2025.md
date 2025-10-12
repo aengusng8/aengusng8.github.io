@@ -5,5 +5,5 @@ inline: true
 published: true
 ---
 
-⚡ Paper **Improved Training Technique for Shortcut Models** is accepted at **NeurIPS 2025**.
+⚡ Paper **Improved Training Technique for Shortcut Models** is accepted at <strong style="background: linear-gradient(45deg, #f960eb, #ff854d, #fff41f); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-fill-color: transparent; font-weight: bold;">NeurIPS 2025</strong>.
 
