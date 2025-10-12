@@ -15,7 +15,6 @@
     {% endif %}
     <div class="author">
     {% assign author_string_array = entry.author | split: " and " %}
-    {% assign site_author_name = site.author | split: " " | join: " " %}
 
     {% for author_name in author_string_array %}
       {% assign author_name_stripped = author_name | strip %}
@@ -23,12 +22,7 @@
       {% assign author_name_parts = author_name_clean | split: " " %}
       {% assign author_last_name = author_name_parts[-1] %}
       
-      {% assign is_site_author = false %}
-      {% if author_name_clean == site_author_name %}
-        {% assign is_site_author = true %}
-      {% endif %}
-
-      {% if is_site_author %}
+      {% if author_name_clean == "Anh Nguyen" %}
         <strong>{{ author_name_stripped }}</strong>
       {% else %}
         {% assign coauthor_url = nil %}
