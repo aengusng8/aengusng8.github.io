@@ -222,7 +222,6 @@ jekyll-archives:
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
 scholar:
-  style: _layouts/custom_citation.html
 
   sort_by: year
   order: descending
