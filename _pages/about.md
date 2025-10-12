@@ -11,10 +11,14 @@ profile:
   image_cicular: true # crops the image to make it circular
   address: false
 
-news: false # includes a list of news items
+news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
+
+<div style="padding: 20px; margin: 20px 0; border: 3px solid transparent; border-radius: 10px; background: linear-gradient(white, white) padding-box, linear-gradient(45deg, #f960eb, #ff854d, #fff41f) border-box;">
+  <strong>I focus on deep generative modeling as a principled route to machine intelligence surpassing human performance.</strong>
+</div>
 
 **Research:** My goal is to build powerful AI models capable of understanding, generating and reasoning with high-dimensional data across diverse modalities. I am currently focused on developing transferable techniques to improve generative models, including architecture, optimization, training objectives, and data efficiency. I invented many foundational concepts and techniques in (score-based) diffusion models, for which you can find more in a [blog post](/blog/2021/score/), a [quanta magazine article](https://www.quantamagazine.org/the-physics-principle-that-inspired-modern-ai-art-20230105/), or a recent [interview](https://x.com/slaterstich/status/1911817486439461009).
 
