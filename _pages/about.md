@@ -7,7 +7,7 @@ subtitle: |+
   I am actively pursuing a PhD position in Computer Science for the Fall 2026 intake and excited to collaborate on impactful research! 🚀
 
 profile:
-  image: profile.png
+  image: profile.jpg
   image_cicular: true # crops the image to make it circular
   address: false
 
