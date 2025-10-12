@@ -38,39 +38,39 @@
   selected={true}
 }
 
-@inproceedings{song2019generative,
-  title={Generative Modeling by Estimating Gradients of the Data Distribution},
-  author={Song, Yang and Ermon, Stefano},
-  booktitle={the 33rd Conference on Neural Information Processing Systems, 2019.},
-  year={2019},
-  abbr={NeurIPS},
-  award={Oral},
-  honor={Oral Presentation [top 0.5\%]},
-  abstract={
-  We introduce a new generative model where samples are produced via Langevin dynamics using gradients of the data distribution estimated with score matching. Because gradients might be ill-defined when the data resides on low-dimensional manifolds, we perturb the data with different levels of Gaussian noise and jointly estimate the corresponding scores, i.e., the vector fields of gradients of the perturbed data distribution for all noise levels. For sampling, we propose an annealed Langevin dynamics where we use gradients corresponding to gradually decreasing noise levels as the sampling process gets closer to the data manifold. Our framework allows flexible model architectures, requires no sampling during training or the use of adversarial methods, and provides a learning objective that can be used for principled model comparisons. Our models produce samples comparable to GANs on MNIST, CelebA and CIFAR-10 datasets, achieving a new state-of-the-art inception score of 8.87 on CIFAR-10. Additionally, we demonstrate that our models learn effective representations via image inpainting experiments.
-  },
-  pdf={https://arxiv.org/abs/1907.05600},
-  code={https://github.com/ermongroup/ncsn},
-  media={https://www.youtube.com/watch?v=Oc3X_x1Q1jU},
-  poster={NeurIPS2019/ncsn-poster.pdf},
-  slides={NeurIPS2019/talk_public.pptx},
-  blog={https://yang-song.github.io/blog/2021/score/},
-  selected={true}
-}
+% @inproceedings{song2019generative,
+%   title={Generative Modeling by Estimating Gradients of the Data Distribution},
+%   author={Song, Yang and Ermon, Stefano},
+%   booktitle={the 33rd Conference on Neural Information Processing Systems, 2019.},
+%   year={2019},
+%   abbr={NeurIPS},
+%   award={Oral},
+%   honor={Oral Presentation [top 0.5\%]},
+%   abstract={
+%   We introduce a new generative model where samples are produced via Langevin dynamics using gradients of the data distribution estimated with score matching. Because gradients might be ill-defined when the data resides on low-dimensional manifolds, we perturb the data with different levels of Gaussian noise and jointly estimate the corresponding scores, i.e., the vector fields of gradients of the perturbed data distribution for all noise levels. For sampling, we propose an annealed Langevin dynamics where we use gradients corresponding to gradually decreasing noise levels as the sampling process gets closer to the data manifold. Our framework allows flexible model architectures, requires no sampling during training or the use of adversarial methods, and provides a learning objective that can be used for principled model comparisons. Our models produce samples comparable to GANs on MNIST, CelebA and CIFAR-10 datasets, achieving a new state-of-the-art inception score of 8.87 on CIFAR-10. Additionally, we demonstrate that our models learn effective representations via image inpainting experiments.
+%   },
+%   pdf={https://arxiv.org/abs/1907.05600},
+%   code={https://github.com/ermongroup/ncsn},
+%   media={https://www.youtube.com/watch?v=Oc3X_x1Q1jU},
+%   poster={NeurIPS2019/ncsn-poster.pdf},
+%   slides={NeurIPS2019/talk_public.pptx},
+%   blog={https://yang-song.github.io/blog/2021/score/},
+%   selected={true}
+% }
 
 
-@inproceedings{song2020improved,
-  title={Improved Techniques for Training Score-Based Generative Models},
-  author={Yang Song and Stefano Ermon},
-  booktitle={the 34th Conference on Neural Information Processing Systems, 2020.},
-  year={2020},
-  abstract={
-    Score-based generative models can produce high quality image samples comparable to GANs, without requiring adversarial optimization. However, existing training procedures are limited to images of low resolution (typically below 32x32), and can be unstable under some settings. We provide a new theoretical analysis of learning and sampling from score models in high dimensional spaces, explaining existing failure modes and motivating new solutions that generalize across datasets. To enhance stability, we also propose to maintain an exponential moving average of model weights. With these improvements, we can effortlessly scale score-based generative models to images with unprecedented resolutions ranging from 64x64 to 256x256. Our score-based models can generate high-fidelity samples that rival best-in-class GANs on various image datasets, including CelebA, FFHQ, and multiple LSUN categories.
-  },
-  pdf={https://arxiv.org/abs/2006.09011},
-  code={https://github.com/ermongroup/ncsnv2},
-  abbr={arXiv},
-  blog={https://yang-song.github.io/blog/2021/score/},
-  poster={NeurIPS2020/ncsnv2-poster.pdf},
-  selected={true},
-}
+% @inproceedings{song2020improved,
+%   title={Improved Techniques for Training Score-Based Generative Models},
+%   author={Yang Song and Stefano Ermon},
+%   booktitle={the 34th Conference on Neural Information Processing Systems, 2020.},
+%   year={2020},
+%   abstract={
+%     Score-based generative models can produce high quality image samples comparable to GANs, without requiring adversarial optimization. However, existing training procedures are limited to images of low resolution (typically below 32x32), and can be unstable under some settings. We provide a new theoretical analysis of learning and sampling from score models in high dimensional spaces, explaining existing failure modes and motivating new solutions that generalize across datasets. To enhance stability, we also propose to maintain an exponential moving average of model weights. With these improvements, we can effortlessly scale score-based generative models to images with unprecedented resolutions ranging from 64x64 to 256x256. Our score-based models can generate high-fidelity samples that rival best-in-class GANs on various image datasets, including CelebA, FFHQ, and multiple LSUN categories.
+%   },
+%   pdf={https://arxiv.org/abs/2006.09011},
+%   code={https://github.com/ermongroup/ncsnv2},
+%   abbr={arXiv},
+%   blog={https://yang-song.github.io/blog/2021/score/},
+%   poster={NeurIPS2020/ncsnv2-poster.pdf},
+%   selected={true},
+% }
