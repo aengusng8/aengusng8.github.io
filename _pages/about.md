@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: |+
-  I am a Research Resident at <a href="https://www.qualcomm.com/research/artificial-intelligence">Qualcomm AI Research</a>, advised by Staff Scientist Dr. <a href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en">Anh Tran</a><br><br>
+  I am a Research Resident at <a href="https://www.qualcomm.com/research/artificial-intelligence">Qualcomm AI Research</a>, where I am fortunate to be advised by Staff Scientist Dr. <a href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en">Anh Tran</a><br><br>
   I am actively pursuing a PhD position in Computer Science for the Fall 2026 intake and excited to collaborate on impactful research! 🚀
 
 profile:
@@ -26,4 +26,14 @@ social: true  # includes social icons at the bottom of the page
 
 **Beyond Research:** I love the combination of mathematics, coding, and intuition. When I'm not debugging models or reading papers, you'll find me running half marathons 🏃‍♂️
 
-<hr style="border: none; border-top: 1px solid rgba(0, 0, 0, 0.1); margin: 2rem 0;">
+<style>
+  .custom-hr {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+  }
+  [data-theme="dark"] .custom-hr {
+    border-top-color: rgba(255, 255, 255, 0.15);
+  }
+</style>
+<hr class="custom-hr">
