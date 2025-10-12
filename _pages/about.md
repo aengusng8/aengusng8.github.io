@@ -41,26 +41,32 @@ social: true  # includes social icons at the bottom of the page
 <div class="news">
   <h2>news</h2>
   {% if site.news != blank -%}
-    {%- assign news_by_year = site.news | where_exp: "item", "item.published != false" | group_by_exp:"item", "item.date | date: '%Y'" -%}
-    {%- for year in news_by_year -%}
-      <h3 class="year">{{ year.name }}</h3>
-      {%- assign news_by_month = year.items | group_by_exp:"item", "item.date | date: '%B'" -%}
-      {%- for month in news_by_month -%}
-        <h4>{{ month.name }}</h4>
-        <ul class="news-list">
-        {%- for item in month.items -%}
-          <li>
-            <div class="date">{{ item.date | date: '%b %d' }}</div>
-            <div class="title-and-content">
-              <div class="title">{{ item.title }}</div>
-              <div class="content">{{ item.content | remove: '<p>' | remove: '</p>' | strip }}</div>
-            </div>
-          </li>
-        {%- endfor %}
-        </ul>
-      {%- endfor %}
+  {%- assign news_size = site.news | size -%}
+  <div class="table-responsive" {% if site.news_scrollable and news_size > 3 %}style="max-height: 10vw"{% endif %}>
+    <table class="table table-sm table-borderless">
+    {%- assign news = site.news | where_exp: "item", "item.published != false" | reverse -%}
+    {% if site.news_limit %}
+    {% assign news_limit = site.news_limit %}
+    {% else %}
+    {% assign news_limit = news_size %}
+    {% endif %}
+    {% for item in news limit: news_limit %}
+      <tr>
+        <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
+        <td>
+          {% if item.inline -%}
+            {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+          {%- else -%}
+            <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          {%- endif %}
+        </td>
+      </tr>
     {%- endfor %}
-  {%- endif %}
+    </table>
+  </div>
+{%- else -%}
+  <p>No news so far...</p>
+{%- endif %}
 </div>
   
 {% if site.selected_papers %}
