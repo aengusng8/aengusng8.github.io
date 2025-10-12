@@ -71,6 +71,5 @@ social: true  # includes social icons at the bottom of the page
   
 {% if site.selected_papers %}
   <h2>selected publications</h2>
-  <p style="margin-bottom: 1rem;">(*) denotes equal contribution</p>
   {% bibliography -f papers -q @*[selected=true]* %}
 {% endif %}
