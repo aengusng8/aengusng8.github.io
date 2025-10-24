@@ -47,6 +47,11 @@ html[data-theme='dark'] {
   --global-divider-color: #424246;
   --global-card-bg-color: #{$grey-900};
 
+  // Enhanced author name styling for dark mode
+  .publications ol.bibliography li .author > em {
+    background-color: rgba(255, 108, 12, 0.15);
+  }
+
   .fa-sun {
     padding-left: 10px;
     padding-top: 12px;

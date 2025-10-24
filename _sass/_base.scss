@@ -534,6 +534,11 @@ footer.sticky-bottom {
         > em {
           border-bottom: 1px solid;
           font-style: normal;
+          font-weight: bold;
+          color: var(--global-theme-color);
+          background-color: rgba(255, 108, 12, 0.1);
+          padding: 2px 4px;
+          border-radius: 3px;
         }
         > span.more-authors {
           color: var(--global-text-color-light);
