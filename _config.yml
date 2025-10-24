@@ -222,6 +222,8 @@ jekyll-archives:
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
 scholar:
+  last_name: Nguyen
+  first_name: [Anh]
 
   sort_by: year
   order: descending
