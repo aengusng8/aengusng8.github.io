@@ -532,13 +532,12 @@ footer.sticky-bottom {
           }
         }
         > em {
-          border-bottom: 1px solid;
           font-style: normal;
           font-weight: bold;
-          color: $black-color !important;
-          background: linear-gradient(45deg, #f960eb, #ff854d, #fff41f) !important;
-          padding: 2px 4px;
-          border-radius: 3px;
+          background: linear-gradient(45deg, #f960eb, #ff854d, #fff41f);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
         > span.more-authors {
           color: var(--global-text-color-light);
