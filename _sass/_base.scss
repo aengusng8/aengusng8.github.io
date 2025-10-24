@@ -535,8 +535,8 @@ footer.sticky-bottom {
           border-bottom: 1px solid;
           font-style: normal;
           font-weight: bold;
-          color: $black-color;
-          background: linear-gradient(45deg, #f960eb, #ff854d, #fff41f);
+          color: $black-color !important;
+          background: linear-gradient(45deg, #f960eb, #ff854d, #fff41f) !important;
           padding: 2px 4px;
           border-radius: 3px;
         }
