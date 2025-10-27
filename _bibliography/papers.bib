@@ -24,7 +24,7 @@
   The escalating demand for real-time image synthesis has driven significant advancements in one-step diffusion models, which inherently offer expedited generation speeds compared to traditional multi-step methods. However, this enhanced efficiency is frequently accompanied by a compromise in the controllability of image attributes. While negative prompting, typically implemented via classifier-free guidance (CFG), has proven effective for fine-grained control in multi-step models, its application to one-step generators remains largely unaddressed. Due to the lack of iterative refinement, as in multi-step diffusion, directly applying CFG to one-step generation leads to blending artifacts and diminished output quality. To fill this gap, we introduce Negative-Away Steer Attention (NASA), an efficient method that integrates negative prompts into one-step diffusion models. NASA operates within the intermediate representation space by leveraging cross-attention mechanisms to suppress undesired visual attributes. This strategy avoids the blending artifacts inherent in output-space guidance and achieves high efficiency, incurring only a minimal 1.89\% increase in FLOPs compared to the computational doubling of CFG. Furthermore, NASA can be seamlessly integrated into existing timestep distillation frameworks, enhancing the student's output quality. Experimental results demonstrate that NASA substantially improves controllability and output quality, achieving an HPSv2 score of 31.21, setting a new state-of-the-art benchmark for one-step diffusion models.
   },
   pdf={https://arxiv.org/abs/2412.02687},
-  html={https://snoopi-onestep.github.io/},
+  website={https://snoopi-onestep.github.io/},
   selected={true}
 }
 
