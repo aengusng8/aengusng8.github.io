@@ -680,6 +680,8 @@ html.transition *:after {
 }
 
 .aurora-text {
+  font-size: 1.1em;
+  font-weight: bold;
   background: linear-gradient(
     45deg,
     #f960eb,
@@ -688,21 +690,15 @@ html.transition *:after {
     #ff854d,
     #f960eb
   );
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
+  background-size: 200% auto;
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: aurora-gradient 10s ease infinite;
+  animation: aurora-gradient 5s linear infinite;
 }
 
 @keyframes aurora-gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
+  to {
+    background-position: 200% center;
   }
 }
