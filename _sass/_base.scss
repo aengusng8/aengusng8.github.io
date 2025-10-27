@@ -694,7 +694,8 @@ html.transition *:after {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: aurora-gradient 5s linear infinite;
+  animation: aurora-gradient 2s linear infinite;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 10px rgba(249, 96, 235, 0.3);
 }
 
 @keyframes aurora-gradient {
