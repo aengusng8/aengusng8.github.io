@@ -679,44 +679,30 @@ html.transition *:after {
   font-size: 0.9em;
 }
 
-.text-gradient {
-  background: linear-gradient(45deg, #f960eb, #ff854d, #fff41f);
+.aurora-text {
+  background: linear-gradient(
+    45deg,
+    #f960eb,
+    #ff854d,
+    #fff41f,
+    #ff854d,
+    #f960eb
+  );
+  background-size: 400% 400%;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: aurora-gradient 10s ease infinite;
 }
 
-/* Glitch effect for the text */
-.glitch {
-  position: relative;
-  @extend .text-gradient;
-}
-
-.glitch::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  @extend .text-gradient;
-  animation: glitch 2s infinite;
-  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-  transform: translate(-2px, -2px);
-}
-
-@keyframes glitch {
-  0%, 100% {
-    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-    transform: translate(0);
+@keyframes aurora-gradient {
+  0% {
+    background-position: 0% 50%;
   }
-  33% {
-    clip-path: polygon(0 0, 100% 0, 100% 15%, 0 15%);
-    transform: translate(-5px, -5px);
+  50% {
+    background-position: 100% 50%;
   }
-  66% {
-    clip-path: polygon(0 85%, 100% 85%, 100% 100%, 0 100%);
-    transform: translate(5px, 5px);
+  100% {
+    background-position: 0% 50%;
   }
 }
