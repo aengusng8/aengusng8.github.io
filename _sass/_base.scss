@@ -724,7 +724,7 @@ html.transition *:after {
   background-clip: padding-box, border-box;
   background-size: auto, 200% auto;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  animation: aurora-border 5s linear infinite;
+  animation: aurora-border 2s linear infinite;
 }
 
 @keyframes aurora-border {
