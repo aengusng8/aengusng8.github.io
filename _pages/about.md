@@ -5,7 +5,7 @@ permalink: /
 subtitle: |+
   I am a Research Resident at <a href="https://www.qualcomm.com/research/artificial-intelligence">Qualcomm AI Research</a>, where I am fortunate to be advised by Staff Scientist Dr. <a href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en">Anh Tran</a>.<br><br>
   I am actively pursuing a PhD position in Computer Science for the Fall 2026 intake and excited to collaborate on impactful research! 🚀<br>
-  Contact: aengus.ng8@gmail.com
+  <span class="contact-info">Contact: aengus.ng8@gmail.com</span>
 profile:
   image: profile.png
   image_cicular: true # crops the image to make it circular

@@ -669,3 +669,11 @@ html.transition *:after {
     }
   }
 }
+
+.contact-info {
+  color: $cyan-color;
+  background-color: var(--global-code-bg-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: monospace;
+}
