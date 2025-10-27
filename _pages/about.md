@@ -17,7 +17,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-<div style="padding: 15px 20px; margin: 20px 0; border: 4px solid transparent; border-radius: 15px; background: linear-gradient(#2d3748, #2d3748) padding-box, linear-gradient(45deg, #f960eb, #ff854d, #fff41f) border-box; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+<div class="aurora-box">
   <p style="margin: 0; font-size: 1.1em; font-weight: 400; color: #f7fafc; line-height: 1.6;">I focus on deep generative modeling as a principled route to machine intelligence surpassing human performance.</p>
 </div>
 
