@@ -51,7 +51,14 @@ social: true  # includes social icons at the bottom of the page
 
   .aurora-box {
     background-image: linear-gradient(#212529, #212529),
-      linear-gradient(45deg, #f960eb, #8972f9, #67f8f8);
+      linear-gradient(
+        45deg,
+        #f960eb,
+        #ff854d,
+        #fff41f,
+        #ff854d,
+        #f960eb
+      );
   }
 </style>
 <hr class="custom-hr">
