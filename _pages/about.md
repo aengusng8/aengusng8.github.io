@@ -18,7 +18,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 <div class="aurora-box">
-  <p style="margin: 0; font-size: 1.1em; font-weight: 400; color: #f7fafc; line-height: 1.6;">I focus on deep generative modeling as a principled route to machine intelligence surpassing human performance.</p>
+  <p class="aurora-text-about" style="margin: 0; font-size: 1.1em; font-weight: 400; line-height: 1.6;">I focus on deep generative modeling as a principled route to machine intelligence surpassing human performance.</p>
 </div>
 
 **Research:** My research is centered on <span class="aurora-text-about">Efficient & Robust Visual Intelligence</span>, a research direction aimed at unifying *generation speed*, *rich semantic representations*, and *controllability*. Currently, my goal is to build unified generative models capable of robust **conditional sampling** and producing **high-dimensional**, **high-fidelity**, and **diverse samples** in a **single forward pass**. My recent works focus on knowledge distillation and developing a unique class of models that **uniquely support one-step, few-step, and multi-step generation** from **a single network**.
@@ -47,6 +47,16 @@ social: true  # includes social icons at the bottom of the page
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+  }
+
+  .aurora-box {
+    background-image: linear-gradient(#212529, #212529),
+      linear-gradient(
+        45deg,
+        #f960eb,
+        #8972f9,
+        #67f8f8
+      );
   }
 </style>
 <hr class="custom-hr">
