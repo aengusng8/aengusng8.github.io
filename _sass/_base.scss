@@ -671,7 +671,7 @@ html.transition *:after {
 }
 
 .contact-info {
-  color: $cyan-color;
+  color: var(--global-text-color);
   background-color: var(--global-code-bg-color);
   padding: 2px 8px;
   border-radius: 5px;
