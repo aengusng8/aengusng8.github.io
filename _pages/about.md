@@ -39,9 +39,9 @@ social: true  # includes social icons at the bottom of the page
 
   .aurora-text-about {
     background: linear-gradient(
-      45deg,
-      #00BFFF,
-      #1E90FF
+      to right,
+      #4facfe 0%,
+      #00f2fe 100%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
