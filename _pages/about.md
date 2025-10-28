@@ -21,7 +21,7 @@ social: true  # includes social icons at the bottom of the page
   <p style="margin: 0; font-size: 1.1em; font-weight: 400; color: #f7fafc; line-height: 1.6;">I focus on deep generative modeling as a principled route to machine intelligence surpassing human performance.</p>
 </div>
 
-**Research:** My research is centered on <span class="aurora-text">Efficient & Robust Visual Intelligence</span>, a research direction aimed at unifying *generation speed*, *rich semantic representations*, and *fine-grained controllability*. Currently, my goal is to build unified generative models capable of robust conditional sampling and producing **high-dimensional**, **high-fidelity**, and **diverse samples** in a **single forward pass**. My recent works focus on knowledge distillation and developing a unique class of models that **uniquely support one-step, few-step, and multi-step generation** from **a single network**.
+**Research:** My research is centered on <span class="aurora-text-about">Efficient & Robust Visual Intelligence</span>, a research direction aimed at unifying *generation speed*, *rich semantic representations*, and *controllability*. Currently, my goal is to build unified generative models capable of robust conditional sampling and producing **high-dimensional**, **high-fidelity**, and **diverse samples** in a **single forward pass**. My recent works focus on knowledge distillation and developing a unique class of models that **uniquely support one-step, few-step, and multi-step generation** from **a single network**.
 
 **Previously:** I spent two years as a research resident in the highly selective AI Residency Program at [VinAI Research](https://github.com/VinAIResearch), a lab recognized in the world's top 20 for AI research based on its research output at top-tier conferences like CVPR and NeurIPS. The program provided intensive, PhD-level training, during which I was responsible for the entire research lifecycle, from ideation and planning to experimentation and implementation. This rigorous environment has a proven record of 119 PhD scholarships worldwide. The program's elite status was further underscored by Qualcomm's [acquisition of its generative AI unit in 2025](https://techcrunch.com/2025/04/01/qualcomm-acquires-generative-ai-division-of-vietnamese-startup-vinai/).
 
@@ -37,7 +37,7 @@ social: true  # includes social icons at the bottom of the page
     border-top-color: rgba(255, 255, 255, 0.15);
   }
 
-  .aurora-text {
+  .aurora-text-about {
     background: linear-gradient(
       45deg,
       #f960eb,
@@ -50,7 +50,6 @@ social: true  # includes social icons at the bottom of the page
     background-clip: text;
     text-fill-color: transparent;
     animation: aurora-text-gradient 3s linear infinite;
-    font-weight: 600;
   }
 
   @keyframes aurora-text-gradient {
