@@ -8,7 +8,7 @@ middle_name:
 last_name: Nguyen
 email: aengusng8@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Anh Nguyen - AI Research Resident @ Qualcomm
+  Anh Nguyen - Predoctoral Research Resident @ Qualcomm
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: Anh Nguyen, machine learning, AI, artificial intelligence, deep learning, generative models, creative models, diffusion models  # add your own keywords or leave empty
