@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: |+
-  I am a Predoctoral Research Resident at <a href="https://www.qualcomm.com/research/artificial-intelligence">Qualcomm AI Research</a>, where I am fortunate to be advised by Principal Scientist Dr. <a href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en">Anh Tran</a>.<br><br>
+  I am a Predodocoral Research Resident at <a href="https://www.qualcomm.com/research/artificial-intelligence">Qualcomm AI Research</a>, where I am fortunate to be advised by Principal Scientist Dr. <a href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en">Anh Tran</a>.<br><br>
   I am actively pursuing a PhD position in Computer Science for the Fall 2026 intake and excited to collaborate on impactful research! 🚀<br>
   <br>
   <span class="contact-info">Contact: anng@qti.qualcomm.com</span>
@@ -18,20 +18,23 @@ social: true  # includes social icons at the bottom of a page
 ---
 
 <!-- THE QUOTE BOX -->
-<div style="border: 2px solid #d55fde; background-color: rgba(255, 255, 255, 0.03); border-radius: 8px; padding: 20px; text-align: center; margin-bottom: 30px;">
-  <span style="color: #e6edf3; font-style: italic; font-size: 1.1em;">
-    I work on <span style="color: #58a6ff; font-weight: bold;">deep generative modeling</span> as a principled route to <span style="color: #58a6ff; font-weight: bold;">machine intelligence beyond human-level</span>.
-  </span>
+<div style="padding: 2px; background: linear-gradient(45deg, #f960eb, #ff854d, #fff41f, #ff854d, #f960eb); border-radius: 12px; margin-bottom: 25px;">
+    <div style="background-color: #161b22; border-radius: 10px; padding: 20px; text-align: center;">
+        <span style="color: #e6edf3; font-style: italic; font-size: 1.1em;">
+            I work on <span style="color: #58a6ff; font-weight: bold;">deep generative modeling</span> as a principled route to <span style="color: #58a6ff; font-weight: bold;">machine intelligence beyond human-level</span>.
+        </span>
+    </div>
 </div>
+
 
 <!-- RESEARCH STATEMENT SECTION -->
 <div style="text-align: justify;">
   <span style="color: #ff9e64; font-weight: bold; font-size: 1.1em;">Research Statement:</span> 
   My <b>long-term goal</b> is to build systems capable of <i>understanding, reasoning, planning</i>, and <i>acquiring physical intuition</i> about the world. 
   <br><br>
-  My current research focuses on <b style="color: #58a6ff;">Efficient & Robust Multimodal Intelligence</b>, aiming to resolve the trade-offs in foundation models through two core pillars: <b>Efficiency & Scalability</b> to minimize training and inference costs, and <b>Robustness & Controllability</b> to enforce alignment and reliability.
+  My current research focuses on <b style="color: #58a6ff;">Efficient & Robust Multimodal Intelligence</b>, aiming to resolve the trade-offs in foundation models through two core pillars: <b style="color: #58a6ff;">Efficiency & Scalability</b> to minimize training and inference costs, and <b style="color: #58a6ff;">Robustness & Controllability</b> to enforce alignment and reliability.
   <br><br>
-  Most recently, my work on <b>One-step Generative Modeling & Distillation</b> (<b style="color: #58a6ff;">NeurIPS</b> & <b style="color: #58a6ff;">ICCV</b> 2025) collapses iterative inference into <i>real-time, high-fidelity synthesis</i>, while my research on <b>Multimodal Representation</b> (<b style="color: #58a6ff;">ICCV</b> 2025) leverages internal semantics for <i>zero-shot, fine-grained controllability</i>.
+  Most recently, my work on <b style="color: #58a6ff;">One-step Generative Modeling & Distillation</b> (<b style="color: #58a6ff;">NeurIPS</b> & <b style="color: #58a6ff;">ICCV</b> 2025) collapses iterative inference into <i>real-time, high-fidelity synthesis</i>, while my research on <b style="color: #58a6ff;">Multimodal Representation</b> (<b style="color: #58a6ff;">ICCV</b> 2025) leverages internal semantics for <i>zero-shot, fine-grained controllability</i>.
   <br><br>
   <b>Research Readiness:</b> I can <b>independently lead</b> the entire research lifecycle for top-tier conferences, driving projects from problem formulation and experimentation to final publication.
 </div>
@@ -85,8 +88,10 @@ social: true  # includes social icons at the bottom of a page
 {%- endif %}
 </div>
   
+<div class="publications">
 {% if site.selected_papers %}
   <h2>selected publications</h2>
   <p style="margin-bottom: 1rem;">(*) denotes equal contribution</p>
   {% bibliography -f papers -q @*[selected=true]* %}
 {% endif %}
+</div>
