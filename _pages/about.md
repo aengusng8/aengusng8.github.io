@@ -14,11 +14,33 @@ profile:
 
 news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true  # includes social icons at the bottom of a page
 ---
 
-<div class="aurora-box">
-  <p class="aurora-text-about" style="margin: 0; font-weight: 400; line-height: 1.6;"><em>I work on <strong>deep generative modeling</strong> as a principled route to <strong>machine intelligence beyond human-level</strong>.</em></p>
+<!-- The Gradient Border Box -->
+<div style="
+    padding: 2px; 
+    background: linear-gradient(to right, #ff9966, #ff5e62, #ff9966); 
+    border-radius: 12px; 
+    margin-bottom: 25px;">
+    
+    <!-- The Inside Box (Background Color Changed) -->
+    <div style="
+        background-color: #161b22; 
+        border-radius: 10px; 
+        padding: 20px; 
+        text-align: left;">
+        
+        <!-- The Text (Color Changed to Ice White) -->
+        <p style="
+            margin: 0; 
+            font-size: 1.1em; 
+            font-style: italic; 
+            color: #e6edf3; 
+            line-height: 1.6;">
+            I work on <b style="color: #58a6ff;">deep generative modeling</b> as a principled route to <b style="color: #58a6ff;">machine intelligence beyond human levels</b>.
+        </p>
+    </div>
 </div>
 
 **Research Statement:** My **long-term goal** is to build systems capable of *understanding, reasoning, planning*, and *acquiring physical intuition* about the world.
