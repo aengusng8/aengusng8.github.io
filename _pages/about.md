@@ -21,7 +21,13 @@ social: true  # includes social icons at the bottom of the page
   <p class="aurora-text-about" style="margin: 0; font-weight: 400; line-height: 1.6;"><em>I work on <strong>deep generative modeling</strong> as a principled route to <strong>machine intelligence beyond human-level</strong>.</em></p>
 </div>
 
-**Research Interest:** My research is centered on <span class="aurora-text-about">Efficient & Robust Multimodal Intelligence</span>, a research direction aimed at unifying *generation speed*, *rich semantic representations*, and *controllability*. Currently, my goal is to build unified generative models capable of robust **conditional sampling** and producing **high-dimensional**, **high-fidelity**, and **diverse samples** in a **single forward pass**. My recent works focus on **knowledge distillation** and developing a unique class of models that **uniquely support one-step, few-step, and multi-step generation** from **a single network**.
+**Research Statement:** My **long-term goal** is to build systems capable of *understanding, reasoning, planning*, and *acquiring physical intuition* about the world.
+
+My current research focuses on <span style="color: #33c9ff">**Efficient & Robust Multimodal Intelligence**</span>, aiming to resolve the trade-offs in foundation models through two core pillars: **Efficiency & Scalability** to minimize training and inference costs, and **Robustness & Controllability** to enforce alignment and reliability.
+
+Most recently, my work on **One-step Generative Modeling & Distillation** (<span style="color: #33c9ff">**NeurIPS**</span> & <span style="color: #33c9ff">**ICCV**</span> 2025) collapses iterative inference into *real-time, high-fidelity synthesis*, while my research on **Multimodal Representation** (<span style="color: #33c9ff">**ICCV**</span> 2025) leverages internal semantics for *zero-shot, fine-grained controllability*.
+
+**Research Readiness:** I can **independently lead** the entire research lifecycle for top-tier conferences, driving projects from problem formulation and experimentation to final publication.
 
 **Previously:** I spent two years as a predoctoral research resident in the highly selective AI Residency Program at [VinAI Research](https://github.com/VinAIResearch), a lab recognized in the world's top 20 for AI research based on its research output at top-tier conferences like CVPR and NeurIPS. The program provided intensive, PhD-level training, during which I was responsible for the entire research lifecycle, from problem formulation and experimentation to final publication. This rigorous environment has a proven record of 119 PhD scholarships worldwide. The program's elite status was further underscored by Qualcomm's [acquisition of its generative AI unit in 2025](https://techcrunch.com/2025/04/01/qualcomm-acquires-generative-ai-division-of-vietnamese-startup-vinai/).
 
