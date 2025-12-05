@@ -24,12 +24,9 @@ layout: default
               {% endif -%}
             </div>                                   
             <div class="col-sm-9">          
-              <h1 style="font-weight: 800; font-size: 2.8em; margin-bottom: 0px; color: #e6edf3; letter-spacing: -0.5px;">
+              <h1 style="font-weight: 800; font-size: 2.8em; margin-bottom: 10px; color: #e6edf3; letter-spacing: -0.5px;">
                 {% if site.title == "blank" -%}{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }} {%- else -%}{{ site.title }}{%- endif %} <span style="color: #58a6ff; font-weight: 300; font-size: 0.6em; vertical-align: middle;">/ Aengus</span>
               </h1>
-              <div style="font-size: 0.9em; color: #8b949e; margin-bottom: 15px; font-family: monospace;">
-                [ an-nuh-win ] &nbsp;•&nbsp; 🇻🇳 Hanoi, Vietnam
-              </div>
               <p class="desc">{{ page.subtitle }}</p>  
               {%- if page.profile.address %}
               <div class="address">
