@@ -50,20 +50,20 @@ social: true  # includes social icons at the bottom of a page
 <!-- PREVIOUSLY SECTION -->
 <div style="text-align: justify;">
   <span style="color: #ff9e64; font-weight: bold; font-size: 1.1em;">Previously:</span> 
-  I spent two years as a predoctoral research resident in the highly selective AI Residency Program at <span style="color: #d2a8ff;">VinAI Research</span>, a lab recognized in the world’s top 20 for AI research based on its research output at top-tier conferences like CVPR and NeurIPS. 
+  I spent two years as a predoctoral research resident in the highly selective AI Residency Program at <a href="https://github.com/VinAIResearch" target="_blank" style="color: #d2a8ff; text-decoration: none;">VinAI Research</a>, a lab recognized in the world's top 20 for AI research based on its research output at top-tier conferences like CVPR and NeurIPS. 
   <br><br>
-  The program provided intensive, PhD-level training, during which I was responsible for the entire research lifecycle, from problem formulation and experimentation to final publication. This rigorous environment has a proven record of 119 PhD scholarships worldwide. The program’s elite status was further underscored by Qualcomm’s <span style="color: #d2a8ff;">acquisition of its generative AI unit in 2025</span>.
+  The program provided intensive, PhD-level training, during which I was responsible for the entire research lifecycle, from problem formulation and experimentation to final publication. This rigorous environment has a proven record of 119 PhD scholarships worldwide. The program's elite status was further underscored by Qualcomm's <a href="https://techcrunch.com/2025/04/01/qualcomm-acquires-generative-ai-division-of-vietnamese-startup-vinai/" target="_blank" style="color: #d2a8ff; text-decoration: none;">acquisition of its generative AI unit in 2025</a>.
 </div>
 
 <br>
 
-<!-- BEYOND RESEARCH SECTION -->
+<!-- OUTSIDE THE LAB SECTION -->
 <div>
-  <span style="color: #ff9e64; font-weight: bold; font-size: 1.1em;">Beyond Research:</span> 
-  I love the combination of mathematics, coding, and intuition. When I’m not debugging models or reading papers, you’ll find me running half marathons 🏃‍♂️
+  <span style="color: #ff9e64; font-weight: bold; font-size: 1.1em;">Outside the Lab:</span> 
+  I enjoy the combination of mathematics, coding, and intuition. Away from the keyboard, you can find me clearing my mind on long-distance runs 🏃‍♂️
 </div>
 
-<div class="news">
+<div class="news" style="margin-top: 60px;">
   <h2>news</h2>
   {% if site.news != blank -%}
   {%- assign news_size = site.news | size -%}
