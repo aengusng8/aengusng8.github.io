@@ -20,7 +20,7 @@ social: true  # includes social icons at the bottom of a page
 <!-- The Gradient Border Box -->
 <div style="
     padding: 2px; 
-    background: linear-gradient(to right, #ff9966, #ff5e62, #ff9966); 
+    background: linear-gradient(45deg, #f960eb, #ff854d, #fff41f, #ff854d, #f960eb); 
     border-radius: 12px; 
     margin-bottom: 25px;">
     
