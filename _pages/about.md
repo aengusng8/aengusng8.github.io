@@ -38,7 +38,7 @@ social: true  # includes social icons at the bottom of a page
   <span style="color: #ff9e64; font-weight: bold; font-size: 1.1em;">Research Statement:</span> 
   My <b>long-term goal</b> is to build systems capable of <i>understanding, reasoning, planning</i>, and <i>acquiring physical intuition</i> about the world. 
   <br><br>
-  My current research focuses on <b style="color: #58a6ff; font-weight: bold;">Efficient & Robust Multimodal Intelligence</b>, aiming to resolve the trade-offs in foundation models through two core pillars: <b style="color: #58a6ff;">Efficiency & Scalability</b> to minimize training and inference costs, and <b style="color: #58a6ff;">Robustness & Controllability</b> to enforce alignment and reliability.
+  My current research focuses on <b style="color: #58a6ff; font-weight: bold;">Efficient & Robust Multimodal Intelligence</b>, aiming to resolve the trade-offs in foundation models through two core pillars: <b style="color: #58a6ff;">(1) Efficiency & Scalability</b> to minimize training and inference costs, and <b style="color: #58a6ff;">(2) Robustness & Controllability</b> to enforce alignment and reliability.
   <br><br>
   Most recently, my work on <b style="color: #58a6ff;">One-step Generative Modeling & Distillation</b> (<b style="color: #58a6ff;">NeurIPS</b> & <b style="color: #58a6ff;">ICCV</b> 2025) collapses iterative inference into <i>real-time, high-fidelity synthesis</i>, while my research on <b style="color: #58a6ff;">Multimodal Representation</b> (<b style="color: #58a6ff;">ICCV</b> 2025) leverages internal semantics for <i>zero-shot, fine-grained controllability</i>.
   <br><br>
