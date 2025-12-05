@@ -17,79 +17,42 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of a page
 ---
 
-<!-- The Gradient Border Box -->
-<div style="
-    padding: 2px; 
-    background: linear-gradient(45deg, #f960eb, #ff854d, #fff41f, #ff854d, #f960eb); 
-    border-radius: 12px; 
-    margin-bottom: 25px;">
-    
-    <!-- The Inside Box (Background Color Changed) -->
-    <div style="
-        background-color: #161b22; 
-        border-radius: 10px; 
-        padding: 20px; 
-        text-align: left;">
-        
-        <!-- The Text (Color Changed to Ice White) -->
-        <p style="
-            margin: 0; 
-            font-size: 1.1em; 
-            font-style: italic; 
-            color: #e6edf3; 
-            line-height: 1.6;">
-            I work on <b style="color: #58a6ff;">deep generative modeling</b> as a principled route to <b style="color: #58a6ff;">machine intelligence beyond human levels</b>.
-        </p>
-    </div>
+<!-- THE QUOTE BOX -->
+<div style="border: 2px solid #d55fde; background-color: rgba(255, 255, 255, 0.03); border-radius: 8px; padding: 20px; text-align: center; margin-bottom: 30px;">
+  <span style="color: #e6edf3; font-style: italic; font-size: 1.1em;">
+    I work on <span style="color: #58a6ff; font-weight: bold;">deep generative modeling</span> as a principled route to <span style="color: #58a6ff; font-weight: bold;">machine intelligence beyond human-level</span>.
+  </span>
 </div>
 
-**Research Statement:** My **long-term goal** is to build systems capable of *understanding, reasoning, planning*, and *acquiring physical intuition* about the world.
+<!-- RESEARCH STATEMENT SECTION -->
+<div style="text-align: justify;">
+  <span style="color: #ff9e64; font-weight: bold; font-size: 1.1em;">Research Statement:</span> 
+  My <b>long-term goal</b> is to build systems capable of <i>understanding, reasoning, planning</i>, and <i>acquiring physical intuition</i> about the world. 
+  <br><br>
+  My current research focuses on <b style="color: #58a6ff;">Efficient & Robust Multimodal Intelligence</b>, aiming to resolve the trade-offs in foundation models through two core pillars: <b>Efficiency & Scalability</b> to minimize training and inference costs, and <b>Robustness & Controllability</b> to enforce alignment and reliability.
+  <br><br>
+  Most recently, my work on <b>One-step Generative Modeling & Distillation</b> (<b style="color: #58a6ff;">NeurIPS</b> & <b style="color: #58a6ff;">ICCV</b> 2025) collapses iterative inference into <i>real-time, high-fidelity synthesis</i>, while my research on <b>Multimodal Representation</b> (<b style="color: #58a6ff;">ICCV</b> 2025) leverages internal semantics for <i>zero-shot, fine-grained controllability</i>.
+  <br><br>
+  <b>Research Readiness:</b> I can <b>independently lead</b> the entire research lifecycle for top-tier conferences, driving projects from problem formulation and experimentation to final publication.
+</div>
 
-My current research focuses on <span style="color: #33c9ff">**Efficient & Robust Multimodal Intelligence**</span>, aiming to resolve the trade-offs in foundation models through two core pillars: **Efficiency & Scalability** to minimize training and inference costs, and **Robustness & Controllability** to enforce alignment and reliability.
+<hr style="border-color: #30363d; margin: 30px 0;">
 
-Most recently, my work on **One-step Generative Modeling & Distillation** (<span style="color: #33c9ff">**NeurIPS**</span> & <span style="color: #33c9ff">**ICCV**</span> 2025) collapses iterative inference into *real-time, high-fidelity synthesis*, while my research on **Multimodal Representation** (<span style="color: #33c9ff">**ICCV**</span> 2025) leverages internal semantics for *zero-shot, fine-grained controllability*.
+<!-- PREVIOUSLY SECTION -->
+<div style="text-align: justify;">
+  <span style="color: #ff9e64; font-weight: bold; font-size: 1.1em;">Previously:</span> 
+  I spent two years as a predoctoral research resident in the highly selective AI Residency Program at <span style="color: #d2a8ff;">VinAI Research</span>, a lab recognized in the world’s top 20 for AI research based on its research output at top-tier conferences like CVPR and NeurIPS. 
+  <br><br>
+  The program provided intensive, PhD-level training, during which I was responsible for the entire research lifecycle, from problem formulation and experimentation to final publication. This rigorous environment has a proven record of 119 PhD scholarships worldwide. The program’s elite status was further underscored by Qualcomm’s <span style="color: #d2a8ff;">acquisition of its generative AI unit in 2025</span>.
+</div>
 
-**Research Readiness:** I can **independently lead** the entire research lifecycle for top-tier conferences, driving projects from problem formulation and experimentation to final publication.
+<br>
 
-**Previously:** I spent two years as a predoctoral research resident in the highly selective AI Residency Program at [VinAI Research](https://github.com/VinAIResearch), a lab recognized in the world's top 20 for AI research based on its research output at top-tier conferences like CVPR and NeurIPS. The program provided intensive, PhD-level training, during which I was responsible for the entire research lifecycle, from problem formulation and experimentation to final publication. This rigorous environment has a proven record of 119 PhD scholarships worldwide. The program's elite status was further underscored by Qualcomm's [acquisition of its generative AI unit in 2025](https://techcrunch.com/2025/04/01/qualcomm-acquires-generative-ai-division-of-vietnamese-startup-vinai/).
-
-**Beyond Research:** I love the combination of mathematics, coding, and intuition. When I'm not debugging models or reading papers, you'll find me running half marathons 🏃‍♂️
-
-<style>
-  .custom-hr {
-    border: none;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    margin: 2rem 0;
-  }
-  [data-theme="dark"] .custom-hr {
-    border-top-color: rgba(255, 255, 255, 0.15);
-  }
-
-  .aurora-text-about {
-    background: linear-gradient(
-      to right,
-      #4facfe 0%,
-      #00f2fe 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-  }
-
-  .aurora-box {
-    background-image: linear-gradient(#212529, #212529),
-      linear-gradient(
-        45deg,
-        #f960eb,
-        #ff854d,
-        #fff41f,
-        #ff854d,
-        #f960eb
-      );
-  }
-</style>
-<hr class="custom-hr">
+<!-- BEYOND RESEARCH SECTION -->
+<div>
+  <span style="color: #ff9e64; font-weight: bold; font-size: 1.1em;">Beyond Research:</span> 
+  I love the combination of mathematics, coding, and intuition. When I’m not debugging models or reading papers, you’ll find me running half marathons 🏃‍♂️
+</div>
 
 <div class="news">
   <h2>news</h2>
