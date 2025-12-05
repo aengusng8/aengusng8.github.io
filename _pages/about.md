@@ -21,7 +21,7 @@ social: true  # includes social icons at the bottom of a page
 <div style="padding: 2px; background: linear-gradient(45deg, #f960eb, #ff854d, #fff41f, #ff854d, #f960eb); border-radius: 12px; margin-bottom: 25px;">
     <div style="background-color: #161b22; border-radius: 10px; padding: 20px; text-align: center;">
         <span style="color: #e6edf3; font-style: italic; font-size: 1.1em;">
-            I work on <span style="color: #58a6ff; font-weight: bold;">deep generative modeling</span> as a principled route to <span style="color: #58a6ff; font-weight: bold;">machine intelligence beyond human-level</span>.
+            I work on <span style="color: #58a6ff; font-weight: bold;">deep generative modeling</span> as a principled route to <span style="color: #58a6ff; font-weight: bold;">machine intelligence beyond human levels</span>.
         </span>
     </div>
 </div>
