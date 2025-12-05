@@ -3,9 +3,15 @@ layout: about
 title: about
 permalink: /
 subtitle: |+
-  I am a Predodocoral Research Resident at <a href="https://www.qualcomm.com/research/artificial-intelligence">Qualcomm AI Research</a>, where I am fortunate to be advised by Principal Scientist Dr. <a href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en">Anh Tran</a>.<br><br>
-  I am actively pursuing a PhD position in Computer Science for the Fall 2026 intake and excited to collaborate on impactful research! 🚀<br>
-  <br>
+  <div style="font-size: 1.05em; line-height: 1.6; margin-bottom: 20px;">
+    I am a <span style="color: #58a6ff; font-weight: bold;">Predoctoral Research Resident</span> at <a href="https://www.qualcomm.com/research/artificial-intelligence" target="_blank" style="color: #58a6ff; text-decoration: none;">Qualcomm AI Research</a>, where I am advised by Principal Scientist <a href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en" target="_blank" style="color: #58a6ff; text-decoration: none;">Dr. Anh Tran</a>.
+  </div>
+  
+  <div style="background: rgba(255, 158, 100, 0.1); border-left: 3px solid #ff9e64; padding: 10px 15px; border-radius: 0 4px 4px 0; margin-bottom: 25px;">
+    <span style="color: #ff9e64; font-weight: bold;">🚀 Fall 2026 Intake:</span> 
+    <span style="color: #e6edf3;">I am actively pursuing a <b>PhD position</b> in Computer Science and am excited to collaborate on impactful research!</span>
+  </div>
+  
   <span class="contact-info">Contact: anng@qti.qualcomm.com</span>
 profile:
   image: profile.png
