@@ -8,8 +8,8 @@ subtitle: |+
   </div>
   
   <div style="background: rgba(255, 158, 100, 0.1); border-left: 3px solid #ff9e64; padding: 10px 15px; border-radius: 0 4px 4px 0; margin-bottom: 25px;">
-    <span style="color: #ff9e64; font-weight: bold;">🚀 Fall 2026 Intake:</span> 
-    <span style="color: #e6edf3;">I am actively pursuing a <b>PhD position</b> in Computer Science and am excited to collaborate on impactful research!</span>
+    <span style="color: #ff9e64; font-weight: bold;">🚀 Fall 2026:</span>
+    <span style="color: #e6edf3;">I will be joining Johns Hopkins University as a Ph.D. student, dedicated to advancing impactful research.</span>
   </div>
   
   <span class="contact-info">Contact: anng@qti.qualcomm.com</span>
