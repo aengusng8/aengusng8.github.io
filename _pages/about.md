@@ -12,7 +12,7 @@ subtitle: |+
     <span style="color: #e6edf3;">I will be joining Johns Hopkins University as a Ph.D. student, dedicated to advancing impactful research.</span>
   </div>
   
-  <span class="contact-info">Contact: anng@qti.qualcomm.com</span>
+  <span class="contact-info">Contact: aengus.ng8@gmail.com</span>
 profile:
   image: profile.png
   image_cicular: true # crops the image to make it circular
