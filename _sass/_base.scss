@@ -135,7 +135,8 @@ blockquote {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
-  opacity: 0.95;
+  opacity: 0.9;
+  min-height: 52px;
 }
 .navbar .dropdown-menu {
   background-color: var(--global-bg-color);
@@ -251,8 +252,12 @@ blockquote {
 .social {
   text-align: left;
   .contact-icons {
-    font-size: 3rem;
+    font-size: 2.25rem;
+    line-height: 1;
+    margin-top: 0.7rem;
     a {
+      display: inline-block;
+      margin-right: 0.75rem;
       i::before {
         color: var(--global-text-color);
         transition-property: all 0.2s ease-in-out;
@@ -462,7 +467,7 @@ footer.sticky-bottom {
 // Publications
 
 .publications {
-  margin-top: 2rem;
+  margin-top: 3rem;
   h1 {
     color: var(--global-theme-color);
     font-size: 2rem;
@@ -492,22 +497,40 @@ footer.sticky-bottom {
     margin-top: 0;
 
     li {
-      margin-bottom: 1rem;
-      .preview {
+      margin-bottom: 2.25rem;
+      .col-sm-3.preview {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+      }
+      img.preview,
+      video.preview {
         width: 100%;
-        min-width: 80px;
-        max-width: 200px;
+        max-width: 220px;
+        aspect-ratio: 16 / 9;
+        object-fit: contain;
+        padding: 0.35rem;
+        border: 1px solid rgba(139, 148, 158, 0.22);
+        border-radius: 6px !important;
+        background: rgba(255, 255, 255, 0.035);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
       }
       .abbr {
-        height: 2rem;
+        height: 1.8rem;
         margin-bottom: 0.5rem;
         abbr {
           display: inline-block;
-          background-color: var(--global-theme-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
+          min-width: 5rem;
+          padding: 0.2rem 0.6rem;
+          border: 1px solid rgba(255, 126, 32, 0.5);
+          border-radius: 4px;
+          color: #ff9e64;
+          background-color: rgba(255, 126, 32, 0.14);
+          font-size: 0.78rem;
+          font-weight: 700;
+          letter-spacing: 0;
           a {
-            color: white;
+            color: #ff9e64;
             &:hover {
               text-decoration: none;
             }
@@ -671,12 +694,85 @@ html.transition *:after {
 }
 
 .contact-info {
-  color: var(--global-text-color);
-  background-color: var(--global-code-bg-color);
-  padding: 2px 8px;
-  border-radius: 5px;
+  color: var(--global-text-color-light);
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
   font-family: monospace;
-  font-size: 0.9em;
+  font-size: 0.84em;
+  letter-spacing: 0;
+}
+
+.post article {
+  > .clearfix,
+  > .news,
+  > .publications {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  > .clearfix {
+    margin-top: 2.5rem;
+  }
+
+  > .news,
+  > .publications {
+    margin-top: 3.5rem;
+  }
+}
+
+.post article > .clearfix {
+  > div,
+  > p {
+    max-width: 980px;
+  }
+}
+
+.news {
+  h2 {
+    margin-bottom: 1.35rem;
+  }
+
+  .table-responsive {
+    overflow-x: visible;
+  }
+
+  table.table {
+    margin-bottom: 0;
+    border-collapse: collapse;
+
+    tr {
+      border-top: 1px solid rgba(139, 148, 158, 0.16);
+    }
+
+    tr:first-child {
+      border-top: 0;
+    }
+
+    th,
+    td {
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
+      vertical-align: top;
+      line-height: 1.55;
+    }
+
+    th {
+      width: 5.5rem;
+      min-width: 5.5rem;
+      padding-right: 1.25rem;
+      color: var(--global-text-color-light);
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-align: right;
+    }
+
+    td {
+      max-width: 900px;
+      font-size: 0.96rem;
+    }
+  }
 }
 
 .aurora-text {
