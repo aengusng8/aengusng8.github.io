@@ -793,6 +793,10 @@ html.transition *:after {
   display: block;
 }
 
+.research-core__main {
+  min-width: 0;
+}
+
 .research-core__statement {
   min-width: 0;
 }
@@ -989,6 +993,11 @@ html.transition *:after {
     grid-template-columns: minmax(0, 1fr) minmax(248px, 285px);
     gap: 2rem;
     align-items: start;
+  }
+
+  .research-core__main {
+    display: grid;
+    gap: 1.55rem;
   }
 
   .research-signals {

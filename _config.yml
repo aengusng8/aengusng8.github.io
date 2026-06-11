@@ -225,8 +225,8 @@ scholar:
   last_name: Nguyen
   first_name: [Anh]
 
-  sort_by: year
-  order: descending
+  sort_by: selected_order
+  order: ascending
 
   source: _bibliography
   bibliography: papers.bib
