@@ -573,7 +573,7 @@ footer.sticky-bottom {
         abbr {
           display: inline-block;
           min-width: 4.72rem;
-          padding: 0.14rem 0.56rem 0.15rem;
+          padding: 0.16rem 0.58rem 0.17rem;
           border: 1px solid rgba(123, 183, 255, 0.62);
           border-radius: 999px;
           color: rgba(238, 246, 255, 0.94);
@@ -585,7 +585,7 @@ footer.sticky-bottom {
             inset 0 1px 0 rgba(238, 246, 255, 0.16),
             0 0 13px rgba(63, 129, 220, 0.3),
             0 0 1px rgba(123, 183, 255, 0.55);
-          font-size: 0.7rem;
+          font-size: 0.72rem;
           font-weight: 800;
           letter-spacing: 0.02em;
           text-align: center;
@@ -608,15 +608,16 @@ footer.sticky-bottom {
         .venue-cvpr,
         .venue-iclr,
         .venue-iccv {
-          border-color: rgba(123, 183, 255, 0.82);
+          border-color: rgba(123, 183, 255, 0.94);
+          color: rgba(255, 255, 255, 0.98);
           background:
-            linear-gradient(180deg, rgba(44, 112, 190, 0.56), rgba(8, 21, 38, 0.9)),
-            linear-gradient(90deg, rgba(123, 183, 255, 0.26), rgba(127, 215, 209, 0.13));
+            linear-gradient(180deg, rgba(52, 124, 210, 0.7), rgba(8, 21, 38, 0.92)),
+            linear-gradient(90deg, rgba(123, 183, 255, 0.34), rgba(127, 215, 209, 0.18));
           box-shadow:
-            inset 0 0 0 1px rgba(238, 246, 255, 0.1),
-            inset 0 1px 0 rgba(238, 246, 255, 0.18),
-            0 0 16px rgba(63, 129, 220, 0.38),
-            0 0 3px rgba(123, 183, 255, 0.58);
+            inset 0 0 0 1px rgba(238, 246, 255, 0.14),
+            inset 0 1px 0 rgba(238, 246, 255, 0.24),
+            0 0 18px rgba(63, 129, 220, 0.48),
+            0 0 5px rgba(123, 183, 255, 0.68);
         }
       }    
       .title {
@@ -1177,18 +1178,6 @@ html.transition *:after {
   padding: 0.96rem 1.28rem;
   border-left: 1px solid rgba(201, 148, 99, 0.18);
   text-align: center;
-}
-
-.research-signature {
-  margin: 0.52rem auto 0;
-  color: rgba(155, 168, 184, 0.82);
-  font-size: 0.72rem;
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  line-height: 1.35;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .news {
