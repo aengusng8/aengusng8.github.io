@@ -536,17 +536,20 @@ footer.sticky-bottom {
         abbr {
           display: inline-block;
           min-width: 5rem;
-          padding: 0.2rem 0.6rem;
-          border: 1px solid rgba(201, 148, 99, 0.38);
-          border-radius: 4px;
-          color: #d4a36f;
+          padding: 0.18rem 0.62rem;
+          border: 1px solid rgba(123, 183, 255, 0.58);
+          border-radius: 6px;
+          color: #eef6ff;
           background:
-            linear-gradient(135deg, rgba(201, 148, 99, 0.14), rgba(127, 215, 209, 0.055));
+            linear-gradient(180deg, rgba(20, 54, 96, 0.48), rgba(9, 20, 34, 0.78));
+          box-shadow:
+            inset 0 0 0 1px rgba(123, 183, 255, 0.08),
+            0 0 14px rgba(47, 111, 181, 0.22);
           font-size: 0.78rem;
           font-weight: 700;
           letter-spacing: 0;
           a {
-            color: #d4a36f;
+            color: #eef6ff;
             &:hover {
               text-decoration: none;
             }
@@ -758,7 +761,7 @@ html.transition *:after {
 
 .news {
   h2 {
-    margin-bottom: 1.4rem;
+    margin-bottom: 1.15rem;
     color: var(--profile-text);
     font-size: 2.15rem;
     font-weight: 300;
@@ -778,8 +781,8 @@ html.transition *:after {
     &::before {
       content: "";
       position: absolute;
-      top: 1.5rem;
-      bottom: 1.5rem;
+      top: 1.25rem;
+      bottom: 1.25rem;
       left: 7.15rem;
       width: 1px;
       background: linear-gradient(180deg, rgba(123, 183, 255, 0.34), rgba(127, 215, 209, 0.18), rgba(201, 148, 99, 0.24));
@@ -797,10 +800,10 @@ html.transition *:after {
 
     th,
     td {
-      padding-top: 1.35rem;
-      padding-bottom: 1.35rem;
+      padding-top: 1.05rem;
+      padding-bottom: 1.05rem;
       vertical-align: top;
-      line-height: 1.55;
+      line-height: 1.48;
     }
 
     th {
@@ -808,7 +811,7 @@ html.transition *:after {
       min-width: 5.5rem;
       padding-right: 1.25rem;
       color: var(--profile-muted);
-      font-size: 0.9rem;
+      font-size: 0.84rem;
       font-weight: 700;
       text-align: right;
       background: linear-gradient(90deg, rgba(8, 13, 19, 0.12), rgba(123, 183, 255, 0.025));
@@ -816,14 +819,14 @@ html.transition *:after {
 
     td {
       max-width: 900px;
-      font-size: 0.96rem;
+      font-size: 0.93rem;
       padding-left: 1.8rem;
       position: relative;
 
       &::before {
         content: "";
         position: absolute;
-        top: 1.95rem;
+        top: 1.55rem;
         left: -0.34rem;
         width: 0.5rem;
         height: 0.5rem;
@@ -843,22 +846,21 @@ html.transition *:after {
 }
 
 .aurora-text {
-  font-size: 1.1em;
-  font-weight: bold;
-  background: linear-gradient(
-    45deg,
-    var(--profile-blue),
-    var(--profile-amber),
-    var(--profile-violet),
-    var(--profile-amber),
-    var(--profile-blue)
-  );
-  background-size: 200% auto;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: aurora-gradient 2s linear infinite;
-  filter: drop-shadow(0 0 3px rgba(106, 169, 255, 0.24));
+  display: inline-block;
+  padding: 0.02em 0.34em 0.08em;
+  border: 1px solid rgba(123, 183, 255, 0.62);
+  border-radius: 7px;
+  color: #eef6ff;
+  font-size: 0.96em;
+  font-weight: 800;
+  line-height: 1.15;
+  background:
+    linear-gradient(180deg, rgba(20, 54, 96, 0.58), rgba(9, 20, 34, 0.78));
+  box-shadow:
+    inset 0 0 0 1px rgba(123, 183, 255, 0.1),
+    0 0 16px rgba(47, 111, 181, 0.34),
+    0 0 2px rgba(123, 183, 255, 0.52);
+  text-shadow: 0 0 8px rgba(123, 183, 255, 0.34);
 }
 
 @keyframes aurora-gradient {
