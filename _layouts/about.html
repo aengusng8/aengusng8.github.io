@@ -10,15 +10,15 @@ layout: default
             <div class="col-sm-3">
               {%- if page.profile.image %}
                 {% if page.profile.image_cicular %}
-                  <img src="{{ '/assets/img/profile.png' | relative_url }}" 
-                       alt="Anh Nguyen profile photo" 
-                       class="img-fluid z-depth-1 rounded-circle" 
-                       style="width: 100%;">
+                  <div class="profile-avatar profile-avatar--circle">
+                    <img src="{{ '/assets/img/profile.png' | relative_url }}"
+                         alt="Anh Nguyen profile photo">
+                  </div>
                 {% else %}
-                  <img src="{{ '/assets/img/profile.png' | relative_url }}" 
-                       alt="Anh Nguyen profile photo" 
-                       class="img-fluid z-depth-1 rounded" 
-                       style="width: 100%;">
+                  <div class="profile-avatar">
+                    <img src="{{ '/assets/img/profile.png' | relative_url }}"
+                         alt="Anh Nguyen profile photo">
+                  </div>
                 {% endif %}
               {% endif -%}
             </div>                                   
