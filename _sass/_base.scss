@@ -808,10 +808,6 @@ html.transition *:after {
 }
 
 .research-signals__header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1rem;
   margin-bottom: 0.76rem;
   padding-bottom: 0.58rem;
   border-bottom: 1px solid rgba(123, 183, 255, 0.16);
@@ -827,15 +823,11 @@ html.transition *:after {
   }
 
   p {
-    margin: 0.24rem 0 0;
+    max-width: 100%;
+    margin: 0.28rem 0 0;
     color: rgba(155, 168, 184, 0.78);
-    font-size: 0.68rem;
-    line-height: 1.35;
-  }
-
-  span {
-    color: rgba(123, 183, 255, 0.82);
-    font-size: 0.68rem;
+    font-size: 0.76rem;
+    line-height: 1.42;
     white-space: nowrap;
   }
 }
