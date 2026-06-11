@@ -34,15 +34,18 @@ social: true  # includes social icons at the bottom of a page
 
 
 <!-- RESEARCH STATEMENT SECTION -->
-<div style="text-align: justify;">
-  <span style="color: #c99463; font-weight: bold; font-size: 1.1em;">Research Statement:</span>
-  My <b>long-term goal</b> is to build systems capable of <i>understanding, reasoning, planning</i>, and <i>acquiring physical intuition</i> about the world.
-  <br><br>
-  My current research focuses on <b style="color: #7bb7ff; font-weight: bold;">Efficient & Robust Multimodal Intelligence</b>, aiming to resolve the trade-offs in foundation models through two core pillars: <b style="color: #7bb7ff;">(1) Efficiency & Scalability</b> to minimize training and inference costs, and <b style="color: #7bb7ff;">(2) Robustness & Controllability</b> to enforce alignment and reliability.
-  <br><br>
-  Most recently, my work on <b style="color: #7bb7ff;">One-step Generative Modeling & Distillation</b> (<b style="color: #7bb7ff;">NeurIPS</b> & <b style="color: #7bb7ff;">ICCV</b> 2025) collapses iterative inference into <i>real-time, high-fidelity synthesis</i>, while my research on <b style="color: #7bb7ff;">Multimodal Representation</b> (<b style="color: #7bb7ff;">ICCV</b> 2025) leverages internal semantics for <i>zero-shot, fine-grained controllability</i>.
-  <br><br>
-  <b>Research Readiness:</b> I can <b>independently lead</b> the entire research lifecycle for top-tier conferences, driving projects from problem formulation and experimentation to final publication.
+<div class="research-core">
+  <div class="research-core__statement" style="text-align: justify;">
+    <span style="color: #c99463; font-weight: bold; font-size: 1.1em;">Research Statement:</span>
+    My <b>long-term goal</b> is to build systems capable of <i>understanding, reasoning, planning</i>, and <i>acquiring physical intuition</i> about the world.
+    <br><br>
+    My current research focuses on <b style="color: #7bb7ff; font-weight: bold;">Efficient & Robust Multimodal Intelligence</b>, aiming to resolve the trade-offs in foundation models through two core pillars: <b style="color: #7bb7ff;">(1) Efficiency & Scalability</b> to minimize training and inference costs, and <b style="color: #7bb7ff;">(2) Robustness & Controllability</b> to enforce alignment and reliability.
+    <br><br>
+    Most recently, my work on <b style="color: #7bb7ff;">One-step Generative Modeling & Distillation</b> (<b style="color: #7bb7ff;">NeurIPS</b> & <b style="color: #7bb7ff;">ICCV</b> 2025) collapses iterative inference into <i>real-time, high-fidelity synthesis</i>, while my research on <b style="color: #7bb7ff;">Multimodal Representation</b> (<b style="color: #7bb7ff;">ICCV</b> 2025) leverages internal semantics for <i>zero-shot, fine-grained controllability</i>.
+    <br><br>
+    <b>Research Readiness:</b> I can <b>independently lead</b> the entire research lifecycle for top-tier conferences, driving projects from problem formulation and experimentation to final publication.
+  </div>
+  {% include research_signals.html %}
 </div>
 
 <!-- OUTSIDE THE LAB SECTION -->

@@ -753,8 +753,7 @@ html.transition *:after {
 .post article {
   > .clearfix,
   > .news,
-  > .publications,
-  > .publications-with-signals {
+  > .publications {
     max-width: 1120px;
     margin-left: auto;
     margin-right: auto;
@@ -765,8 +764,7 @@ html.transition *:after {
   }
 
   > .news,
-  > .publications,
-  > .publications-with-signals {
+  > .publications {
     margin-top: 3.7rem;
   }
 }
@@ -791,25 +789,18 @@ html.transition *:after {
   margin-top: 1.55rem;
 }
 
-.publications-with-signals {
+.research-core {
   display: block;
-
-  .publications {
-    margin-top: 0;
-    min-width: 0;
-  }
 }
 
-.publications-with-signals__main {
-  ol.bibliography {
-    max-width: 100%;
-  }
+.research-core__statement {
+  min-width: 0;
 }
 
 .research-signals {
   position: static;
   min-width: 0;
-  margin-top: 2.8rem;
+  margin-top: 2.35rem;
 }
 
 .research-signals__header {
@@ -986,14 +977,14 @@ html.transition *:after {
 }
 
 @media (min-width: 992px) {
-  .post article > .publications-with-signals {
+  .post article > .clearfix > .research-core {
     width: min(1100px, calc(100vw - 6rem));
     max-width: none;
     margin-left: 50%;
     transform: translateX(-50%);
   }
 
-  .publications-with-signals {
+  .research-core {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(248px, 285px);
     gap: 2rem;
@@ -1003,16 +994,16 @@ html.transition *:after {
   .research-signals {
     position: sticky;
     top: 5rem;
-    margin-top: 0.15rem;
+    margin-top: 0;
   }
 }
 
 @media (min-width: 1200px) {
-  .post article > .publications-with-signals {
+  .post article > .clearfix > .research-core {
     width: min(1160px, calc(100vw - 7rem));
   }
 
-  .publications-with-signals {
+  .research-core {
     grid-template-columns: minmax(0, 1fr) minmax(260px, 300px);
     gap: 2.35rem;
   }
