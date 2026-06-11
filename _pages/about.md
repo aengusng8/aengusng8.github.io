@@ -27,7 +27,7 @@ social: true  # includes social icons at the bottom of a page
 <div class="research-thesis-card">
     <div class="research-thesis-card__inner">
         <span style="color: #d7dde6; font-style: italic; font-size: 1.1em;">
-            I work on <span style="color: #7bb7ff; font-weight: bold;">efficient, scalable, controllable</span> generative modeling as a principled route to <span style="color: #7bb7ff; font-weight: bold;">machine intelligence beyond human levels</span>.
+            I work on <span style="color: #7bb7ff; font-weight: bold;">efficient, scalable, and controllable</span> generative modeling as a principled route to <span style="color: #7bb7ff; font-weight: bold;">machine intelligence beyond human levels</span>.
         </span>
     </div>
 </div>
