@@ -1,5 +1,41 @@
-- id: diffusion-video-linear-probe-physics
+- id: world-modeling-second-pretraining-paradigm
   rank: 1
+  section: research_signals
+  source_type: external_x_repost
+  include: true
+  author_name: "Jim Fan"
+  author_handle: "DrJimFan"
+  author_avatar_url: "https://unavatar.io/twitter/DrJimFan"
+  date: "2026-02-03"
+  title: "World modeling as the second pre-training paradigm"
+  insight: "World models shift pre-training from next-token prediction toward next physical state prediction, putting vision, action, counterfactuals, and dynamics at the center of physical AI."
+  why_selected: "Closest to the intellectual direction of building generative models that acquire physical intuition."
+  display_text: "World modeling reframes pre-training as next physical state prediction. The important shift is not better video; it is learning counterfactual dynamics for physical intelligence."
+  tags: ["world-models", "physical-ai", "robotics", "pretraining"]
+  tweet_url: "https://x.com/DrJimFan/status/2018754323141054786"
+  primary_url: "https://x.com/DrJimFan/status/2018754323141054786"
+  confidence: "high"
+
+- id: vision-as-perception-action-loop
+  rank: 2
+  section: research_signals
+  source_type: external_x_repost
+  include: true
+  author_name: "Vincent Sitzmann"
+  author_handle: "vincesitzmann"
+  author_avatar_url: "https://unavatar.io/twitter/vincesitzmann"
+  date: "2026-02-16"
+  title: "Vision should be defined through perception-action loops"
+  insight: "For embodied intelligence, vision is not just mapping images to hand-designed intermediate representations; it is meaningful only in service of action, control, and interaction with the world."
+  why_selected: "Sharp representation-design principle for robotics and physical intelligence."
+  display_text: "A useful correction: vision for embodied intelligence should be judged by the perception-action loop, not by whether it recovers a human-designed intermediate representation."
+  tags: ["embodied-ai", "vision", "robotics", "representation"]
+  tweet_url: "https://x.com/vincesitzmann/status/2023420051182022774"
+  primary_url: "https://x.com/vincesitzmann/status/2023420051182022774"
+  confidence: "high"
+
+- id: diffusion-video-linear-probe-physics
+  rank: 3
   section: research_signals
   source_type: external_x_repost
   include: true
@@ -11,15 +47,70 @@
   title: "Linear probes suggest diffusion video models encode physics"
   insight: "A linear probe predicting physical variables from diffusion video representations suggests that these models may contain explicit internal physics representations, not merely surface-level pixel statistics."
   why_selected: "Strong conceptual correction to the claim that only explicit world models have useful physics representations."
-  display_text: "Linear probes can reveal surprisingly explicit physics inside video diffusion models. Useful reminder: a generative model can learn world structure even when trained as a pixel generator."
+  display_text: "Linear probes can reveal surprisingly explicit physics inside video diffusion models. A generative model can learn world structure even when trained as a pixel generator."
   tags: ["world-models", "video-diffusion", "linear-probes", "physics"]
   tweet_url: "https://x.com/giffmana/status/2064718736783823145"
   x_search_url: "https://x.com/search?q=%22video%20generation%20models%22%20%22LINEAR%20probe%22%20from%3Agiffmana&src=typed_query"
   primary_url: "https://x.com/giffmana/status/2064718736783823145"
   confidence: "high"
 
+- id: temporal-video-diffusion-layer-specialization
+  rank: 4
+  section: research_signals
+  source_type: external_x_repost
+  include: true
+  author_name: "Sander Dieleman"
+  author_handle: "sedielem"
+  author_avatar_url: "https://unavatar.io/twitter/sedielem"
+  date: "2026-02-20"
+  title: "Layer specialization in autoregressive video diffusion"
+  insight: "Temporally autoregressive video diffusion models may separate causal processing in lower layers from intra-frame denoising in upper layers; exploiting this separation can improve speed and practicality."
+  why_selected: "Good systems-level clue for making video diffusion more efficient without losing temporal structure."
+  display_text: "Video diffusion may not be a monolith: lower layers can carry causal temporal processing while upper layers denoise frames. Architecture should exploit that separation."
+  tags: ["video-diffusion", "architecture", "efficiency", "temporal-modeling"]
+  tweet_url: "https://x.com/sedielem/status/2024851421217149430"
+  primary_url: "https://x.com/sedielem/status/2024851421217149430"
+  confidence: "high"
+
+- id: deep-supervision-for-useful-diffusion-representations
+  rank: 5
+  section: research_signals
+  source_type: external_x_repost
+  include: true
+  author_name: "Jiawei Yang"
+  author_handle: "JiaweiYang118"
+  author_avatar_url: "https://unavatar.io/twitter/JiaweiYang118"
+  date: "2026-06-05"
+  title: "Deep supervision may make diffusion layers useful earlier"
+  insight: "Encouraging x0 prediction across multiple layers, early exits, or deep supervision may pressure shallow diffusion layers to learn useful representations instead of remaining passive."
+  why_selected: "Practical representation-learning hypothesis for faster diffusion inference and better intermediate features."
+  display_text: "If shallow diffusion layers are too passive, deep supervision and early exits may force useful representations to emerge earlier. That is both a speed and representation question."
+  tags: ["diffusion", "representation", "efficiency", "deep-supervision"]
+  tweet_url: "https://x.com/JiaweiYang118/status/2062709056067039713"
+  primary_url: "https://x.com/JiaweiYang118/status/2062709056067039713"
+  confidence: "high"
+
+- id: against-mandatory-3d-intermediate
+  rank: 6
+  section: research_signals
+  source_type: external_x_repost
+  include: true
+  author_name: "F. Güney"
+  author_handle: "ftm_guney"
+  author_avatar_url: "https://unavatar.io/twitter/ftm_guney"
+  date: "2026-06-04"
+  title: "Questioning 3D as a mandatory intermediate representation"
+  insight: "Explicit 3D representations may not always be the best intermediate for robotics or driving; the debate is shifting toward when structure should be hand-designed versus learned end-to-end."
+  why_selected: "High-level representation-design insight, not tied to a single benchmark or paper announcement."
+  display_text: "Even 3D-first researchers are questioning whether explicit 3D must be the middle layer for robotics and driving. The better question is where structure should enter the system."
+  tags: ["3d", "robotics", "driving", "representation"]
+  tweet_url: "https://x.com/ftm_guney/status/2062222786165125560"
+  x_search_url: "https://x.com/search?q=%22both%20Jon%20Barron%20and%20Vincent%20Sitzmann%20argued%20against%203D%22&src=typed_query"
+  primary_url: "https://x.com/ftm_guney/status/2062222786165125560"
+  confidence: "high"
+
 - id: latent-manifold-over-action-dim
-  rank: 2
+  rank: 7
   section: research_signals
   source_type: external_x_repost
   include: true
@@ -38,7 +129,7 @@
   confidence: "high"
 
 - id: multimodal-generation-as-structured-code
-  rank: 3
+  rank: 8
   section: research_signals
   source_type: external_x_repost
   include: true
@@ -56,21 +147,20 @@
   primary_url: "https://x.com/TianweiY"
   confidence: "medium_exact_status_not_verified"
 
-- id: against-mandatory-3d-intermediate
-  rank: 4
+- id: long-context-evals-and-scaling
+  rank: 9
   section: research_signals
   source_type: external_x_repost
   include: true
-  author_name: "F. Güney"
-  author_handle: "ftm_guney"
-  author_avatar_url: "https://unavatar.io/twitter/ftm_guney"
-  date: "2026-06-04"
-  title: "Questioning 3D as a mandatory intermediate representation"
-  insight: "Explicit 3D representations may not always be the best intermediate for robotics or driving; the debate is shifting toward when structure should be hand-designed versus learned end-to-end."
-  why_selected: "High-level representation-design insight, not tied to a single benchmark or paper announcement."
-  display_text: "Even 3D-first researchers are questioning whether explicit 3D must be the middle layer for robotics and driving. The better question is where structure should enter the system."
-  tags: ["3d", "robotics", "driving", "representation-learning"]
-  tweet_url: "https://x.com/ftm_guney/status/2062222786165125560"
-  x_search_url: "https://x.com/search?q=%22both%20Jon%20Barron%20and%20Vincent%20Sitzmann%20argued%20against%203D%22&src=typed_query"
-  primary_url: "https://x.com/ftm_guney/status/2062222786165125560"
+  author_name: "Lucas Beyer"
+  author_handle: "giffmana"
+  author_avatar_url: "https://unavatar.io/twitter/giffmana"
+  date: "2025-05-03"
+  title: "Long-context progress needs clean capability signals"
+  insight: "Long-context evaluation should isolate capability cleanly; realistic tasks can dilute the signal by mixing retrieval, coding, reasoning, and context length into one ambiguous hillclimb."
+  why_selected: "Useful research taste principle: build evaluations that expose the capability being optimized."
+  display_text: "Long context is not just bigger windows. Good evals isolate the capability: hard distractors, multiple needles, output length, and the tension between in-context and in-weight knowledge."
+  tags: ["long-context", "evaluation", "scaling", "inference"]
+  tweet_url: "https://x.com/giffmana/status/1918764792720007292"
+  primary_url: "https://x.com/giffmana/status/1918764792720007292"
   confidence: "high"
