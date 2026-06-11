@@ -53,7 +53,7 @@ social: true  # includes social icons at the bottom of a page
       I enjoy the combination of mathematics, coding, and intuition. Away from the keyboard, you can find me clearing my mind on long-distance runs 🏃‍♂️
     </div>
 
-    <div class="news" style="margin-top: 40px;">
+    <div class="news">
       <h2>news</h2>
       {% if site.news != blank -%}
       {%- assign news_size = site.news | size -%}

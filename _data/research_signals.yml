@@ -5,6 +5,7 @@
   include: true
   author_name: "Lucas Beyer"
   author_handle: "giffmana"
+  author_avatar_url: "https://unavatar.io/twitter/giffmana"
   date: "2026-06-10"
   date_note: "Approximate, from visible 16h X label"
   title: "Linear probes suggest diffusion video models encode physics"
@@ -24,6 +25,7 @@
   include: true
   author_name: "Kostas Daniilidis"
   author_handle: "KostasPenn"
+  author_avatar_url: "https://unavatar.io/twitter/KostasPenn"
   date: "2026-06-04"
   title: "Low-dimensional action space does not make robotics easy"
   insight: "The difficulty of control is not determined only by action dimensionality; it depends on the structure of the latent manifold and what that manifold encodes."
@@ -42,6 +44,7 @@
   include: true
   author_name: "Tianwei Yin"
   author_handle: "TianweiY"
+  author_avatar_url: "https://unavatar.io/twitter/TianweiY"
   date: "2026-06-04"
   title: "Multimodal generation as structured text/code generation"
   insight: "Represent planning, logic, and reasoning as structured text/code handled by the LLM, while diffusion focuses on rendering pixels."
@@ -60,6 +63,7 @@
   include: true
   author_name: "F. Güney"
   author_handle: "ftm_guney"
+  author_avatar_url: "https://unavatar.io/twitter/ftm_guney"
   date: "2026-06-04"
   title: "Questioning 3D as a mandatory intermediate representation"
   insight: "Explicit 3D representations may not always be the best intermediate for robotics or driving; the debate is shifting toward when structure should be hand-designed versus learned end-to-end."
