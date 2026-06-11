@@ -45,18 +45,6 @@ social: true  # includes social icons at the bottom of a page
   <b>Research Readiness:</b> I can <b>independently lead</b> the entire research lifecycle for top-tier conferences, driving projects from problem formulation and experimentation to final publication.
 </div>
 
-<hr style="border-color: #263445; margin: 30px 0;">
-
-<!-- PREVIOUSLY SECTION -->
-<div style="text-align: justify;">
-  <span style="color: #c99463; font-weight: bold; font-size: 1.1em;">Previously:</span>
-  I spent two years as a predoctoral research resident in the highly selective AI Residency Program at <a href="https://github.com/VinAIResearch" target="_blank" style="color: #a99ac7; text-decoration: none;">VinAI Research</a>, a lab recognized in the world's top 20 for AI research based on its research output at top-tier conferences like CVPR and NeurIPS.
-  <br><br>
-  The program provided intensive, PhD-level training, during which I was responsible for the entire research lifecycle, from problem formulation and experimentation to final publication. This rigorous environment has a proven record of 119 PhD scholarships worldwide. The program's elite status was further underscored by Qualcomm's <a href="https://techcrunch.com/2025/04/01/qualcomm-acquires-generative-ai-division-of-vietnamese-startup-vinai/" target="_blank" style="color: #a99ac7; text-decoration: none;">acquisition of its generative AI unit in 2025</a>.
-</div>
-
-<br>
-
 <!-- OUTSIDE THE LAB SECTION -->
 <div>
   <span style="color: #c99463; font-weight: bold; font-size: 1.1em;">Outside the Lab:</span>
@@ -93,9 +81,3 @@ social: true  # includes social icons at the bottom of a page
   <p>No news so far...</p>
 {%- endif %}
 </div>
-
-{% if site.selected_papers %}
-  <h2>selected publications</h2>
-  <p style="margin-bottom: 1rem;">(*) denotes equal contribution</p>
-  {% bibliography -f papers -q @*[selected=true]* %}
-{% endif %}
