@@ -1117,12 +1117,13 @@ html.transition *:after {
     top: 1.25rem;
     display: flex;
     flex-direction: column;
-    max-height: calc(100vh - 2.5rem);
+    max-height: min(72vh, 760px);
     overflow: hidden;
     margin-top: 0;
   }
 
   .research-signals__list {
+    min-height: 0;
     overflow-y: auto;
     overscroll-behavior: contain;
     padding-right: 0.25rem;
@@ -1173,6 +1174,17 @@ html.transition *:after {
 .research-thesis-card__inner {
   padding: 0.96rem 1.28rem;
   border-left: 1px solid rgba(201, 148, 99, 0.18);
+  text-align: center;
+}
+
+.research-signature {
+  max-width: 830px !important;
+  margin: -1.18rem auto 2.05rem;
+  color: rgba(155, 168, 184, 0.78);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.35;
   text-align: center;
 }
 

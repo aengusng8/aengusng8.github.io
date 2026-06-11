@@ -4,12 +4,12 @@ title: about
 permalink: /
 subtitle: |+
   <div style="font-size: 1.05em; line-height: 1.6; margin-bottom: 20px;">
-    I am a <span style="color: #7bb7ff; font-weight: bold;">Predoctoral Research Resident</span> at <a href="https://www.qualcomm.com/research/artificial-intelligence" target="_blank" style="color: #7bb7ff; text-decoration: none;">Qualcomm AI Research</a>, where I am advised by Principal Scientist <a href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en" target="_blank" style="color: #7bb7ff; text-decoration: none;">Dr. Anh Tran</a>.
+    I am a <span style="color: #7bb7ff; font-weight: bold;">Predoctoral Research Resident</span> at <a href="https://www.qualcomm.com/research/artificial-intelligence" target="_blank" style="color: #7bb7ff; text-decoration: none;">Qualcomm AI Research</a>, advised by Principal Scientist <a href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en" target="_blank" style="color: #7bb7ff; text-decoration: none;">Dr. Anh Tran</a>, and an incoming Ph.D. student at <a href="https://www.jhu.edu/" target="_blank" style="color: #7bb7ff; text-decoration: none;">Johns Hopkins University</a> in Fall 2026.
   </div>
 
   <div style="background: linear-gradient(135deg, rgba(201, 148, 99, 0.13), rgba(123, 183, 255, 0.045)); border-left: 3px solid #c99463; padding: 10px 15px; border-radius: 0 4px 4px 0; margin-bottom: 25px;">
-    <span style="color: #c99463; font-weight: bold;">🚀 Fall 2026:</span>
-    <span style="color: #d7dde6;">I will be joining Johns Hopkins University as a Ph.D. student, dedicated to advancing impactful research.</span>
+    <span style="color: #c99463; font-weight: bold;">Summer 2027:</span>
+    <span style="color: #d7dde6;">Open to research internships; interested in collaborations on generative models across pre-training, distillation, and controllable multimodal applications.</span>
   </div>
 
   <span class="contact-info">Contact: aengus.ng8@gmail.com</span>
@@ -31,6 +31,8 @@ social: true  # includes social icons at the bottom of a page
         </span>
     </div>
 </div>
+
+<div class="research-signature">efficient, scalable, controllable generation</div>
 
 
 <!-- RESEARCH STATEMENT SECTION -->
