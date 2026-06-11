@@ -913,9 +913,6 @@ html.transition *:after {
 }
 
 .research-signals__header {
-  position: sticky;
-  top: 0;
-  z-index: 3;
   flex: 0 0 auto;
   margin-bottom: 0.76rem;
   padding-bottom: 0.58rem;
@@ -947,6 +944,7 @@ html.transition *:after {
   display: grid;
   gap: 0.64rem;
   counter-reset: research-signal;
+  min-height: 0;
 }
 
 .research-signal-card {
@@ -1110,7 +1108,7 @@ html.transition *:after {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(238px, 275px);
     gap: 2.05rem;
-    align-items: start;
+    align-items: stretch;
   }
 
   .research-core__main {
@@ -1122,19 +1120,18 @@ html.transition *:after {
   }
 
   .research-signals {
-    position: sticky;
-    top: 2rem;
-    align-self: start;
+    align-self: stretch;
     display: flex;
     flex-direction: column;
-    max-height: calc(100vh - 4rem);
-    overflow: visible;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
     margin-top: 0;
   }
 
   .research-signals__list {
     min-height: 0;
-    max-height: min(40vh, 440px);
+    flex: 1 1 auto;
     overflow-y: auto;
     overscroll-behavior: contain;
     padding-right: 0.25rem;
