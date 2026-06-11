@@ -19,7 +19,7 @@ profile:
   address: false
 
 news: false # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of a page
 ---
 
@@ -83,6 +83,9 @@ social: true  # includes social icons at the bottom of a page
       <p>No news so far...</p>
     {%- endif %}
     </div>
+
+    <!-- Selected papers -->
+    {% include selected_papers.html %}
   </div>
   {% include research_signals.html %}
 </div>

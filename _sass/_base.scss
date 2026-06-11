@@ -899,6 +899,10 @@ html.transition *:after {
   min-width: 0;
 }
 
+.research-core__main > .publications {
+  margin-top: 1.85rem;
+}
+
 .research-signals {
   position: static;
   min-width: 0;
@@ -1110,8 +1114,34 @@ html.transition *:after {
 
   .research-signals {
     position: sticky;
-    top: 5rem;
+    top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 2.5rem);
+    overflow: hidden;
     margin-top: 0;
+  }
+
+  .research-signals__list {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-right: 0.25rem;
+    scrollbar-color: rgba(123, 183, 255, 0.34) rgba(123, 183, 255, 0.06);
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgba(123, 183, 255, 0.045);
+      border-radius: 999px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba(123, 183, 255, 0.3);
+      border-radius: 999px;
+    }
   }
 }
 
