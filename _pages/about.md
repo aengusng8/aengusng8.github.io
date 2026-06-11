@@ -37,7 +37,7 @@ social: true  # includes social icons at the bottom of a page
 <div class="research-core">
   <div class="research-core__main">
     <div class="research-core__statement" style="text-align: justify;">
-      <span style="color: #c99463; font-weight: bold; font-size: 1.1em;">Research Statement:</span>
+      <div class="section-kicker">Research Statement</div>
       My <b>long-term goal</b> is to build systems capable of <i>understanding, reasoning, planning</i>, and <i>acquiring physical intuition</i> about the world.
       <br><br>
       My current research focuses on <b style="color: #7bb7ff; font-weight: bold;">Efficient & Robust Multimodal Intelligence</b>, aiming to resolve the trade-offs in foundation models through two core pillars: <b style="color: #7bb7ff;">(1) Efficiency & Scalability</b> to minimize training and inference costs, and <b style="color: #7bb7ff;">(2) Robustness & Controllability</b> to enforce alignment and reliability.
@@ -49,7 +49,7 @@ social: true  # includes social icons at the bottom of a page
 
     <!-- OUTSIDE THE LAB SECTION -->
     <div>
-      <span style="color: #c99463; font-weight: bold; font-size: 1.1em;">Outside the Lab:</span>
+      <div class="section-kicker section-kicker--quiet">Outside the Lab</div>
       I enjoy the combination of mathematics, coding, and intuition. Away from the keyboard, you can find me clearing my mind on long-distance runs 🏃‍♂️
     </div>
 

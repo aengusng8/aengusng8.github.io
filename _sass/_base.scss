@@ -872,6 +872,21 @@ html.transition *:after {
   margin-top: 1.55rem;
 }
 
+.section-kicker {
+  display: block;
+  margin-bottom: 0.42rem;
+  color: rgba(201, 148, 99, 0.82);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.section-kicker--quiet {
+  color: rgba(201, 148, 99, 0.68);
+}
+
 .research-core {
   display: block;
 }
