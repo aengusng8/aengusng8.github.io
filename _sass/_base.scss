@@ -913,9 +913,6 @@ html.transition *:after {
 }
 
 .research-signals__header {
-  position: sticky;
-  top: 0;
-  z-index: 2;
   flex: 0 0 auto;
   margin-bottom: 0.76rem;
   padding-bottom: 0.58rem;
@@ -1127,13 +1124,13 @@ html.transition *:after {
     align-self: start;
     display: flex;
     flex-direction: column;
-    max-height: min(72vh, 760px);
-    overflow: hidden;
+    overflow: visible;
     margin-top: 0;
   }
 
   .research-signals__list {
     min-height: 0;
+    max-height: min(58vh, 620px);
     overflow-y: auto;
     overscroll-behavior: contain;
     padding-right: 0.25rem;
