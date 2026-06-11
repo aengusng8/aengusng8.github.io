@@ -4,12 +4,12 @@ title: about
 permalink: /
 subtitle: |+
   <div style="font-size: 1.05em; line-height: 1.6; margin-bottom: 20px;">
-    I am a <span style="color: #6aa9ff; font-weight: bold;">Predoctoral Research Resident</span> at <a href="https://www.qualcomm.com/research/artificial-intelligence" target="_blank" style="color: #6aa9ff; text-decoration: none;">Qualcomm AI Research</a>, where I am advised by Principal Scientist <a href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en" target="_blank" style="color: #6aa9ff; text-decoration: none;">Dr. Anh Tran</a>.
+    I am a <span style="color: #7bb7ff; font-weight: bold;">Predoctoral Research Resident</span> at <a href="https://www.qualcomm.com/research/artificial-intelligence" target="_blank" style="color: #7bb7ff; text-decoration: none;">Qualcomm AI Research</a>, where I am advised by Principal Scientist <a href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en" target="_blank" style="color: #7bb7ff; text-decoration: none;">Dr. Anh Tran</a>.
   </div>
 
-  <div style="background: rgba(216, 144, 95, 0.12); border-left: 3px solid #d8905f; padding: 10px 15px; border-radius: 0 4px 4px 0; margin-bottom: 25px;">
-    <span style="color: #d8905f; font-weight: bold;">🚀 Fall 2026:</span>
-    <span style="color: #d8dee9;">I will be joining Johns Hopkins University as a Ph.D. student, dedicated to advancing impactful research.</span>
+  <div style="background: linear-gradient(135deg, rgba(201, 148, 99, 0.13), rgba(123, 183, 255, 0.045)); border-left: 3px solid #c99463; padding: 10px 15px; border-radius: 0 4px 4px 0; margin-bottom: 25px;">
+    <span style="color: #c99463; font-weight: bold;">🚀 Fall 2026:</span>
+    <span style="color: #d7dde6;">I will be joining Johns Hopkins University as a Ph.D. student, dedicated to advancing impactful research.</span>
   </div>
 
   <span class="contact-info">Contact: aengus.ng8@gmail.com</span>
@@ -24,10 +24,10 @@ social: true  # includes social icons at the bottom of a page
 ---
 
 <!-- THE QUOTE BOX -->
-<div style="background: linear-gradient(135deg, rgba(17, 24, 32, 0.98), rgba(13, 22, 34, 0.96)); border: 1px solid rgba(106, 169, 255, 0.18); border-left: 4px solid #6aa9ff; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 14px 34px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(216, 144, 95, 0.08);">
-    <div style="border-left: 1px solid rgba(216, 144, 95, 0.45); padding: 20px 24px; text-align: center;">
-        <span style="color: #d8dee9; font-style: italic; font-size: 1.1em;">
-            I work on <span style="color: #6aa9ff; font-weight: bold;">deep generative modeling</span> as a principled route to <span style="color: #6aa9ff; font-weight: bold;">machine intelligence beyond human levels</span>.
+<div style="background: linear-gradient(135deg, rgba(16, 25, 35, 0.98) 0%, rgba(11, 18, 26, 0.96) 58%, rgba(13, 22, 33, 0.98) 100%); border: 1px solid rgba(123, 183, 255, 0.16); border-left: 4px solid #7bb7ff; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 14px 34px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(127, 215, 209, 0.08);">
+    <div style="border-left: 1px solid rgba(201, 148, 99, 0.42); padding: 20px 24px; text-align: center;">
+        <span style="color: #d7dde6; font-style: italic; font-size: 1.1em;">
+            I work on <span style="color: #7bb7ff; font-weight: bold;">deep generative modeling</span> as a principled route to <span style="color: #7bb7ff; font-weight: bold;">machine intelligence beyond human levels</span>.
         </span>
     </div>
 </div>
@@ -35,31 +35,31 @@ social: true  # includes social icons at the bottom of a page
 
 <!-- RESEARCH STATEMENT SECTION -->
 <div style="text-align: justify;">
-  <span style="color: #d8905f; font-weight: bold; font-size: 1.1em;">Research Statement:</span>
+  <span style="color: #c99463; font-weight: bold; font-size: 1.1em;">Research Statement:</span>
   My <b>long-term goal</b> is to build systems capable of <i>understanding, reasoning, planning</i>, and <i>acquiring physical intuition</i> about the world.
   <br><br>
-  My current research focuses on <b style="color: #6aa9ff; font-weight: bold;">Efficient & Robust Multimodal Intelligence</b>, aiming to resolve the trade-offs in foundation models through two core pillars: <b style="color: #6aa9ff;">(1) Efficiency & Scalability</b> to minimize training and inference costs, and <b style="color: #6aa9ff;">(2) Robustness & Controllability</b> to enforce alignment and reliability.
+  My current research focuses on <b style="color: #7bb7ff; font-weight: bold;">Efficient & Robust Multimodal Intelligence</b>, aiming to resolve the trade-offs in foundation models through two core pillars: <b style="color: #7bb7ff;">(1) Efficiency & Scalability</b> to minimize training and inference costs, and <b style="color: #7bb7ff;">(2) Robustness & Controllability</b> to enforce alignment and reliability.
   <br><br>
-  Most recently, my work on <b style="color: #6aa9ff;">One-step Generative Modeling & Distillation</b> (<b style="color: #6aa9ff;">NeurIPS</b> & <b style="color: #6aa9ff;">ICCV</b> 2025) collapses iterative inference into <i>real-time, high-fidelity synthesis</i>, while my research on <b style="color: #6aa9ff;">Multimodal Representation</b> (<b style="color: #6aa9ff;">ICCV</b> 2025) leverages internal semantics for <i>zero-shot, fine-grained controllability</i>.
+  Most recently, my work on <b style="color: #7bb7ff;">One-step Generative Modeling & Distillation</b> (<b style="color: #7bb7ff;">NeurIPS</b> & <b style="color: #7bb7ff;">ICCV</b> 2025) collapses iterative inference into <i>real-time, high-fidelity synthesis</i>, while my research on <b style="color: #7bb7ff;">Multimodal Representation</b> (<b style="color: #7bb7ff;">ICCV</b> 2025) leverages internal semantics for <i>zero-shot, fine-grained controllability</i>.
   <br><br>
   <b>Research Readiness:</b> I can <b>independently lead</b> the entire research lifecycle for top-tier conferences, driving projects from problem formulation and experimentation to final publication.
 </div>
 
-<hr style="border-color: #253244; margin: 30px 0;">
+<hr style="border-color: #263445; margin: 30px 0;">
 
 <!-- PREVIOUSLY SECTION -->
 <div style="text-align: justify;">
-  <span style="color: #d8905f; font-weight: bold; font-size: 1.1em;">Previously:</span>
-  I spent two years as a predoctoral research resident in the highly selective AI Residency Program at <a href="https://github.com/VinAIResearch" target="_blank" style="color: #b9a3e3; text-decoration: none;">VinAI Research</a>, a lab recognized in the world's top 20 for AI research based on its research output at top-tier conferences like CVPR and NeurIPS.
+  <span style="color: #c99463; font-weight: bold; font-size: 1.1em;">Previously:</span>
+  I spent two years as a predoctoral research resident in the highly selective AI Residency Program at <a href="https://github.com/VinAIResearch" target="_blank" style="color: #a99ac7; text-decoration: none;">VinAI Research</a>, a lab recognized in the world's top 20 for AI research based on its research output at top-tier conferences like CVPR and NeurIPS.
   <br><br>
-  The program provided intensive, PhD-level training, during which I was responsible for the entire research lifecycle, from problem formulation and experimentation to final publication. This rigorous environment has a proven record of 119 PhD scholarships worldwide. The program's elite status was further underscored by Qualcomm's <a href="https://techcrunch.com/2025/04/01/qualcomm-acquires-generative-ai-division-of-vietnamese-startup-vinai/" target="_blank" style="color: #b9a3e3; text-decoration: none;">acquisition of its generative AI unit in 2025</a>.
+  The program provided intensive, PhD-level training, during which I was responsible for the entire research lifecycle, from problem formulation and experimentation to final publication. This rigorous environment has a proven record of 119 PhD scholarships worldwide. The program's elite status was further underscored by Qualcomm's <a href="https://techcrunch.com/2025/04/01/qualcomm-acquires-generative-ai-division-of-vietnamese-startup-vinai/" target="_blank" style="color: #a99ac7; text-decoration: none;">acquisition of its generative AI unit in 2025</a>.
 </div>
 
 <br>
 
 <!-- OUTSIDE THE LAB SECTION -->
 <div>
-  <span style="color: #d8905f; font-weight: bold; font-size: 1.1em;">Outside the Lab:</span>
+  <span style="color: #c99463; font-weight: bold; font-size: 1.1em;">Outside the Lab:</span>
   I enjoy the combination of mathematics, coding, and intuition. Away from the keyboard, you can find me clearing my mind on long-distance runs 🏃‍♂️
 </div>
 

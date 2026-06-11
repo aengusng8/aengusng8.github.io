@@ -6,8 +6,8 @@ layout: default
       <div class="post">        
         <article>
           {% if page.profile -%}
-          <div class="row">        
-            <div class="col-sm-3">
+          <div class="row profile-hero">
+            <div class="col-sm-3 profile-hero__media">
               {%- if page.profile.image %}
                 {% if page.profile.image_cicular %}
                   <div class="profile-avatar profile-avatar--circle">
@@ -22,12 +22,12 @@ layout: default
                 {% endif %}
               {% endif -%}
             </div>                                   
-            <div class="col-sm-9">          
-              <h1 style="font-size: 2.8em; margin-bottom: 20px; color: #e6edf3; letter-spacing: -0.5px;">
-                <span style="font-weight: 800;">Anh</span> 
-                <span style="font-weight: 300; opacity: 0.9;">Nguyen</span> 
-                <span style="font-weight: 300; color: #58a6ff; font-size: 0.7em; vertical-align: middle;">/</span>
-                <span style="font-weight: 800; color: #58a6ff; font-size: 0.7em; vertical-align: middle;">Aengus</span>
+            <div class="col-sm-9 profile-hero__body">
+              <h1 class="profile-hero__name">
+                <span class="profile-hero__name-strong">Anh</span>
+                <span class="profile-hero__name-light">Nguyen</span>
+                <span class="profile-hero__slash">/</span>
+                <span class="profile-hero__alias">Aengus</span>
               </h1>
               <p class="desc">{{ page.subtitle }}</p>  
               {%- if page.profile.address %}

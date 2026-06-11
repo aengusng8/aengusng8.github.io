@@ -3,29 +3,32 @@
  ******************************************************************************/
 
 :root {
-  --global-bg-color: #{$grey-color-dark};
+  --global-bg-color: #080d13;
   --global-code-bg-color: #{$code-bg-color-dark};
   --global-text-color: #{$grey-color-light};
   --global-text-color-light: #{$grey-color-light};
-  --global-theme-color: #d8905f;
-  --global-hover-color: #6aa9ff;
+  --global-theme-color: #c99463;
+  --global-hover-color: #7bb7ff;
   --global-footer-bg-color: #{$grey-color-light};
   --global-footer-text-color: #{$grey-color-dark};
   --global-footer-link-color: #{$black-color};
   --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
-  --profile-bg: #0b1118;
-  --profile-surface: #111820;
-  --profile-surface-soft: #151d27;
-  --profile-border: #253244;
-  --profile-text: #d8dee9;
-  --profile-muted: #9aa7b5;
-  --profile-blue: #6aa9ff;
-  --profile-blue-soft: rgba(106, 169, 255, 0.16);
-  --profile-copper: #d8905f;
-  --profile-copper-soft: rgba(216, 144, 95, 0.14);
-  --profile-violet: #b9a3e3;
+  --global-divider-color: #263445;
+  --global-card-bg-color: #141b24;
+  --profile-bg: #080d13;
+  --profile-surface: #101923;
+  --profile-surface-soft: #141b24;
+  --profile-border: #263445;
+  --profile-text: #d7dde6;
+  --profile-muted: #9ba8b8;
+  --profile-blue: #7bb7ff;
+  --profile-blue-deep: #2f6fb5;
+  --profile-blue-soft: rgba(123, 183, 255, 0.16);
+  --profile-cyan: #7fd7d1;
+  --profile-cyan-soft: rgba(127, 215, 209, 0.12);
+  --profile-amber: #c99463;
+  --profile-amber-soft: rgba(201, 148, 99, 0.14);
+  --profile-violet: #a99ac7;
 
   .fa-sun {
     display : none;
