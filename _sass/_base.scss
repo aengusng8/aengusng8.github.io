@@ -253,14 +253,14 @@ blockquote {
 .social {
   text-align: left;
   .contact-icons {
-    font-size: 2rem;
+    font-size: 1.72rem;
     line-height: 1;
-    margin-top: 0.65rem;
+    margin-top: 0.5rem;
     a {
       display: inline-block;
-      margin-right: 0.9rem;
+      margin-right: 0.78rem;
       i::before {
-        color: rgba(215, 221, 230, 0.86);
+        color: rgba(215, 221, 230, 0.74);
         transition-property: all 0.2s ease-in-out;
       }
       &:hover {
@@ -482,8 +482,18 @@ footer.sticky-bottom {
     font-size: 2.15rem;
     font-weight: 300;
     letter-spacing: 0;
+    position: relative;
     span {
       font-size: 1.5rem;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 4.8rem;
+      height: 1px;
+      margin-top: 0.7rem;
+      background: linear-gradient(90deg, rgba(123, 183, 255, 0.52), rgba(127, 215, 209, 0.28), rgba(201, 148, 99, 0));
     }
   }
   h2.year {
@@ -537,19 +547,18 @@ footer.sticky-bottom {
           display: inline-block;
           min-width: 5rem;
           padding: 0.18rem 0.62rem;
-          border: 1px solid rgba(123, 183, 255, 0.58);
-          border-radius: 6px;
-          color: #eef6ff;
+          border: 1px solid rgba(201, 148, 99, 0.34);
+          border-radius: 5px;
+          color: rgba(215, 221, 230, 0.92);
           background:
-            linear-gradient(180deg, rgba(20, 54, 96, 0.48), rgba(9, 20, 34, 0.78));
+            linear-gradient(135deg, rgba(201, 148, 99, 0.13), rgba(123, 183, 255, 0.04));
           box-shadow:
-            inset 0 0 0 1px rgba(123, 183, 255, 0.08),
-            0 0 14px rgba(47, 111, 181, 0.22);
+            inset 0 1px 0 rgba(255, 255, 255, 0.03);
           font-size: 0.78rem;
           font-weight: 700;
           letter-spacing: 0;
           a {
-            color: #eef6ff;
+            color: inherit;
             &:hover {
               text-decoration: none;
             }
@@ -720,12 +729,12 @@ html.transition *:after {
 }
 
 .contact-info {
-  color: var(--profile-muted);
+  color: rgba(155, 168, 184, 0.84);
   background-color: transparent;
   padding: 0;
   border-radius: 0;
   font-family: monospace;
-  font-size: 0.84em;
+  font-size: 0.8em;
   letter-spacing: 0;
 }
 
@@ -759,6 +768,26 @@ html.transition *:after {
   }
 }
 
+.research-thesis-card {
+  max-width: 940px !important;
+  margin: 0 auto 2.35rem;
+  overflow: hidden;
+  border: 1px solid rgba(123, 183, 255, 0.14);
+  border-left: 4px solid rgba(123, 183, 255, 0.9);
+  border-radius: 7px;
+  background:
+    linear-gradient(135deg, rgba(15, 24, 34, 0.98), rgba(8, 15, 23, 0.96) 56%, rgba(13, 24, 35, 0.98));
+  box-shadow:
+    0 14px 32px rgba(0, 0, 0, 0.22),
+    inset 0 1px 0 rgba(127, 215, 209, 0.07);
+}
+
+.research-thesis-card__inner {
+  padding: 1rem 1.3rem;
+  border-left: 1px solid rgba(201, 148, 99, 0.26);
+  text-align: center;
+}
+
 .news {
   h2 {
     margin-bottom: 1.15rem;
@@ -766,6 +795,16 @@ html.transition *:after {
     font-size: 2.15rem;
     font-weight: 300;
     letter-spacing: 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 4.8rem;
+      height: 1px;
+      margin-top: 0.7rem;
+      background: linear-gradient(90deg, rgba(123, 183, 255, 0.52), rgba(127, 215, 209, 0.28), rgba(201, 148, 99, 0));
+    }
   }
 
   .table-responsive {
@@ -781,9 +820,9 @@ html.transition *:after {
     &::before {
       content: "";
       position: absolute;
-      top: 1.25rem;
-      bottom: 1.25rem;
-      left: 7.15rem;
+      top: 1.1rem;
+      bottom: 1.1rem;
+      left: 6.72rem;
       width: 1px;
       background: linear-gradient(180deg, rgba(123, 183, 255, 0.34), rgba(127, 215, 209, 0.18), rgba(201, 148, 99, 0.24));
     }
@@ -800,18 +839,18 @@ html.transition *:after {
 
     th,
     td {
-      padding-top: 1.05rem;
-      padding-bottom: 1.05rem;
+      padding-top: 0.9rem;
+      padding-bottom: 0.9rem;
       vertical-align: top;
-      line-height: 1.48;
+      line-height: 1.44;
     }
 
     th {
-      width: 5.5rem;
-      min-width: 5.5rem;
-      padding-right: 1.25rem;
+      width: 5.15rem;
+      min-width: 5.15rem;
+      padding-right: 1.1rem;
       color: var(--profile-muted);
-      font-size: 0.84rem;
+      font-size: 0.8rem;
       font-weight: 700;
       text-align: right;
       background: linear-gradient(90deg, rgba(8, 13, 19, 0.12), rgba(123, 183, 255, 0.025));
@@ -819,17 +858,17 @@ html.transition *:after {
 
     td {
       max-width: 900px;
-      font-size: 0.93rem;
-      padding-left: 1.8rem;
+      font-size: 0.91rem;
+      padding-left: 1.58rem;
       position: relative;
 
       &::before {
         content: "";
         position: absolute;
-        top: 1.55rem;
-        left: -0.34rem;
-        width: 0.5rem;
-        height: 0.5rem;
+        top: 1.35rem;
+        left: -0.3rem;
+        width: 0.46rem;
+        height: 0.46rem;
         border-radius: 50%;
         background: var(--profile-bg);
         border: 1px solid rgba(123, 183, 255, 0.5);
@@ -845,22 +884,74 @@ html.transition *:after {
   }
 }
 
+@media (max-width: 575px) {
+  .research-thesis-card {
+    margin-bottom: 2rem;
+  }
+
+  .research-thesis-card__inner {
+    padding: 0.9rem 1rem;
+  }
+
+  .news {
+    table.table {
+      &::before {
+        left: 0.46rem;
+      }
+
+      tr {
+        display: block;
+        padding: 0.9rem 0;
+      }
+
+      tr + tr {
+        border-top: 1px solid rgba(123, 183, 255, 0.11);
+      }
+
+      th,
+      td {
+        display: block;
+        width: auto;
+        min-width: 0;
+        border-top: 0 !important;
+      }
+
+      th {
+        padding: 0 0 0.25rem 1.35rem;
+        text-align: left;
+        background: transparent;
+      }
+
+      td {
+        padding: 0 0 0 1.35rem;
+
+        &::before {
+          top: 0.28rem;
+          left: 0.24rem;
+        }
+      }
+    }
+  }
+}
+
 .aurora-text {
   display: inline-block;
-  padding: 0.02em 0.34em 0.08em;
-  border: 1px solid rgba(123, 183, 255, 0.62);
+  padding: 0.04em 0.38em 0.09em;
+  border: 1px solid rgba(95, 160, 255, 0.7);
   border-radius: 7px;
   color: #eef6ff;
   font-size: 0.96em;
   font-weight: 800;
   line-height: 1.15;
   background:
-    linear-gradient(180deg, rgba(20, 54, 96, 0.58), rgba(9, 20, 34, 0.78));
+    linear-gradient(180deg, rgba(24, 76, 138, 0.56), rgba(8, 21, 38, 0.86)),
+    linear-gradient(90deg, rgba(123, 183, 255, 0.18), rgba(127, 215, 209, 0.08));
   box-shadow:
-    inset 0 0 0 1px rgba(123, 183, 255, 0.1),
-    0 0 16px rgba(47, 111, 181, 0.34),
-    0 0 2px rgba(123, 183, 255, 0.52);
-  text-shadow: 0 0 8px rgba(123, 183, 255, 0.34);
+    inset 0 0 0 1px rgba(180, 216, 255, 0.1),
+    inset 0 1px 0 rgba(238, 246, 255, 0.14),
+    0 0 14px rgba(63, 129, 220, 0.36),
+    0 0 2px rgba(123, 183, 255, 0.55);
+  text-shadow: 0 0 9px rgba(123, 183, 255, 0.38);
 }
 
 @keyframes aurora-gradient {

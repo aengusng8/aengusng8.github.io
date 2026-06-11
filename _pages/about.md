@@ -24,8 +24,8 @@ social: true  # includes social icons at the bottom of a page
 ---
 
 <!-- THE QUOTE BOX -->
-<div style="background: linear-gradient(135deg, rgba(16, 25, 35, 0.98) 0%, rgba(11, 18, 26, 0.96) 58%, rgba(13, 22, 33, 0.98) 100%); border: 1px solid rgba(123, 183, 255, 0.16); border-left: 4px solid #7bb7ff; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 14px 34px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(127, 215, 209, 0.08);">
-    <div style="border-left: 1px solid rgba(201, 148, 99, 0.42); padding: 20px 24px; text-align: center;">
+<div class="research-thesis-card">
+    <div class="research-thesis-card__inner">
         <span style="color: #d7dde6; font-style: italic; font-size: 1.1em;">
             I work on <span style="color: #7bb7ff; font-weight: bold;">deep generative modeling</span> as a principled route to <span style="color: #7bb7ff; font-weight: bold;">machine intelligence beyond human levels</span>.
         </span>
