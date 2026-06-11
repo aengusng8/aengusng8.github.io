@@ -134,7 +134,8 @@ blockquote {
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
+  background:
+    linear-gradient(180deg, rgba(13, 17, 23, 0.96), rgba(11, 17, 24, 0.9));
   opacity: 0.9;
   min-height: 52px;
 }
@@ -195,7 +196,7 @@ blockquote {
       }
       &:hover {
         i::before {
-          color: var(--global-theme-color);
+          color: var(--profile-blue);
         }
       }
     }
@@ -512,8 +513,11 @@ footer.sticky-bottom {
         padding: 0.35rem;
         border: 1px solid rgba(139, 148, 158, 0.22);
         border-radius: 6px !important;
-        background: rgba(255, 255, 255, 0.035);
-        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+        background:
+          linear-gradient(135deg, rgba(17, 24, 32, 0.96), rgba(13, 22, 34, 0.92));
+        box-shadow:
+          0 10px 24px rgba(0, 0, 0, 0.18),
+          inset 0 1px 0 rgba(106, 169, 255, 0.05);
       }
       .abbr {
         height: 1.8rem;
@@ -522,15 +526,16 @@ footer.sticky-bottom {
           display: inline-block;
           min-width: 5rem;
           padding: 0.2rem 0.6rem;
-          border: 1px solid rgba(255, 126, 32, 0.5);
+          border: 1px solid rgba(216, 144, 95, 0.42);
           border-radius: 4px;
-          color: #ff9e64;
-          background-color: rgba(255, 126, 32, 0.14);
+          color: var(--profile-copper);
+          background:
+            linear-gradient(135deg, rgba(216, 144, 95, 0.16), rgba(106, 169, 255, 0.08));
           font-size: 0.78rem;
           font-weight: 700;
           letter-spacing: 0;
           a {
-            color: #ff9e64;
+            color: var(--profile-copper);
             &:hover {
               text-decoration: none;
             }
@@ -557,7 +562,7 @@ footer.sticky-bottom {
         > em {
           font-style: normal;
           font-weight: bold;
-          background: linear-gradient(45deg, #f960eb, #ff854d, #fff41f);
+          background: linear-gradient(90deg, var(--profile-blue), var(--profile-copper));
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -744,6 +749,8 @@ html.transition *:after {
 
     tr {
       border-top: 1px solid rgba(139, 148, 158, 0.16);
+      background:
+        linear-gradient(90deg, rgba(106, 169, 255, 0.035), rgba(216, 144, 95, 0));
     }
 
     tr:first-child {
@@ -780,19 +787,18 @@ html.transition *:after {
   font-weight: bold;
   background: linear-gradient(
     45deg,
-    #f960eb,
-    #ff854d,
-    #fff41f,
-    #ff854d,
-    #f960eb
+    var(--profile-blue),
+    var(--profile-copper),
+    var(--profile-violet),
+    var(--profile-copper),
+    var(--profile-blue)
   );
   background-size: 200% auto;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: aurora-gradient 2s linear infinite;
-  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.5))
-    drop-shadow(0 0 8px rgba(0, 194, 255, 0.5));
+  filter: drop-shadow(0 0 3px rgba(106, 169, 255, 0.24));
 }
 
 @keyframes aurora-gradient {
@@ -810,11 +816,11 @@ html.transition *:after {
   background-image: linear-gradient(#2d3748, #2d3748),
     linear-gradient(
       45deg,
-      #f960eb,
-      #ff854d,
-      #fff41f,
-      #ff854d,
-      #f960eb
+      var(--profile-blue),
+      var(--profile-copper),
+      var(--profile-violet),
+      var(--profile-copper),
+      var(--profile-blue)
     );
   background-origin: padding-box, border-box;
   background-clip: padding-box, border-box;

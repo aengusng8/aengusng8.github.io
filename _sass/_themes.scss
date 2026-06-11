@@ -7,14 +7,25 @@
   --global-code-bg-color: #{$code-bg-color-dark};
   --global-text-color: #{$grey-color-light};
   --global-text-color-light: #{$grey-color-light};
-  --global-theme-color: #{$caltech-orange};
-  --global-hover-color: #{$caltech-orange};
+  --global-theme-color: #d8905f;
+  --global-hover-color: #6aa9ff;
   --global-footer-bg-color: #{$grey-color-light};
   --global-footer-text-color: #{$grey-color-dark};
   --global-footer-link-color: #{$black-color};
   --global-distill-app-color: #{$grey-color-light};
   --global-divider-color: #424246;
   --global-card-bg-color: #{$grey-900};
+  --profile-bg: #0b1118;
+  --profile-surface: #111820;
+  --profile-surface-soft: #151d27;
+  --profile-border: #253244;
+  --profile-text: #d8dee9;
+  --profile-muted: #9aa7b5;
+  --profile-blue: #6aa9ff;
+  --profile-blue-soft: rgba(106, 169, 255, 0.16);
+  --profile-copper: #d8905f;
+  --profile-copper-soft: rgba(216, 144, 95, 0.14);
+  --profile-violet: #b9a3e3;
 
   .fa-sun {
     display : none;
