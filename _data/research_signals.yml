@@ -90,8 +90,26 @@
   primary_url: "https://x.com/JiaweiYang118/status/2062709056067039713"
   confidence: "high"
 
-- id: against-mandatory-3d-intermediate
+- id: leapalign-diffusion-post-training
   rank: 6
+  section: research_signals
+  source_type: external_x_repost
+  include: true
+  author_name: "Liang Zheng"
+  author_handle: "LiangZheng_06"
+  author_avatar_url: "https://unavatar.io/twitter/LiangZheng_06"
+  date: "2026-06-11"
+  title: "Diffusion post-training should use native gradients"
+  insight: "LeapAlign treats flow-matching generation as a continuous differentiable trajectory, making reward gradients a native alignment signal for diffusion-style post-training rather than forcing an RL token-generation analogy."
+  why_selected: "Directly relevant to efficient and controllable generative modeling: it connects post-training, early-step layout control, and differentiable generation dynamics."
+  display_text: "For flow-matching models, gradient descent is the native post-training tool. The key taste point: train early generation steps too, because layout and composition are decided before the final polish."
+  tags: ["diffusion", "post-training", "flow-matching", "alignment"]
+  tweet_url: "https://x.com/LiangZheng_06/status/2065261520230228022"
+  primary_url: "https://x.com/LiangZheng_06/status/2065261520230228022"
+  confidence: "high"
+
+- id: against-mandatory-3d-intermediate
+  rank: 7
   section: research_signals
   source_type: external_x_repost
   include: true
@@ -110,7 +128,7 @@
   confidence: "high"
 
 - id: latent-manifold-over-action-dim
-  rank: 7
+  rank: 8
   section: research_signals
   source_type: external_x_repost
   include: true
@@ -129,7 +147,7 @@
   confidence: "high"
 
 - id: multimodal-generation-as-structured-code
-  rank: 8
+  rank: 9
   section: research_signals
   source_type: external_x_repost
   include: true
@@ -148,7 +166,7 @@
   confidence: "medium_exact_status_not_verified"
 
 - id: long-context-evals-and-scaling
-  rank: 9
+  rank: 10
   section: research_signals
   source_type: external_x_repost
   include: true
