@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: Anh Nguyen is an incoming ECE Ph.D. student at Johns Hopkins University and a Predoctoral Research Resident at Qualcomm AI Research working on efficient, scalable, controllable generative modeling.
+description: Anh Nguyen is an incoming ECE Ph.D. student at Johns Hopkins University and a Predoctoral Research Resident at Qualcomm AI Research, working on efficient, scalable, controllable generative modeling.
 keywords: Anh Nguyen, ECE Ph.D. student, Johns Hopkins University, Qualcomm AI Research, generative modeling, diffusion models, multimodal intelligence
 subtitle: |+
   <div style="font-size: 1.05em; line-height: 1.6; margin-bottom: 20px;">

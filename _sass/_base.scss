@@ -621,15 +621,16 @@ footer.sticky-bottom {
           color: #fbfdff;
           overflow: hidden;
           background-image:
-            linear-gradient(180deg, rgba(22, 49, 80, 0.98), rgba(8, 20, 36, 0.99)),
-            linear-gradient(115deg, rgba(127, 215, 209, 0.95), rgba(123, 183, 255, 0.95) 48%, rgba(201, 148, 99, 0.82));
+            radial-gradient(120% 100% at 50% 0%, rgba(230, 246, 255, 0.12), transparent 55%),
+            linear-gradient(180deg, rgba(18, 48, 84, 0.98), rgba(6, 18, 33, 0.99)),
+            linear-gradient(112deg, rgba(114, 239, 221, 0.98), rgba(116, 178, 255, 1) 42%, rgba(185, 151, 255, 0.76) 70%, rgba(236, 186, 119, 0.88));
           background-origin: border-box;
           background-clip: padding-box, border-box;
           box-shadow:
-            0 8px 24px rgba(43, 117, 202, 0.2),
-            0 0 18px rgba(127, 215, 209, 0.16),
-            inset 0 1px 0 rgba(255, 255, 255, 0.12),
-            inset 0 -1px 0 rgba(0, 0, 0, 0.52);
+            0 9px 24px rgba(45, 126, 220, 0.26),
+            0 0 19px rgba(114, 239, 221, 0.2),
+            inset 0 1px 0 rgba(255, 255, 255, 0.2),
+            inset 0 -1px 0 rgba(0, 0, 0, 0.56);
           font-size: 0.7rem;
           font-weight: 840;
           letter-spacing: 0.035em;
@@ -1330,15 +1331,16 @@ html.transition *:after {
   line-height: 1;
   letter-spacing: 0.018em;
   background-image:
-    linear-gradient(180deg, rgba(22, 49, 80, 0.98), rgba(8, 20, 36, 0.99)),
-    linear-gradient(115deg, rgba(127, 215, 209, 0.88), rgba(123, 183, 255, 0.92) 48%, rgba(201, 148, 99, 0.72));
+    radial-gradient(120% 100% at 50% 0%, rgba(230, 246, 255, 0.1), transparent 55%),
+    linear-gradient(180deg, rgba(18, 48, 84, 0.98), rgba(6, 18, 33, 0.99)),
+    linear-gradient(112deg, rgba(114, 239, 221, 0.9), rgba(116, 178, 255, 0.95) 42%, rgba(185, 151, 255, 0.62) 70%, rgba(236, 186, 119, 0.76));
   background-origin: border-box;
   background-clip: padding-box, border-box;
   box-shadow:
-    0 5px 15px rgba(36, 112, 204, 0.17),
-    0 0 12px rgba(127, 215, 209, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.48);
+    0 5px 16px rgba(45, 126, 220, 0.22),
+    0 0 12px rgba(114, 239, 221, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.16),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.52);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.44);
   vertical-align: 0.08em;
   white-space: nowrap;

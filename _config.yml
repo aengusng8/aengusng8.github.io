@@ -2,13 +2,13 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Anh Nguyen - ECE Ph.D. Student at Johns Hopkins University # the website title (if blank, full name will be used instead)
+title: Anh Nguyen | ECE Ph.D. Student at Johns Hopkins University # the website title (if blank, full name will be used instead)
 first_name: Anh
 middle_name: 
 last_name: Nguyen
 email: aengusng8@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Anh Nguyen is an incoming ECE Ph.D. student at Johns Hopkins University and a Predoctoral Research Resident at Qualcomm AI Research working on efficient, scalable, controllable generative modeling.
+  Anh Nguyen is an incoming ECE Ph.D. student at Johns Hopkins University and a Predoctoral Research Resident at Qualcomm AI Research, working on efficient, scalable, controllable generative modeling.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: Anh Nguyen, ECE Ph.D. student, Johns Hopkins University, Qualcomm AI Research, machine learning, AI, artificial intelligence, deep learning, generative models, diffusion models, multimodal intelligence  # add your own keywords or leave empty
@@ -19,7 +19,7 @@ lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 # -----------------------------------------------------------------------------
 icon: 𝓐 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://aengusng8.github.io/ # the base hostname & protocol for your site
+url: https://aengusng8.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -61,7 +61,7 @@ max_width: 800px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
