@@ -2,9 +2,11 @@
 layout: about
 title: about
 permalink: /
+description: Anh Nguyen is an incoming ECE Ph.D. student at Johns Hopkins University and a Predoctoral Research Resident at Qualcomm AI Research working on efficient, scalable, controllable generative modeling.
+keywords: Anh Nguyen, ECE Ph.D. student, Johns Hopkins University, Qualcomm AI Research, generative modeling, diffusion models, multimodal intelligence
 subtitle: |+
   <div style="font-size: 1.05em; line-height: 1.6; margin-bottom: 20px;">
-    Incoming Ph.D. student at <a href="https://www.jhu.edu/" target="_blank" style="color: #7bb7ff; text-decoration: none;">Johns Hopkins University</a> in Fall 2026. Currently, I am a <span style="color: #7bb7ff; font-weight: bold;">Predoctoral Research Resident</span> at <a href="https://www.qualcomm.com/research/artificial-intelligence" target="_blank" style="color: #7bb7ff; text-decoration: none;">Qualcomm AI Research</a>, advised by Principal Scientist <a href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en" target="_blank" style="color: #7bb7ff; text-decoration: none;">Dr. Anh Tran</a>.
+    Incoming <span style="color: #7bb7ff; font-weight: bold;">ECE Ph.D. student</span> at <a href="https://www.jhu.edu/" target="_blank" style="color: #7bb7ff; text-decoration: none;">Johns Hopkins University</a> in Fall 2026. Currently, I am a <span style="color: #7bb7ff; font-weight: bold;">Predoctoral Research Resident</span> at <a href="https://www.qualcomm.com/research/artificial-intelligence" target="_blank" style="color: #7bb7ff; text-decoration: none;">Qualcomm AI Research</a>, advised by Principal Scientist <a href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en" target="_blank" style="color: #7bb7ff; text-decoration: none;">Dr. Anh Tran</a>.
   </div>
 
   <div style="background: linear-gradient(135deg, rgba(201, 148, 99, 0.13), rgba(123, 183, 255, 0.045)); border-left: 3px solid #c99463; padding: 10px 15px; border-radius: 0 4px 4px 0; margin-bottom: 25px;">

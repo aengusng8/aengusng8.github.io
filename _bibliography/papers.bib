@@ -1,6 +1,20 @@
 ---
 ---
 
+@inproceedings{nguyen2026crossspace,
+  title={Cross-Space Distillation: Teaching One-Step Students with Modern Diffusion Teachers},
+  author={Anh Nguyen* and Ngan Nguyen* and Duc Vu* and Trung Dao and Viet Nguyen and Quan Dao and Kien Nguyen and Chi Tran and Phong Nguyen and Khoi Nguyen and Cuong Pham and Dimitris Metaxas and Vishal M Patel and Anh Tran},
+  booktitle={European Conference on Computer Vision, 2026},
+  year={2026},
+  abbr={ECCV},
+  abstract={
+  This work removes a hidden constraint in fast diffusion distillation: Teacher and Student no longer need to live in the same latent space. We formalize Cross-Space Distillation and introduce Bridge, a lightweight latent-space interface that makes standard one-step distillation possible across mismatched resolutions, VAEs, architectures, and diffusion/flow paradigms.
+  },
+  selected={true},
+  selected_order={1},
+  preview={eccv2026.jpg}
+}
+
 @inproceedings{nguyen2025improved,
   title={Improved Training Technique for Shortcut Models},
   author={Anh Nguyen* and Viet Nguyen* and Duc Vu and Trung Dao and Chi Tran and Toan Tran and Anh Tran},
@@ -12,7 +26,7 @@
   Shortcut models represent a promising, non-adversarial paradigm for generative modeling, uniquely supporting one-step, few-step, and multi-step sampling from a single trained network. However, their widespread adoption has been stymied by critical performance bottlenecks. This paper tackles the five core issues that held shortcut models back: (1) the hidden flaw of compounding guidance, which we are the first to formalize, causing severe image artifacts; (2) inflexible fixed guidance that restricts inference-time control; (3) a pervasive frequency bias driven by a reliance on low-level distances in the direct domain, which biases reconstructions toward low frequencies; (4) divergent self-consistency arising from a conflict with EMA training; and (5) curvy flow trajectories that impede convergence. To address these challenges, we introduce iSM, a unified training framework that systematically resolves each limitation. Our framework is built on four key improvements: Intrinsic Guidance provides explicit, dynamic control over guidance strength, resolving both compounding guidance and inflexibility. A Multi-Level Wavelet Loss mitigates frequency bias to restore high-frequency details. Scaling Optimal Transport (sOT) reduces training variance and learns straighter, more stable generative paths. Finally, a Twin EMA strategy reconciles training stability with self-consistency. Extensive experiments on ImageNet 256 × 256 demonstrate that our approach yields substantial FID improvements over baseline shortcut models across one-step, few-step, and multi-step generation, making shortcut models a viable and competitive class of generative models.
   },
   selected={true},
-  selected_order={1},
+  selected_order={2},
   slides={/assets/publications/neurips2025/slides.pdf},
   poster={/assets/publications/neurips2025/poster.pdf},
   preview={neurips2025.jpg}
@@ -30,7 +44,7 @@
   pdf={https://arxiv.org/abs/2412.02687},
   website={https://snoopi-onestep.github.io/},
   selected={true},
-  selected_order={4},
+  selected_order={5},
   slides={/assets/publications/iccv2025/slides.pdf},
   poster={/assets/publications/iccv2025/poster.pdf},
   preview={iccv2025.jpg}
@@ -46,7 +60,7 @@
   Advances in diffusion-based video generation models, while significantly improving human animation, poses threats of misuse through the creation of fake videos from a specific person's photo and text prompts. Recent efforts have focused on adversarial attacks that introduce crafted perturbations to protect images from diffusion-based models. However, most existing approaches target image generation, while relatively few explicitly address image-to-video diffusion models (VDMs), and most primarily focus on UNet-based architectures. Hence, their effectiveness against Diffusion Transformer (DiT) models remains largely under-explored, as these models demonstrate improved feature retention, and stronger temporal consistency due to larger capacity and advanced attention mechanisms. In this work, we introduce Anti-I2V, a novel defense against malicious human image-to-video generation, applicable across diverse diffusion backbones. Instead of restricting noise updates to the RGB space, Anti-I2V operates in both the L*a*b* and frequency domains, improving robustness and concentrating on salient pixels. We then identify the network layers that capture the most distinct semantic features during the denoising process to design appropriate training objectives that maximize degradation of temporal coherence and generation fidelity. Through extensive validation, Anti-I2V demonstrates state-of-the-art defense performance against diverse video diffusion models, offering an effective solution to the problem.
   },
   selected={true},
-  selected_order={2},
+  selected_order={3},
   preview={cvpr2026.mp4}
 }
 
@@ -59,6 +73,6 @@
   pdf={https://arxiv.org/abs/2501.18936},
   abstract={Visual Prompt Tuning (VPT) has proven effective for parameter-efficient adaptation of pre-trained vision models to downstream tasks by inserting task-specific learnable prompt tokens. Despite its empirical success, a comprehensive theoretical understanding of VPT remains an active area of research. Building on the recently established connection between Mixture of Experts (MoE) and prompt-based methods, wherein each attention head can be conceptualized as a composition of multiple MoE models, we reinterpret VPT as the introduction of new prompt experts into these MoE structures. We identify a key limitation in existing VPT frameworks: the restricted functional expressiveness of prompt experts, which remain static and thus limited in their adaptability. To address this, we propose Visual Adaptive Prompt Tuning (VAPT), a novel method that endows prompt experts with enhanced expressiveness while preserving parameter efficiency. Empirical evaluations on VTAB-1K and FGVC demonstrate that VAPT achieves substantial performance improvements, surpassing fully fine-tuned baselines by 7.34% and 1.04%, respectively. Moreover, VAPT consistently outperforms VPT while requiring fewer additional parameters. Furthermore, our theoretical analysis indicates that VAPT achieves optimal sample efficiency.   Collectively, these results underscore the theoretical grounding and empirical advantages of our approach.},
   selected={true},
-  selected_order={3},
+  selected_order={4},
   preview={iclr2026.png}
 }

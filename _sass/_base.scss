@@ -608,18 +608,37 @@ footer.sticky-bottom {
         .venue-neurips,
         .venue-cvpr,
         .venue-iclr,
-        .venue-iccv {
-          min-width: 4.1rem;
-          padding: 0.12rem 0.46rem 0.13rem;
-          border: 1px solid rgba(125, 183, 255, 0.38);
-          border-radius: 4px;
-          color: rgba(226, 240, 255, 0.96);
-          background:
-            linear-gradient(180deg, rgba(238, 246, 255, 0.055), rgba(238, 246, 255, 0) 48%),
-            rgba(70, 118, 184, 0.16);
+        .venue-iccv,
+        .venue-eccv {
+          position: relative;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 4.35rem;
+          padding: 0.14rem 0.62rem 0.155rem;
+          border: 1px solid transparent;
+          border-radius: 6px;
+          color: #fbfdff;
+          overflow: hidden;
+          background-image:
+            linear-gradient(180deg, rgba(22, 49, 80, 0.98), rgba(8, 20, 36, 0.99)),
+            linear-gradient(115deg, rgba(127, 215, 209, 0.95), rgba(123, 183, 255, 0.95) 48%, rgba(201, 148, 99, 0.82));
+          background-origin: border-box;
+          background-clip: padding-box, border-box;
           box-shadow:
-            inset 0 1px 0 rgba(255, 255, 255, 0.07);
-          text-shadow: none;
+            0 8px 24px rgba(43, 117, 202, 0.2),
+            0 0 18px rgba(127, 215, 209, 0.16),
+            inset 0 1px 0 rgba(255, 255, 255, 0.12),
+            inset 0 -1px 0 rgba(0, 0, 0, 0.52);
+          font-size: 0.7rem;
+          font-weight: 840;
+          letter-spacing: 0.035em;
+          text-shadow: 0 1px 2px rgba(0, 0, 0, 0.46);
+
+          a {
+            color: inherit;
+            -webkit-text-fill-color: currentColor;
+          }
         }
       }    
       .title {
@@ -1296,24 +1315,32 @@ html.transition *:after {
 }
 
 .aurora-text {
+  position: relative;
   display: inline-flex;
-  align-items: baseline;
-  padding: 0 0.08em;
-  border: 0;
-  border-radius: 0;
-  color: rgba(226, 240, 255, 0.98);
-  font-size: 0.96em;
-  font-weight: 820;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.05em;
+  padding: 0.075em 0.46em 0.09em;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #fbfdff;
+  overflow: hidden;
+  font-size: 0.82em;
+  font-weight: 840;
   line-height: 1;
-  letter-spacing: 0;
-  background:
-    linear-gradient(90deg, rgba(125, 183, 255, 0.52), rgba(127, 215, 209, 0.34));
-  background-repeat: no-repeat;
-  background-size: 100% 0.08em;
-  background-position: 0 92%;
-  box-shadow: none;
-  text-shadow: none;
-  text-underline-offset: 0.16em;
+  letter-spacing: 0.018em;
+  background-image:
+    linear-gradient(180deg, rgba(22, 49, 80, 0.98), rgba(8, 20, 36, 0.99)),
+    linear-gradient(115deg, rgba(127, 215, 209, 0.88), rgba(123, 183, 255, 0.92) 48%, rgba(201, 148, 99, 0.72));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow:
+    0 5px 15px rgba(36, 112, 204, 0.17),
+    0 0 12px rgba(127, 215, 209, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.48);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.44);
+  vertical-align: 0.08em;
   white-space: nowrap;
 }
 
