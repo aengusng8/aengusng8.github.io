@@ -42,12 +42,7 @@
                 <!-- Author -->
                 <div class="author">
                 {% assign author_array_size = entry.author_array | size %}
-
-                {%- if site.max_author_limit and author_array_size > site.max_author_limit %}
-                  {% assign author_array_limit = site.max_author_limit %}
-                {% else %}
-                  {% assign author_array_limit = author_array_size %}
-                {% endif %}
+                {% assign author_array_limit = author_array_size %}
 
                 {%- for author in entry.author_array limit: author_array_limit -%}
                   {%- assign author_is_self = false -%}
@@ -105,39 +100,6 @@
                   {%- endif -%}
                 {%- endfor %}
 
-                {% assign more_authors = author_array_size | minus: author_array_limit %}
-
-                {%- if more_authors > 0 %}
-                  {% assign more_authors_hide = more_authors | append: " more author" %}
-                  {% if more_authors > 1 %}
-                    {% assign more_authors_hide = more_authors_hide | append: "s" %}
-                  {% endif %}
-                  {% assign more_authors_show = '' %}
-                  {%- for author in entry.author_array offset: author_array_limit -%}
-                    {% assign more_authors_show = more_authors_show | append: author.first | append: " " | append: author.last %}
-                    {% unless forloop.last %}      
-                      {% assign more_authors_show = more_authors_show | append: ",&nbsp;" %}
-                    {% endunless %}
-                  {%- endfor -%}
-                  and
-                  <span
-                      class="more-authors"
-                      title="click to view {{more_authors_hide}}"
-                      onclick="
-                        var element = $(this);
-                        element.attr('title', '');
-                        var more_authors_text = element.text() == '{{more_authors_hide}}' ? '{{more_authors_show}}' : '{{more_authors_hide}}';
-                        var cursorPosition = 0;
-                        var textAdder = setInterval(function(){
-                          element.text(more_authors_text.substring(0, cursorPosition + 1));
-                          if (++cursorPosition == more_authors_text.length){
-                            clearInterval(textAdder);
-                          }
-                        }, 15);
-                      "
-                  >{{more_authors_hide}}</span>
-                {% endif %}
-
                 </div>
 
                 <!-- Journal/Book title and date -->
@@ -159,6 +121,7 @@
                 <div class="periodical">
                   {{ periodical | strip }}
                 </div>
+
               {%- endif %}
               
                 {%- if entry.honor -%}
@@ -175,6 +138,15 @@
                 {%- endif -%}
                 <!-- Links/Buttons -->
                 <div class="links">
+                {%- if entry.institution -%}
+                  <span class="pub-institution-group">
+                  {%- assign institutions = entry.institution | split: " · " -%}
+                  {%- for institution in institutions -%}
+                    <span class="pub-institution-chip">{{ institution }}</span>
+                  {%- endfor -%}
+                  </span>
+                {%- endif -%}
+                <span class="pub-action-group">
                 {%- if entry.abstract %}
                   <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
                 {%- endif %}
@@ -219,6 +191,7 @@
                 {%- if entry.media %}
                   <a href="{{ entry.media }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Media</a>
                 {%- endif %}
+                </span>
                 </div>
 
                 {% if entry.abstract -%}

@@ -44,7 +44,10 @@ body.sticky-bottom-footer {
 
 .profile-hero__media {
   display: flex;
+  align-self: center;
+  align-items: center;
   justify-content: center;
+  padding-top: 0;
 }
 
 .profile-hero__name {
@@ -125,6 +128,11 @@ body.sticky-bottom-footer {
   .profile-hero {
     margin-top: 0.75rem;
     text-align: center;
+  }
+
+  .profile-hero__media {
+    align-self: center;
+    padding-top: 0;
   }
 
   .profile-hero__name {

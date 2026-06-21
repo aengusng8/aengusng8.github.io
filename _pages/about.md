@@ -9,12 +9,11 @@ subtitle: |+
     Incoming <span style="color: #7bb7ff; font-weight: bold;">ECE Ph.D. student</span> at <a href="https://www.jhu.edu/" target="_blank" style="color: #7bb7ff; text-decoration: none;">Johns Hopkins University</a> in Fall 2026. Currently, I am a <span style="color: #7bb7ff; font-weight: bold;">Predoctoral Research Resident</span> at <a href="https://www.qualcomm.com/research/artificial-intelligence" target="_blank" style="color: #7bb7ff; text-decoration: none;">Qualcomm AI Research</a>, advised by Principal Scientist <a href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en" target="_blank" style="color: #7bb7ff; text-decoration: none;">Dr. Anh Tran</a>.
   </div>
 
-  <div style="background: linear-gradient(135deg, rgba(201, 148, 99, 0.13), rgba(123, 183, 255, 0.045)); border-left: 3px solid #c99463; padding: 10px 15px; border-radius: 0 4px 4px 0; margin-bottom: 25px;">
-    <span style="color: #c99463; font-weight: bold;">Summer 2027:</span>
-    <span style="color: #d7dde6;">Open to research internships; interested in collaborations on generative models across pre-training, distillation, and controllable multimodal applications.</span>
+  <div class="profile-opportunity-card">
+    <span class="profile-opportunity-card__label">Summer 2027:</span>
+    Open to research internships; interested in academic-industry joint research in pre-training, distillation, and multimodal applications.
   </div>
 
-  <span class="contact-info">Contact: aengus.ng8@gmail.com</span>
 profile:
   image: profile.png
   image_cicular: true # crops the image to make it circular
@@ -28,8 +27,8 @@ social: true  # includes social icons at the bottom of a page
 <!-- THE QUOTE BOX -->
 <div class="research-thesis-card">
     <div class="research-thesis-card__inner">
-        <span style="color: #d7dde6; font-style: italic; font-size: 1.1em;">
-            I work on <span style="color: #7bb7ff; font-weight: bold;">efficient, scalable, and controllable</span> generative modeling as a principled route to <span style="color: #7bb7ff; font-weight: bold;">machine intelligence beyond human levels</span>.
+        <span class="research-thesis-line">
+            I work on <span class="research-thesis-line__focus">efficient, scalable, and controllable</span> generative modeling as a principled route to <span class="research-thesis-line__focus">machine intelligence beyond human levels</span>.
         </span>
     </div>
 </div>
@@ -40,13 +39,11 @@ social: true  # includes social icons at the bottom of a page
   <div class="research-core__main">
     <div class="research-core__statement" style="text-align: justify;">
       <div class="section-kicker">Research Statement</div>
-      My <b>long-term goal</b> is to build systems capable of <i>understanding, reasoning, planning</i>, and <i>acquiring physical intuition</i> about the world.
+      My long-term goal is to build systems capable of <span class="rs-goal-em">understanding, reasoning, planning,</span> and <span class="rs-goal-em">acquiring physical intuition</span> about the world, while designed to be <span class="rs-goal-em">efficient, scalable, and controllable</span>.
       <br><br>
-      My current research focuses on <b style="color: #7bb7ff; font-weight: bold;">Efficient & Robust Multimodal Intelligence</b>, aiming to resolve the trade-offs in foundation models through two core pillars: <b style="color: #7bb7ff;">(1) Efficiency & Scalability</b> to minimize training and inference costs, and <b style="color: #7bb7ff;">(2) Robustness & Controllability</b> to enforce alignment and reliability.
+      Toward this goal, my recent work on <a class="rs-link" href="#selected-publications">One-step Generative Modeling & Distillation</a> (<a class="rs-link" href="#selected-publications">ECCV, NeurIPS & ICCV</a>) enables <span class="rs-outcome">real-time, high-fidelity synthesis</span>, while my work on <a class="rs-link" href="#selected-publications">Multimodal Representation</a> (<a class="rs-link" href="#selected-publications">CVPR, ICCV</a>) exposes internal semantics for <span class="rs-outcome">zero-shot, fine-grained control</span>.
       <br><br>
-      Most recently, my work on <b style="color: #7bb7ff;">One-step Generative Modeling & Distillation</b> (<b style="color: #7bb7ff;">NeurIPS</b> & <b style="color: #7bb7ff;">ICCV</b> 2025) collapses iterative inference into <i>real-time, high-fidelity synthesis</i>, while my research on <b style="color: #7bb7ff;">Multimodal Representation</b> (<b style="color: #7bb7ff;">ICCV</b> 2025) leverages internal semantics for <i>zero-shot, fine-grained controllability</i>.
-      <br><br>
-      <b>Research Readiness:</b> I can <b>independently lead</b> the entire research lifecycle for top-tier conferences, driving projects from problem formulation and experimentation to final publication.
+      <span class="rs-label">Research Ownership:</span> I can independently lead the entire research lifecycle for top-tier conferences, driving projects from problem formulation and experimentation through final publication.
     </div>
 
     <!-- OUTSIDE THE LAB SECTION -->
