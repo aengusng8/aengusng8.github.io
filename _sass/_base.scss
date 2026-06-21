@@ -942,7 +942,8 @@ html.transition *:after {
 
 .research-core__statement .rs-link {
   color: #7bb7ff;
-  font-weight: 700;
+  font-family: inherit;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -954,7 +955,7 @@ html.transition *:after {
 .research-core__statement .rs-outcome {
   color: rgba(215, 221, 230, 0.94);
   font-style: italic;
-  font-weight: 430;
+  font-weight: inherit;
 }
 
 .research-core__statement .rs-label {
@@ -1269,9 +1270,10 @@ html.transition *:after {
 
 .research-thesis-line {
   color: #d7dde6;
+  font-family: inherit;
   font-size: 1.06em;
   font-style: normal;
-  font-weight: 400 !important;
+  font-weight: inherit !important;
   letter-spacing: 0;
   line-height: 1.55;
 
@@ -1284,7 +1286,8 @@ html.transition *:after {
 
 .research-thesis-line__focus {
   color: #8ec5ff;
-  font-weight: 400 !important;
+  font-family: inherit;
+  font-weight: 500 !important;
 }
 
 .news {

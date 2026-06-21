@@ -11,13 +11,35 @@ layout: default
               {%- if page.profile.image %}
                 {% if page.profile.image_cicular %}
                   <div class="profile-avatar profile-avatar--circle">
-                    <img src="{{ '/assets/img/profile.png' | relative_url }}"
-                         alt="Anh Nguyen profile photo">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="{{ '/assets/img/profile-480.webp' | relative_url }} 480w,
+                                {{ '/assets/img/profile-800.webp' | relative_url }} 800w"
+                        sizes="214px">
+                      <img src="{{ '/assets/img/profile.png' | relative_url }}"
+                           width="214"
+                           height="214"
+                           alt="Anh Nguyen profile photo"
+                           decoding="async"
+                           fetchpriority="high">
+                    </picture>
                   </div>
                 {% else %}
                   <div class="profile-avatar">
-                    <img src="{{ '/assets/img/profile.png' | relative_url }}"
-                         alt="Anh Nguyen profile photo">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="{{ '/assets/img/profile-480.webp' | relative_url }} 480w,
+                                {{ '/assets/img/profile-800.webp' | relative_url }} 800w"
+                        sizes="214px">
+                      <img src="{{ '/assets/img/profile.png' | relative_url }}"
+                           width="214"
+                           height="214"
+                           alt="Anh Nguyen profile photo"
+                           decoding="async"
+                           fetchpriority="high">
+                    </picture>
                   </div>
                 {% endif %}
               {% endif -%}
