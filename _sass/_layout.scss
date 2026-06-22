@@ -126,6 +126,7 @@ body.sticky-bottom-footer {
 
 @media (max-width: 575px) {
   body {
+    padding-bottom: calc(82px + env(safe-area-inset-bottom));
     background:
       radial-gradient(circle at 50% 3.75rem, rgba(47, 111, 181, 0.1), rgba(47, 111, 181, 0) 18rem),
       linear-gradient(180deg, rgba(127, 215, 209, 0.02), rgba(127, 215, 209, 0) 16rem),
@@ -133,8 +134,8 @@ body.sticky-bottom-footer {
   }
 
   .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.92rem;
+    padding-right: 0.92rem;
   }
 
   .profile-hero {

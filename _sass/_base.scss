@@ -1676,8 +1676,8 @@ html.transition *:after {
 
   .news h2,
   .publications h2 {
-    margin-bottom: 0.82rem;
-    font-size: 1.48rem;
+    margin-bottom: 0.72rem;
+    font-size: 1.34rem;
     line-height: 1.12;
   }
 
@@ -1693,7 +1693,7 @@ html.transition *:after {
 
   .publications ol.bibliography li {
     margin-bottom: 0;
-    padding: 0.88rem 0.86rem 0.94rem;
+    padding: 0.76rem 0.78rem 0.84rem;
     border: 1px solid rgba(123, 183, 255, 0.105);
     border-left: 1px solid rgba(201, 148, 99, 0.19);
     border-radius: 7px;
@@ -1739,14 +1739,14 @@ html.transition *:after {
 
   .publications ol.bibliography li .title {
     margin-bottom: 0.3rem;
-    font-size: 1rem;
+    font-size: 0.92rem;
     font-weight: 760;
     line-height: 1.28;
     overflow-wrap: break-word;
   }
 
   .publications ol.bibliography li .author {
-    font-size: 0.84rem;
+    font-size: 0.78rem;
     line-height: 1.42;
     overflow-wrap: break-word;
   }
@@ -1754,7 +1754,7 @@ html.transition *:after {
   .publications ol.bibliography li .periodical {
     margin-top: 0.38rem;
     padding-left: 0.58rem;
-    font-size: 0.82rem;
+    font-size: 0.76rem;
     line-height: 1.38;
     overflow-wrap: break-word;
   }
@@ -1957,7 +1957,8 @@ html.transition *:after {
   }
 
   body {
-    font-size: 15px;
+    padding-top: env(safe-area-inset-top);
+    font-size: 14.5px;
     text-rendering: optimizeLegibility;
     -webkit-text-size-adjust: 100%;
   }
@@ -2006,17 +2007,17 @@ html.transition *:after {
   }
 
   .post article > .clearfix {
-    margin-top: 1.35rem;
+    margin-top: 1.22rem;
   }
 
   .post article > .news,
   .post article > .publications {
-    margin-top: 2.2rem;
+    margin-top: 1.9rem;
   }
 
   .post article > .clearfix > div:not(.research-thesis-card):not(.news) {
-    font-size: 0.9rem !important;
-    line-height: 1.58;
+    font-size: 0.84rem !important;
+    line-height: 1.54;
   }
 
   .post article > .clearfix > div:not(.research-thesis-card):not(.news) + div:not(.research-thesis-card):not(.news) {
@@ -2024,25 +2025,25 @@ html.transition *:after {
   }
 
   .profile-opportunity-card {
-    margin-bottom: 1.18rem;
-    padding: 0.66rem 0.82rem;
-    font-size: 0.88rem;
-    line-height: 1.5;
+    margin-bottom: 1.08rem;
+    padding: 0.62rem 0.76rem;
+    font-size: 0.82rem;
+    line-height: 1.48;
   }
 
   .research-thesis-card {
-    margin-bottom: 1.45rem;
+    margin-bottom: 1.28rem;
     border-radius: 6px;
   }
 
   .research-thesis-card__inner {
-    padding: 0.78rem 0.84rem;
+    padding: 0.72rem 0.78rem;
     text-align: left;
   }
 
   .research-thesis-line {
-    font-size: 0.93rem;
-    line-height: 1.52;
+    font-size: 0.84rem;
+    line-height: 1.48;
   }
 
   .research-core__statement {
@@ -2055,12 +2056,13 @@ html.transition *:after {
 
   .research-core__statement .rs-label {
     display: block;
-    margin-top: 0.78rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.12rem;
   }
 
   .section-kicker {
-    margin-bottom: 0.34rem;
-    font-size: 0.66rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.62rem;
   }
 
   .news .table-responsive {
@@ -2068,6 +2070,8 @@ html.transition *:after {
   }
 
   .news table.table tr {
+    padding-top: 0.58rem;
+    padding-bottom: 0.62rem;
     border-bottom: 1px solid rgba(123, 183, 255, 0.08);
   }
 
@@ -2077,19 +2081,19 @@ html.transition *:after {
 
   .news table.table th {
     color: rgba(155, 168, 184, 0.72);
-    font-size: 0.68rem;
+    font-size: 0.62rem;
     letter-spacing: 0.02em;
   }
 
   .news table.table td {
-    font-size: 0.82rem;
-    line-height: 1.48;
+    font-size: 0.76rem;
+    line-height: 1.46;
     overflow-wrap: break-word;
   }
 
   .news .aurora-text {
-    min-width: 2.7em;
-    font-size: 0.78em;
+    min-width: 2.55em;
+    font-size: 0.74em;
   }
 
   .research-signals {
