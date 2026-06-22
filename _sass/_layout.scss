@@ -139,9 +139,9 @@ body.sticky-bottom-footer {
   }
 
   .profile-hero {
-    margin-top: 0.4rem;
-    margin-bottom: 1.65rem;
-    text-align: left;
+    margin-top: 0.12rem;
+    margin-bottom: 1.42rem;
+    text-align: center;
   }
 
   .profile-hero__media {
@@ -150,21 +150,21 @@ body.sticky-bottom-footer {
   }
 
   .profile-avatar {
-    max-width: 150px;
-    margin-bottom: 1rem;
+    max-width: 132px;
+    margin-bottom: 0.84rem;
   }
 
   .profile-hero__name {
-    margin-bottom: 0.48rem;
-    font-size: 1.86em;
+    margin-bottom: 0.42rem;
+    font-size: 1.66em;
     line-height: 1.08;
   }
 
   .profile-hero__body .desc {
     margin-left: auto;
     margin-right: auto;
-    font-size: 0.92rem;
-    line-height: 1.48;
+    font-size: 0.84rem;
+    line-height: 1.46;
   }
 }
 
