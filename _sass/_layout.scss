@@ -125,9 +125,22 @@ body.sticky-bottom-footer {
 }
 
 @media (max-width: 575px) {
+  body {
+    background:
+      radial-gradient(circle at 50% 3.75rem, rgba(47, 111, 181, 0.1), rgba(47, 111, 181, 0) 18rem),
+      linear-gradient(180deg, rgba(127, 215, 209, 0.02), rgba(127, 215, 209, 0) 16rem),
+      var(--global-bg-color);
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .profile-hero {
-    margin-top: 0.75rem;
-    text-align: center;
+    margin-top: 0.4rem;
+    margin-bottom: 1.65rem;
+    text-align: left;
   }
 
   .profile-hero__media {
@@ -135,13 +148,22 @@ body.sticky-bottom-footer {
     padding-top: 0;
   }
 
+  .profile-avatar {
+    max-width: 150px;
+    margin-bottom: 1rem;
+  }
+
   .profile-hero__name {
-    font-size: 2.2em;
+    margin-bottom: 0.48rem;
+    font-size: 1.86em;
+    line-height: 1.08;
   }
 
   .profile-hero__body .desc {
     margin-left: auto;
     margin-right: auto;
+    font-size: 0.92rem;
+    line-height: 1.48;
   }
 }
 
