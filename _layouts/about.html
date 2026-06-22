@@ -11,35 +11,21 @@ layout: default
               {%- if page.profile.image %}
                 {% if page.profile.image_cicular %}
                   <div class="profile-avatar profile-avatar--circle">
-                    <picture>
-                      <source
-                        type="image/webp"
-                        srcset="{{ '/assets/img/profile-480.webp' | relative_url }} 480w,
-                                {{ '/assets/img/profile-800.webp' | relative_url }} 800w"
-                        sizes="214px">
-                      <img src="{{ '/assets/img/profile.png' | relative_url }}"
-                           width="214"
-                           height="214"
-                           alt="Anh Nguyen profile photo"
-                           decoding="async"
-                           fetchpriority="high">
-                    </picture>
+                    <img src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}"
+                         width="214"
+                         height="214"
+                         alt="Anh Nguyen profile photo"
+                         decoding="async"
+                         fetchpriority="high">
                   </div>
                 {% else %}
                   <div class="profile-avatar">
-                    <picture>
-                      <source
-                        type="image/webp"
-                        srcset="{{ '/assets/img/profile-480.webp' | relative_url }} 480w,
-                                {{ '/assets/img/profile-800.webp' | relative_url }} 800w"
-                        sizes="214px">
-                      <img src="{{ '/assets/img/profile.png' | relative_url }}"
-                           width="214"
-                           height="214"
-                           alt="Anh Nguyen profile photo"
-                           decoding="async"
-                           fetchpriority="high">
-                    </picture>
+                    <img src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}"
+                         width="214"
+                         height="214"
+                         alt="Anh Nguyen profile photo"
+                         decoding="async"
+                         fetchpriority="high">
                   </div>
                 {% endif %}
               {% endif -%}
