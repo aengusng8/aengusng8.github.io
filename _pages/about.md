@@ -2,11 +2,11 @@
 layout: about
 title: about
 permalink: /
-description: Anh Nguyen is an incoming ECE Ph.D. student at Johns Hopkins University and a Predoctoral Research Resident at Qualcomm AI Research, working on efficient, scalable, controllable generative modeling.
-keywords: Anh Nguyen, ECE Ph.D. student, Johns Hopkins University, Qualcomm AI Research, generative modeling, diffusion models, multimodal intelligence
+description: Anh Nguyen is an incoming Ph.D. student in Electrical and Computer Engineering at Johns Hopkins University and a Predoctoral Research Resident at Qualcomm AI Research, working on efficient, scalable, controllable generative modeling.
+keywords: Anh Nguyen, Anh Nguyen JHU, Anh Nguyen Johns Hopkins, Johns Hopkins University, ECE Ph.D. student, Qualcomm AI Research, generative modeling, diffusion models, multimodal intelligence
 subtitle: |+
   <div style="font-size: 1.05em; line-height: 1.6; margin-bottom: 20px;">
-    Incoming <span style="color: #7bb7ff; font-weight: bold;">ECE Ph.D. student</span> at <a href="https://www.jhu.edu/" target="_blank" style="color: #7bb7ff; text-decoration: none;">Johns Hopkins University</a> in Fall 2026. Currently, I am a <span style="color: #7bb7ff; font-weight: bold;">Predoctoral Research Resident</span> at <a href="https://www.qualcomm.com/research/artificial-intelligence" target="_blank" style="color: #7bb7ff; text-decoration: none;">Qualcomm AI Research</a>, advised by Principal Scientist <a href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en" target="_blank" style="color: #7bb7ff; text-decoration: none;">Dr. Anh Tran</a>.
+    <strong>Anh Nguyen</strong> is an incoming <span style="color: #7bb7ff; font-weight: bold;">Ph.D. student in Electrical and Computer Engineering</span> at <a href="https://www.jhu.edu/" target="_blank" style="color: #7bb7ff; text-decoration: none;">Johns Hopkins University</a> in Fall 2026. Currently, I am a <span style="color: #7bb7ff; font-weight: bold;">Predoctoral Research Resident</span> at <a href="https://www.qualcomm.com/research/artificial-intelligence" target="_blank" style="color: #7bb7ff; text-decoration: none;">Qualcomm AI Research</a>, advised by Principal Scientist <a href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en" target="_blank" style="color: #7bb7ff; text-decoration: none;">Dr. Anh Tran</a>.
   </div>
 
   <div class="profile-opportunity-card">
