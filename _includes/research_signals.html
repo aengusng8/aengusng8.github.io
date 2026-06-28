@@ -10,7 +10,11 @@
     <div class="research-signals__list">
       {%- for signal in research_signals limit: 10 -%}
         {%- assign signal_url = signal.tweet_url | default: signal.x_search_url | default: signal.primary_url -%}
+        {%- if signal_url -%}
+        <a class="research-signal-card" href="{{ signal_url }}" target="_blank" rel="noopener noreferrer" aria-label="View {{ signal.title | escape }} on X">
+        {%- else -%}
         <article class="research-signal-card">
+        {%- endif -%}
           <div class="research-signal-card__top">
             <div class="research-signal-card__avatar" aria-hidden="true">
               {%- if signal.author_avatar_url -%}
@@ -32,13 +36,11 @@
               <span>{{ tag }}</span>
             {%- endfor -%}
           </div>
-          <div class="research-signal-card__footer">
-            <time datetime="{{ signal.date }}">{{ signal.date | date: "%b %-d, %Y" }}</time>
-            {%- if signal_url -%}
-              <a href="{{ signal_url }}" target="_blank" rel="noopener noreferrer">View on X -></a>
-            {%- endif -%}
-          </div>
+        {%- if signal_url -%}
+        </a>
+        {%- else -%}
         </article>
+        {%- endif -%}
       {%- endfor -%}
     </div>
   </aside>

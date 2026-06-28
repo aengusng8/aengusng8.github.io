@@ -95,6 +95,7 @@ contact_note: >
 
 google_analytics: UA-69768980-1 # your Goole Analytics measurement ID (format: G-XXXXXXXXXX)
 panelbear_analytics: 2L2SaElaomp # panelbear analytics site ID (format: XXXXXXXXX)
+microsoft_clarity: xdwv0xzfz7 # your Microsoft Clarity project ID
 
 google_site_verification:  # your google-site-verification ID (Google Search Console)
 bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
@@ -280,8 +281,9 @@ jekyll-diagrams:
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics:    true  # enables google analytics
+enable_google_analytics:    false # enables google analytics
 enable_panelbear_analytics: false  # enables panelbear analytics
+enable_microsoft_clarity:   true   # enables Microsoft Clarity analytics
 enable_google_verification: false  # enables google site verification
 enable_bing_verification:   false  # enables bing site verification
 enable_masonry:             true   # enables automatic project cards arangement

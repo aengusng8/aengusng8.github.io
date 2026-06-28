@@ -1012,16 +1012,19 @@ html.transition *:after {
 
 .research-signal-card {
   position: relative;
+  display: block;
   counter-increment: research-signal;
   border: 1px solid rgba(123, 183, 255, 0.09);
   border-radius: 6px;
   padding: 0.75rem 0.78rem 0.78rem;
+  color: inherit;
   background:
     linear-gradient(145deg, rgba(15, 24, 34, 0.94), rgba(8, 13, 19, 0.98) 70%, rgba(13, 22, 32, 0.95));
   box-shadow:
     0 7px 18px rgba(0, 0, 0, 0.12),
     inset 0 1px 0 rgba(255, 255, 255, 0.025);
-  transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
+  text-decoration: none;
+  transition: border-color 160ms ease, background 160ms ease, box-shadow 160ms ease, transform 160ms ease;
 
   &::before {
     content: counter(research-signal, decimal-leading-zero);
@@ -1050,15 +1053,24 @@ html.transition *:after {
   }
 }
 
-.research-signal-card:hover {
+.research-signal-card:hover,
+.research-signal-card:focus {
   border-color: rgba(123, 183, 255, 0.18);
   background:
     linear-gradient(145deg, rgba(16, 25, 35, 0.98), rgba(8, 13, 19, 0.99) 70%, rgba(14, 24, 34, 0.98));
+  box-shadow:
+    0 10px 22px rgba(0, 0, 0, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
   transform: translateY(-1px);
+  text-decoration: none;
 }
 
-.research-signal-card__top,
-.research-signal-card__footer {
+.research-signal-card:focus-visible {
+  outline: 2px solid rgba(123, 183, 255, 0.62);
+  outline-offset: 3px;
+}
+
+.research-signal-card__top {
   display: flex;
   align-items: center;
 }
@@ -1121,40 +1133,22 @@ html.transition *:after {
 .research-signal-card__tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.24rem;
-  margin-top: 0.5rem;
+  gap: 0.34rem 0.48rem;
+  margin-top: 0.58rem;
 
   span {
     border: 0;
     border-radius: 0;
     padding: 0;
-    color: rgba(155, 168, 184, 0.66);
-    font-size: 0.56rem;
-    line-height: 1.4;
+    color: rgba(155, 168, 184, 0.78);
+    font-size: 0.68rem;
+    font-weight: 520;
+    line-height: 1.35;
     background: transparent;
 
     &::before {
       content: "#";
-      color: rgba(123, 183, 255, 0.44);
-    }
-  }
-}
-
-.research-signal-card__footer {
-  justify-content: space-between;
-  gap: 0.8rem;
-  margin-top: 0.58rem;
-  color: rgba(155, 168, 184, 0.72);
-  font-size: 0.64rem;
-
-  a {
-    color: rgba(123, 183, 255, 0.82);
-    white-space: nowrap;
-    text-decoration: none;
-
-    &:hover {
-      color: var(--profile-amber);
-      text-decoration: none;
+      color: rgba(123, 183, 255, 0.56);
     }
   }
 }
