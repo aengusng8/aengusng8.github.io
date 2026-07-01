@@ -6,8 +6,9 @@ body {
   padding-bottom: 70px;
   color: var(--global-text-color);
   background:
-    radial-gradient(circle at 50% 5.5rem, rgba(47, 111, 181, 0.12), rgba(47, 111, 181, 0) 27rem),
-    linear-gradient(180deg, rgba(127, 215, 209, 0.025), rgba(127, 215, 209, 0) 21rem),
+    radial-gradient(circle at 52% 5.5rem, rgba(74, 139, 210, 0.17), rgba(74, 139, 210, 0) 28rem),
+    radial-gradient(circle at 18% 20rem, rgba(211, 161, 95, 0.06), rgba(211, 161, 95, 0) 24rem),
+    linear-gradient(180deg, rgba(113, 234, 223, 0.035), rgba(113, 234, 223, 0) 22rem),
     var(--global-bg-color);
 
   h1, h2, h3, h4, h5, h6 {
@@ -63,20 +64,24 @@ body.sticky-bottom-footer {
   font-weight: 800;
 }
 
+.profile-hero__name-strong {
+  color: var(--profile-text);
+}
+
 .profile-hero__name-light {
   font-weight: 300;
-  color: rgba(215, 221, 230, 0.86);
+  color: rgba(220, 228, 239, 0.82);
 }
 
 .profile-hero__slash {
-  color: var(--profile-blue);
+  color: var(--profile-gold);
   font-size: 0.7em;
   font-weight: 300;
   vertical-align: middle;
 }
 
 .profile-hero__alias {
-  color: var(--profile-blue);
+  color: #9fceff;
   font-size: 0.7em;
   vertical-align: middle;
 }
@@ -93,12 +98,13 @@ body.sticky-bottom-footer {
   margin: 0 auto 1.25rem;
   padding: 0;
   overflow: hidden;
-  border: 1px solid rgba(123, 183, 255, 0.26);
+  border: 1px solid rgba(130, 194, 255, 0.38);
   border-radius: 8px;
-  background: #0b1118;
+  background: #0d141d;
   box-shadow:
     0 12px 28px rgba(0, 0, 0, 0.28),
-    0 0 0 1px rgba(47, 111, 181, 0.16);
+    0 0 0 1px rgba(74, 139, 210, 0.2),
+    0 0 26px rgba(130, 194, 255, 0.08);
 
   img {
     display: block;
@@ -128,8 +134,8 @@ body.sticky-bottom-footer {
   body {
     padding-bottom: calc(82px + env(safe-area-inset-bottom));
     background:
-      radial-gradient(circle at 50% 3.75rem, rgba(47, 111, 181, 0.1), rgba(47, 111, 181, 0) 18rem),
-      linear-gradient(180deg, rgba(127, 215, 209, 0.02), rgba(127, 215, 209, 0) 16rem),
+      radial-gradient(circle at 50% 3.75rem, rgba(63, 127, 195, 0.1), rgba(63, 127, 195, 0) 18rem),
+      linear-gradient(180deg, rgba(127, 231, 220, 0.02), rgba(127, 231, 220, 0) 16rem),
       var(--global-bg-color);
   }
 

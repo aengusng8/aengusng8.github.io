@@ -133,9 +133,9 @@ blockquote {
 
 .navbar {
   box-shadow: none;
-  border-bottom: 1px solid rgba(123, 183, 255, 0.12);
+  border-bottom: 1px solid rgba(130, 194, 255, 0.12);
   background:
-    linear-gradient(180deg, rgba(8, 13, 19, 0.96), rgba(8, 13, 19, 0.86));
+    linear-gradient(180deg, rgba(7, 11, 16, 0.96), rgba(7, 11, 16, 0.86));
   opacity: 0.9;
   min-height: 52px;
 }
@@ -260,7 +260,7 @@ blockquote {
       display: inline-block;
       margin-right: 0.68rem;
       i::before {
-        color: rgba(215, 221, 230, 0.68);
+        color: rgba(220, 228, 239, 0.68);
         transition-property: all 0.2s ease-in-out;
       }
       &:hover {
@@ -297,16 +297,16 @@ footer.fixed-bottom {
 
 footer.sticky-bottom {
   margin-top: 4.4rem !important;
-  border-top: 1px solid rgba(123, 183, 255, 0.08);
+  border-top: 1px solid rgba(130, 194, 255, 0.08);
   padding-top: 1.1rem;
   padding-bottom: 1.2rem;
-  color: rgba(155, 168, 184, 0.58);
+  color: rgba(168, 179, 194, 0.58);
   background:
-    linear-gradient(180deg, rgba(8, 13, 19, 0), rgba(8, 13, 19, 0.72));
+    linear-gradient(180deg, rgba(7, 11, 16, 0), rgba(7, 11, 16, 0.72));
   font-size: 0.68rem;
 
   a {
-    color: rgba(155, 168, 184, 0.7);
+    color: rgba(168, 179, 194, 0.7);
   }
 }
 
@@ -502,13 +502,13 @@ footer.sticky-bottom {
       width: 3.25rem;
       height: 1px;
       margin-top: 0.52rem;
-      background: linear-gradient(90deg, rgba(201, 148, 99, 0.52), rgba(123, 183, 255, 0.28), rgba(201, 148, 99, 0));
+      background: linear-gradient(90deg, rgba(211, 161, 95, 0.52), rgba(130, 194, 255, 0.28), rgba(211, 161, 95, 0));
     }
   }
 
   .publications__note {
     margin-bottom: 1.35rem;
-    color: rgba(155, 168, 184, 0.78);
+    color: rgba(168, 179, 194, 0.78);
     font-size: 0.82rem;
   }
 
@@ -531,9 +531,9 @@ footer.sticky-bottom {
       position: relative;
       margin-bottom: 2.25rem;
       padding: 1.05rem 0 1.55rem;
-      border-bottom: 1px solid rgba(123, 183, 255, 0.085);
+      border-bottom: 1px solid rgba(130, 194, 255, 0.085);
       background:
-        linear-gradient(90deg, rgba(123, 183, 255, 0.026), rgba(123, 183, 255, 0) 21rem);
+        linear-gradient(90deg, rgba(130, 194, 255, 0.026), rgba(130, 194, 255, 0) 21rem);
 
       > .row {
         align-items: flex-start;
@@ -551,21 +551,21 @@ footer.sticky-bottom {
         aspect-ratio: 16 / 9;
         object-fit: contain;
         padding: 0.42rem;
-        border: 1px solid rgba(123, 183, 255, 0.16);
+        border: 1px solid rgba(130, 194, 255, 0.16);
         border-radius: 6px !important;
         background:
-          linear-gradient(135deg, rgba(15, 24, 34, 0.98), rgba(8, 13, 19, 0.98) 66%, rgba(12, 22, 32, 0.98));
+          linear-gradient(135deg, rgba(13, 20, 29, 0.98), rgba(7, 11, 16, 0.98) 66%, rgba(17, 26, 36, 0.98));
         box-shadow:
           0 8px 22px rgba(0, 0, 0, 0.16),
-          inset 0 1px 0 rgba(127, 215, 209, 0.05);
+          inset 0 1px 0 rgba(127, 231, 220, 0.05);
         transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
       }
       img.preview:hover,
       video.preview:hover {
-        border-color: rgba(123, 183, 255, 0.24);
+        border-color: rgba(130, 194, 255, 0.24);
         box-shadow:
           0 12px 28px rgba(0, 0, 0, 0.2),
-          inset 0 1px 0 rgba(127, 215, 209, 0.06);
+          inset 0 1px 0 rgba(127, 231, 220, 0.06);
         transform: translateY(-1px);
       }
       .abbr {
@@ -575,17 +575,17 @@ footer.sticky-bottom {
           display: inline-block;
           min-width: 4.55rem;
           padding: 0.13rem 0.54rem 0.14rem;
-          border: 1px solid rgba(123, 183, 255, 0.6);
+          border: 1px solid rgba(130, 194, 255, 0.6);
           border-radius: 5px;
           color: rgba(246, 250, 255, 0.95);
           background:
-            linear-gradient(180deg, rgba(25, 68, 118, 0.52), rgba(8, 18, 31, 0.94)),
-            linear-gradient(90deg, rgba(123, 183, 255, 0.16), rgba(127, 215, 209, 0.07));
+            linear-gradient(180deg, rgba(25, 68, 118, 0.52), rgba(13, 20, 29, 0.94)),
+            linear-gradient(90deg, rgba(130, 194, 255, 0.16), rgba(127, 231, 220, 0.07));
           box-shadow:
             inset 0 0 0 1px rgba(238, 246, 255, 0.075),
             inset 0 1px 0 rgba(238, 246, 255, 0.14),
-            0 0 8px rgba(63, 129, 220, 0.24),
-            0 0 1px rgba(123, 183, 255, 0.5);
+            0 0 8px rgba(74, 139, 210, 0.24),
+            0 0 1px rgba(130, 194, 255, 0.5);
           font-size: 0.68rem;
           font-weight: 800;
           letter-spacing: 0.035em;
@@ -618,17 +618,17 @@ footer.sticky-bottom {
           padding: 0.14rem 0.62rem 0.155rem;
           border: 1px solid transparent;
           border-radius: 6px;
-          color: #fbfdff;
+          color: #fff5df;
           overflow: hidden;
           background-image:
             radial-gradient(120% 100% at 50% 0%, rgba(230, 246, 255, 0.12), transparent 55%),
-            linear-gradient(180deg, rgba(18, 48, 84, 0.98), rgba(6, 18, 33, 0.99)),
-            linear-gradient(112deg, rgba(114, 239, 221, 0.98), rgba(116, 178, 255, 1) 42%, rgba(185, 151, 255, 0.76) 70%, rgba(236, 186, 119, 0.88));
+            linear-gradient(180deg, rgba(18, 48, 84, 0.98), rgba(7, 11, 16, 0.99)),
+            linear-gradient(112deg, rgba(113, 234, 223, 0.98), rgba(130, 194, 255, 1) 42%, rgba(169, 154, 199, 0.76) 70%, rgba(225, 189, 115, 0.88));
           background-origin: border-box;
           background-clip: padding-box, border-box;
           box-shadow:
-            0 9px 24px rgba(45, 126, 220, 0.26),
-            0 0 19px rgba(114, 239, 221, 0.2),
+            0 9px 24px rgba(74, 139, 210, 0.26),
+            0 0 19px rgba(113, 234, 223, 0.2),
             inset 0 1px 0 rgba(255, 255, 255, 0.2),
             inset 0 -1px 0 rgba(0, 0, 0, 0.56);
           font-size: 0.7rem;
@@ -650,31 +650,28 @@ footer.sticky-bottom {
         font-size: 1.02rem;
       }
       .author {
-        color: rgba(155, 168, 184, 0.78);
+        color: rgba(190, 200, 213, 0.86);
         line-height: 1.45;
         font-size: 0.9rem;
         a {
           color: inherit;
           border-bottom: 0;
           &:hover {
-            color: rgba(215, 221, 230, 0.9);
+            color: rgba(220, 228, 239, 0.9);
             text-decoration: none;
           }
         }
         .pub-author-name,
         .pub-author-link {
-          color: rgba(155, 168, 184, 0.78);
+          color: rgba(190, 200, 213, 0.86);
         }
         .pub-author-link:hover {
-          color: rgba(215, 221, 230, 0.92);
+          color: rgba(232, 238, 247, 0.94);
         }
         em {
           font-style: normal;
-          font-weight: bold;
-          background: linear-gradient(90deg, #8ec5ff, #7fe7dc);
-          -webkit-background-clip: text;
-          background-clip: text;
-          -webkit-text-fill-color: transparent;
+          font-weight: 760;
+          color: #8eddea;
         }
         .pub-author-self {
           color: inherit;
@@ -694,8 +691,8 @@ footer.sticky-bottom {
         margin-top: 0.5rem;
 
         a.btn {
-          color: rgba(215, 221, 230, 0.78);
-          border: 1px solid rgba(155, 168, 184, 0.46);
+          color: rgba(220, 228, 239, 0.78);
+          border: 1px solid rgba(168, 179, 194, 0.46);
           padding: 0.09rem 0.42rem;
           margin: 0.2rem 0.12rem 0 0;
           border-radius: 4px;
@@ -703,8 +700,8 @@ footer.sticky-bottom {
           letter-spacing: 0;
           &:hover {
             color: var(--profile-blue);
-            border-color: rgba(123, 183, 255, 0.72);
-            background: rgba(123, 183, 255, 0.06);
+            border-color: rgba(130, 194, 255, 0.72);
+            background: rgba(130, 194, 255, 0.06);
           }
         }
       }
@@ -715,7 +712,7 @@ footer.sticky-bottom {
 
       .periodical {
         margin-top: 0.14rem;
-        color: rgba(215, 221, 230, 0.78);
+        color: rgba(220, 228, 239, 0.78);
         font-size: 0.92rem;
         line-height: 1.38;
       }
@@ -860,7 +857,7 @@ html.transition *:after {
 }
 
 .contact-info {
-  color: rgba(155, 168, 184, 0.78);
+  color: rgba(168, 179, 194, 0.78);
   background-color: transparent;
   padding: 0;
   border-radius: 0;
@@ -895,7 +892,7 @@ html.transition *:after {
   }
 
   hr {
-    border-color: rgba(123, 183, 255, 0.13) !important;
+    border-color: rgba(130, 194, 255, 0.13) !important;
   }
 }
 
@@ -911,7 +908,7 @@ html.transition *:after {
 .section-kicker {
   display: block;
   margin-bottom: 0.48rem;
-  color: rgba(201, 148, 99, 0.82);
+  color: rgba(211, 161, 95, 0.94);
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -920,7 +917,7 @@ html.transition *:after {
 }
 
 .section-kicker--quiet {
-  color: rgba(201, 148, 99, 0.68);
+  color: rgba(211, 161, 95, 0.78);
 }
 
 .research-core {
@@ -936,41 +933,85 @@ html.transition *:after {
 }
 
 .research-core__statement .rs-focus {
-  color: #dce4ef;
+  color: var(--profile-text);
   font-weight: 650;
 }
 
 .research-core__statement .rs-strong {
-  color: #dce4ef;
+  color: var(--profile-text);
   font-weight: 700;
 }
 
 .research-core__statement .rs-goal-em {
-  color: rgba(215, 221, 230, 0.88);
+  color: rgba(220, 228, 239, 0.88);
   font-style: italic;
   font-weight: 430;
 }
 
 .research-core__statement .rs-link {
-  color: #7bb7ff;
+  color: var(--profile-blue);
   font-family: inherit;
   font-weight: 600;
   text-decoration: none;
 }
 
 .research-core__statement .rs-link:hover {
-  color: #9fcbff;
+  color: #b7dbff;
+  text-decoration: none;
+}
+
+.research-core__statement .rs-badge-group {
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.2em;
+  margin: 0 0.08em;
+  vertical-align: 0.08em;
+}
+
+.research-core__statement .rs-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.6em;
+  padding: 0.05em 0.4em 0.065em;
+  border: 1px solid rgba(225, 189, 115, 0.78);
+  border-radius: 5px;
+  color: #fff5df;
+  background:
+    linear-gradient(180deg, rgba(92, 66, 28, 0.96), rgba(35, 25, 13, 0.98)),
+    radial-gradient(120% 90% at 20% 0%, rgba(255, 230, 177, 0.28), transparent 58%);
+  box-shadow:
+    0 0 0 1px rgba(5, 12, 22, 0.68),
+    0 0 8px rgba(225, 189, 115, 0.14),
+    inset 0 1px 0 rgba(255, 245, 220, 0.12);
+  font-size: 0.7em;
+  font-weight: 820;
+  letter-spacing: 0.02em;
+  line-height: 1.12;
+  text-decoration: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.42);
+  white-space: nowrap;
+}
+
+.research-core__statement .rs-badge:hover {
+  color: #fff9ea;
+  border-color: rgba(255, 219, 150, 0.95);
+  box-shadow:
+    0 0 0 1px rgba(5, 12, 22, 0.72),
+    0 0 13px rgba(225, 189, 115, 0.26),
+    inset 0 1px 0 rgba(255, 245, 220, 0.18);
   text-decoration: none;
 }
 
 .research-core__statement .rs-outcome {
-  color: rgba(215, 221, 230, 0.94);
+  color: rgba(220, 228, 239, 0.94);
   font-style: italic;
   font-weight: inherit;
 }
 
 .research-core__statement .rs-label {
-  color: rgba(215, 221, 230, 0.9);
+  color: rgba(220, 228, 239, 0.9);
   font-size: inherit;
   font-weight: 400;
   letter-spacing: 0;
@@ -990,13 +1031,13 @@ html.transition *:after {
   flex: 0 0 auto;
   margin-bottom: 0.76rem;
   padding-bottom: 0.58rem;
-  border-bottom: 1px solid rgba(123, 183, 255, 0.16);
+  border-bottom: 1px solid rgba(130, 194, 255, 0.16);
   background:
-    linear-gradient(180deg, rgba(8, 13, 19, 0.98), rgba(8, 13, 19, 0.92));
+    linear-gradient(180deg, rgba(7, 11, 16, 0.98), rgba(7, 11, 16, 0.92));
 
   h2 {
     margin: 0;
-    color: rgba(201, 148, 99, 0.82);
+    color: rgba(211, 161, 95, 0.82);
     font-size: 0.72rem;
     font-weight: 800;
     line-height: 1.15;
@@ -1007,7 +1048,7 @@ html.transition *:after {
   p {
     max-width: 100%;
     margin: 0.36rem 0 0;
-    color: rgba(155, 168, 184, 0.78);
+    color: rgba(168, 179, 194, 0.78);
     font-size: 0.82rem;
     line-height: 1.42;
     white-space: nowrap;
@@ -1025,12 +1066,13 @@ html.transition *:after {
   position: relative;
   display: block;
   counter-increment: research-signal;
-  border: 1px solid rgba(123, 183, 255, 0.09);
+  border: 1px solid rgba(130, 194, 255, 0.12);
+  border-left: 1px solid rgba(130, 194, 255, 0.2);
   border-radius: 6px;
   padding: 0.75rem 0.78rem 0.78rem;
   color: inherit;
   background:
-    linear-gradient(145deg, rgba(15, 24, 34, 0.94), rgba(8, 13, 19, 0.98) 70%, rgba(13, 22, 32, 0.95));
+    linear-gradient(145deg, rgba(18, 28, 39, 0.96), rgba(5, 9, 14, 0.99) 68%, rgba(21, 34, 49, 0.96));
   box-shadow:
     0 7px 18px rgba(0, 0, 0, 0.12),
     inset 0 1px 0 rgba(255, 255, 255, 0.025);
@@ -1042,7 +1084,7 @@ html.transition *:after {
     position: absolute;
     top: 0.78rem;
     right: 0.78rem;
-    color: rgba(123, 183, 255, 0.36);
+    color: rgba(130, 194, 255, 0.38);
     font-size: 0.64rem;
     font-weight: 800;
     letter-spacing: 0.04em;
@@ -1058,7 +1100,7 @@ html.transition *:after {
 
   p {
     margin: 0;
-    color: rgba(215, 221, 230, 0.82);
+    color: rgba(220, 228, 239, 0.82);
     font-size: 0.76rem;
     line-height: 1.42;
   }
@@ -1066,9 +1108,10 @@ html.transition *:after {
 
 .research-signal-card:hover,
 .research-signal-card:focus {
-  border-color: rgba(123, 183, 255, 0.18);
+  border-color: rgba(130, 194, 255, 0.26);
+  border-left-color: rgba(113, 234, 223, 0.32);
   background:
-    linear-gradient(145deg, rgba(16, 25, 35, 0.98), rgba(8, 13, 19, 0.99) 70%, rgba(14, 24, 34, 0.98));
+    linear-gradient(145deg, rgba(21, 34, 49, 0.99), rgba(5, 9, 14, 0.99) 68%, rgba(22, 36, 51, 0.99));
   box-shadow:
     0 10px 22px rgba(0, 0, 0, 0.16),
     inset 0 1px 0 rgba(255, 255, 255, 0.03);
@@ -1077,7 +1120,7 @@ html.transition *:after {
 }
 
 .research-signal-card:focus-visible {
-  outline: 2px solid rgba(123, 183, 255, 0.62);
+  outline: 2px solid rgba(130, 194, 255, 0.62);
   outline-offset: 3px;
 }
 
@@ -1098,13 +1141,13 @@ html.transition *:after {
   height: 1.62rem;
   flex: 0 0 1.62rem;
   overflow: hidden;
-  border: 1px solid rgba(123, 183, 255, 0.18);
+  border: 1px solid rgba(130, 194, 255, 0.18);
   border-radius: 50%;
   color: rgba(238, 246, 255, 0.84);
   font-size: 0.68rem;
   font-weight: 800;
   background:
-    radial-gradient(circle at 34% 28%, rgba(127, 215, 209, 0.18), rgba(47, 111, 181, 0.14) 42%, rgba(8, 13, 19, 0.98) 74%);
+    radial-gradient(circle at 34% 28%, rgba(127, 231, 220, 0.18), rgba(63, 127, 195, 0.14) 42%, rgba(7, 11, 16, 0.98) 74%);
 
   img {
     display: block;
@@ -1126,7 +1169,7 @@ html.transition *:after {
 
   span {
     display: block;
-    color: rgba(155, 168, 184, 0.78);
+    color: rgba(168, 179, 194, 0.78);
     font-size: 0.64rem;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1135,7 +1178,7 @@ html.transition *:after {
 
 .research-signal-card__x {
   margin-left: auto;
-  color: rgba(215, 221, 230, 0.42);
+  color: rgba(220, 228, 239, 0.42);
   font-size: 0.68rem;
   font-weight: 800;
   line-height: 1;
@@ -1151,7 +1194,7 @@ html.transition *:after {
     border: 0;
     border-radius: 0;
     padding: 0;
-    color: rgba(155, 168, 184, 0.78);
+    color: rgba(168, 179, 194, 0.78);
     font-size: 0.68rem;
     font-weight: 520;
     line-height: 1.35;
@@ -1159,7 +1202,7 @@ html.transition *:after {
 
     &::before {
       content: "#";
-      color: rgba(123, 183, 255, 0.56);
+      color: rgba(130, 194, 255, 0.46);
     }
   }
 }
@@ -1183,8 +1226,8 @@ html.transition *:after {
     display: grid;
     gap: 1.42rem;
     padding-left: 0.95rem;
-    border-left: 1px solid rgba(201, 148, 99, 0.14);
-    background: linear-gradient(90deg, rgba(201, 148, 99, 0.032), rgba(201, 148, 99, 0) 8.5rem);
+    border-left: 1px solid rgba(211, 161, 95, 0.14);
+    background: linear-gradient(90deg, rgba(211, 161, 95, 0.032), rgba(211, 161, 95, 0) 8.5rem);
   }
 
   .research-signals {
@@ -1204,7 +1247,7 @@ html.transition *:after {
     overflow-y: auto;
     overscroll-behavior: contain;
     padding-right: 0.25rem;
-    scrollbar-color: rgba(123, 183, 255, 0.34) rgba(123, 183, 255, 0.06);
+    scrollbar-color: rgba(130, 194, 255, 0.34) rgba(130, 194, 255, 0.06);
     scrollbar-width: thin;
 
     &::-webkit-scrollbar {
@@ -1212,12 +1255,12 @@ html.transition *:after {
     }
 
     &::-webkit-scrollbar-track {
-      background: rgba(123, 183, 255, 0.045);
+      background: rgba(130, 194, 255, 0.045);
       border-radius: 999px;
     }
 
     &::-webkit-scrollbar-thumb {
-      background: rgba(123, 183, 255, 0.3);
+      background: rgba(130, 194, 255, 0.3);
       border-radius: 999px;
     }
   }
@@ -1238,12 +1281,12 @@ html.transition *:after {
   max-width: 900px !important;
   margin: 0 auto 2.35rem;
   overflow: hidden;
-  border: 1px solid rgba(123, 183, 255, 0.13);
-  border-left: 1px solid rgba(123, 183, 255, 0.62);
+  border: 1px solid rgba(130, 194, 255, 0.2);
+  border-left: 2px solid rgba(225, 189, 115, 0.7);
   border-radius: 5px;
   background:
-    linear-gradient(135deg, rgba(13, 22, 32, 0.72), rgba(8, 13, 19, 0.92) 58%, rgba(10, 18, 27, 0.78)),
-    radial-gradient(circle at 50% 0%, rgba(123, 183, 255, 0.07), rgba(123, 183, 255, 0) 42%);
+    linear-gradient(135deg, rgba(21, 34, 49, 0.86), rgba(5, 9, 14, 0.94) 58%, rgba(15, 23, 33, 0.86)),
+    radial-gradient(circle at 50% 0%, rgba(113, 234, 223, 0.12), rgba(113, 234, 223, 0) 42%);
   box-shadow:
     0 7px 18px rgba(0, 0, 0, 0.11),
     inset 0 1px 0 rgba(238, 246, 255, 0.035);
@@ -1251,30 +1294,30 @@ html.transition *:after {
 
 .research-thesis-card__inner {
   padding: 0.78rem 1.24rem;
-  border-left: 1px solid rgba(201, 148, 99, 0.12);
+  border-left: 1px solid rgba(211, 161, 95, 0.12);
   text-align: center;
 }
 
 .profile-opportunity-card {
   margin: 0 0 1.55rem;
   padding: 0.72rem 1rem;
-  color: #d7dde6;
+  color: var(--profile-text);
   border: 0;
-  border-left: 3px solid #c99463;
+  border-left: 3px solid var(--profile-gold);
   border-radius: 0 4px 4px 0;
-  background: linear-gradient(135deg, rgba(201, 148, 99, 0.13), rgba(123, 183, 255, 0.045));
+  background: linear-gradient(135deg, rgba(211, 161, 95, 0.18), rgba(130, 194, 255, 0.055));
   box-shadow: none;
   font-size: 0.98rem;
   line-height: 1.58;
 }
 
 .profile-opportunity-card__label {
-  color: #c99463;
+  color: var(--profile-gold);
   font-weight: 700;
 }
 
 .research-thesis-line {
-  color: #d7dde6;
+  color: var(--profile-text);
   font-family: inherit;
   font-size: 1.06em;
   font-style: normal;
@@ -1283,14 +1326,14 @@ html.transition *:after {
   line-height: 1.55;
 
   em {
-    color: rgba(215, 221, 230, 0.92);
+    color: rgba(220, 228, 239, 0.92);
     font-style: italic;
     font-weight: 400 !important;
   }
 }
 
 .research-thesis-line__focus {
-  color: #8ec5ff;
+  color: var(--profile-blue);
   font-family: inherit;
   font-weight: 500 !important;
 }
@@ -1311,7 +1354,7 @@ html.transition *:after {
       width: 3.25rem;
       height: 1px;
       margin-top: 0.52rem;
-      background: linear-gradient(90deg, rgba(201, 148, 99, 0.52), rgba(123, 183, 255, 0.28), rgba(201, 148, 99, 0));
+      background: linear-gradient(90deg, rgba(211, 161, 95, 0.52), rgba(130, 194, 255, 0.28), rgba(211, 161, 95, 0));
     }
   }
 
@@ -1341,7 +1384,7 @@ html.transition *:after {
       width: 5.15rem;
       min-width: 5.15rem;
       padding-right: 1.1rem;
-      color: rgba(155, 168, 184, 0.66);
+      color: rgba(168, 179, 194, 0.66);
       font-size: 0.74rem;
       font-weight: 700;
       text-align: right;
@@ -1353,15 +1396,20 @@ html.transition *:after {
       font-size: 0.88rem;
       padding-left: 1.35rem;
       position: relative;
-      color: rgba(215, 221, 230, 0.9);
+      color: rgba(220, 228, 239, 0.9);
 
       .news-title,
       a.news-title {
-        color: rgba(201, 148, 99, 0.92);
+        color: rgba(225, 189, 115, 0.84);
         text-decoration: none;
+      }
+
+      a.news-title:hover {
+        color: #ffe2a6;
       }
     }
   }
+
 }
 
 @media (max-width: 575px) {
@@ -1401,37 +1449,6 @@ html.transition *:after {
   }
 }
 
-.aurora-text {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 3.05em;
-  padding: 0.075em 0.46em 0.09em;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  color: #fbfdff;
-  overflow: hidden;
-  font-size: 0.82em;
-  font-weight: 840;
-  line-height: 1;
-  letter-spacing: 0.018em;
-  background-image:
-    radial-gradient(120% 100% at 50% 0%, rgba(230, 246, 255, 0.1), transparent 55%),
-    linear-gradient(180deg, rgba(18, 48, 84, 0.98), rgba(6, 18, 33, 0.99)),
-    linear-gradient(112deg, rgba(114, 239, 221, 0.9), rgba(116, 178, 255, 0.95) 42%, rgba(185, 151, 255, 0.62) 70%, rgba(236, 186, 119, 0.76));
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  box-shadow:
-    0 5px 16px rgba(45, 126, 220, 0.22),
-    0 0 12px rgba(114, 239, 221, 0.16),
-    inset 0 1px 0 rgba(255, 255, 255, 0.16),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.52);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.44);
-  vertical-align: 0.08em;
-  white-space: nowrap;
-}
-
 .bridge-symbol {
   display: inline-block;
   margin-left: 0.08em;
@@ -1449,62 +1466,17 @@ html.transition *:after {
   }
 }
 
-/* Conference seals: stronger prestige signal without glossy UI heaviness */
-.aurora-text {
-  min-width: 3.38em;
-  padding: 0.105em 0.52em 0.12em;
-  border-radius: 6px;
-  font-size: 0.92em;
-  font-weight: 880;
-  letter-spacing: 0.018em;
-  background-image:
-    radial-gradient(120% 90% at 50% 0%, rgba(238, 248, 255, 0.18), transparent 58%),
-    linear-gradient(180deg, rgba(22, 64, 111, 0.98), rgba(7, 19, 34, 0.99)),
-    linear-gradient(112deg, rgba(118, 228, 216, 0.98), rgba(125, 187, 255, 1) 46%, rgba(215, 163, 106, 0.78));
-  box-shadow:
-    0 0 0 1px rgba(125, 187, 255, 0.18),
-    0 0 18px rgba(125, 187, 255, 0.36),
-    0 0 30px rgba(118, 228, 216, 0.14),
-    inset 0 1px 0 rgba(255, 255, 255, 0.18),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.48);
-  vertical-align: 0.06em;
-}
-
 .publications ol.bibliography li .periodical {
   display: block;
   width: fit-content;
   margin-top: 0.3rem;
   padding-left: 0.62rem;
-  border-left: 2px solid rgba(123, 183, 255, 0.34);
-  color: rgba(215, 221, 230, 0.78);
+  border-left: 2px solid rgba(113, 234, 223, 0.32);
+  color: rgba(220, 228, 239, 0.78);
   font-size: 0.92rem;
   font-style: italic;
   line-height: 1.42;
   letter-spacing: 0;
-}
-
-.publications ol.bibliography li .abbr .venue-neurips,
-.publications ol.bibliography li .abbr .venue-cvpr,
-.publications ol.bibliography li .abbr .venue-iclr,
-.publications ol.bibliography li .abbr .venue-iccv,
-.publications ol.bibliography li .abbr .venue-eccv {
-  min-width: 5.3rem;
-  padding: 0.2rem 0.74rem 0.22rem;
-  border-radius: 7px;
-  font-size: 0.82rem;
-  font-weight: 880;
-  letter-spacing: 0.028em;
-  background-image:
-    radial-gradient(120% 90% at 50% 0%, rgba(238, 248, 255, 0.18), transparent 58%),
-    linear-gradient(180deg, rgba(22, 64, 111, 0.98), rgba(7, 19, 34, 0.99)),
-    linear-gradient(112deg, rgba(118, 228, 216, 0.98), rgba(125, 187, 255, 1) 46%, rgba(215, 163, 106, 0.78));
-  box-shadow:
-    0 0 0 1px rgba(125, 187, 255, 0.18),
-    0 0 20px rgba(125, 187, 255, 0.38),
-    0 0 36px rgba(118, 228, 216, 0.14),
-    inset 0 1px 0 rgba(255, 255, 255, 0.18),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.48);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
 }
 
 @media (min-width: 576px) {
@@ -1533,7 +1505,7 @@ html.transition *:after {
   margin: 20px 0;
   border: 4px solid transparent;
   border-radius: 15px;
-  background-image: linear-gradient(#2d3748, #2d3748),
+  background-image: linear-gradient(#121c27, #121c27),
     linear-gradient(
       45deg,
       var(--profile-blue),
@@ -1563,7 +1535,7 @@ html.transition *:after {
 
 .research-signals__header p {
   max-width: 100%;
-  color: rgba(215, 221, 230, 0.94);
+  color: rgba(220, 228, 239, 0.94);
   font-size: 0.9rem;
   line-height: 1.45;
   white-space: normal;
@@ -1594,7 +1566,7 @@ html.transition *:after {
   position: absolute;
   top: -1.08rem;
   left: 0;
-  color: rgba(201, 148, 99, 0.84);
+  color: rgba(211, 161, 95, 0.84);
   font-size: 0.61rem;
   font-weight: 820;
   letter-spacing: 0.12em;
@@ -1612,9 +1584,9 @@ html.transition *:after {
 
 .news h2::after,
 .publications h2::after {
-  width: 4.2rem;
+  width: 5.4rem;
   margin-top: 0.62rem;
-  background: linear-gradient(90deg, rgba(201, 148, 99, 0.62), rgba(123, 183, 255, 0.36), rgba(127, 215, 209, 0));
+  background: linear-gradient(90deg, rgba(225, 189, 115, 0.86), rgba(130, 194, 255, 0.44), rgba(113, 234, 223, 0));
 }
 
 .publications h2 a {
@@ -1641,14 +1613,14 @@ html.transition *:after {
   align-items: center;
   justify-content: center;
   color: #fff5df;
-  border: 1px solid rgba(217, 179, 106, 0.82);
+  border: 1px solid rgba(225, 189, 115, 0.9);
   background:
-    linear-gradient(180deg, rgba(76, 55, 24, 0.95), rgba(30, 22, 12, 0.98)),
-    radial-gradient(120% 90% at 20% 0%, rgba(255, 226, 169, 0.22), transparent 58%),
-    linear-gradient(112deg, rgba(217, 179, 106, 0.42), rgba(255, 242, 202, 0.16));
+    linear-gradient(180deg, rgba(92, 66, 28, 0.98), rgba(35, 25, 13, 0.99)),
+    radial-gradient(120% 90% at 20% 0%, rgba(255, 230, 177, 0.34), transparent 58%),
+    linear-gradient(112deg, rgba(225, 189, 115, 0.54), rgba(255, 242, 202, 0.2));
   box-shadow:
     0 0 0 1px rgba(5, 12, 22, 0.82),
-    0 0 14px rgba(217, 179, 106, 0.22),
+    0 0 18px rgba(225, 189, 115, 0.28),
     0 8px 22px rgba(0, 0, 0, 0.18),
     inset 0 1px 0 rgba(255, 245, 220, 0.16);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.46);
@@ -1701,12 +1673,12 @@ html.transition *:after {
   .publications ol.bibliography li {
     margin-bottom: 0;
     padding: 0.76rem 0.78rem 0.84rem;
-    border: 1px solid rgba(123, 183, 255, 0.105);
-    border-left: 1px solid rgba(201, 148, 99, 0.19);
+    border: 1px solid rgba(130, 194, 255, 0.12);
+    border-left: 1px solid rgba(225, 189, 115, 0.24);
     border-radius: 7px;
     background:
-      linear-gradient(90deg, rgba(123, 183, 255, 0.042), rgba(123, 183, 255, 0.012) 48%, rgba(8, 13, 19, 0) 100%),
-      linear-gradient(180deg, rgba(15, 24, 34, 0.2), rgba(8, 13, 19, 0.04));
+      linear-gradient(90deg, rgba(130, 194, 255, 0.038), rgba(130, 194, 255, 0.01) 48%, rgba(7, 11, 16, 0) 100%),
+      linear-gradient(180deg, rgba(13, 20, 29, 0.2), rgba(7, 11, 16, 0.04));
     scroll-margin-top: calc(3.8rem + env(safe-area-inset-top));
   }
 
@@ -1789,7 +1761,7 @@ html.transition *:after {
     align-items: center;
     min-height: 1.35rem;
     margin: 0;
-    color: rgba(215, 221, 230, 0.68);
+    color: rgba(220, 228, 239, 0.68);
     font-size: 0.64rem;
     font-weight: 760;
     letter-spacing: 0.03em;
@@ -1819,12 +1791,12 @@ html.transition *:after {
   .publications ol.bibliography li {
     margin-bottom: 0;
     padding: 0.98rem 1.12rem 1.02rem;
-    border: 1px solid rgba(123, 183, 255, 0.095);
-    border-left: 1px solid rgba(201, 148, 99, 0.2);
+    border: 1px solid rgba(130, 194, 255, 0.115);
+    border-left: 1px solid rgba(225, 189, 115, 0.26);
     border-radius: 7px;
     background:
-      linear-gradient(90deg, rgba(123, 183, 255, 0.045), rgba(123, 183, 255, 0.012) 38%, rgba(8, 13, 19, 0) 100%),
-      linear-gradient(180deg, rgba(15, 24, 34, 0.2), rgba(8, 13, 19, 0.04));
+      linear-gradient(90deg, rgba(130, 194, 255, 0.04), rgba(130, 194, 255, 0.01) 38%, rgba(7, 11, 16, 0) 100%),
+      linear-gradient(180deg, rgba(13, 20, 29, 0.2), rgba(7, 11, 16, 0.04));
     box-shadow:
       inset 0 1px 0 rgba(238, 246, 255, 0.018),
       0 12px 30px rgba(0, 0, 0, 0.045);
@@ -1878,7 +1850,7 @@ html.transition *:after {
 
   .publications ol.bibliography li .author {
     max-width: 92ch;
-    color: rgba(155, 168, 184, 0.78);
+    color: rgba(190, 200, 213, 0.86);
     font-size: 0.89rem;
     line-height: 1.43;
   }
@@ -1886,8 +1858,8 @@ html.transition *:after {
   .publications ol.bibliography li .periodical {
     margin-top: 0.42rem;
     padding-left: 0.68rem;
-    color: rgba(215, 221, 230, 0.74);
-    border-left-color: rgba(123, 183, 255, 0.42);
+    color: rgba(220, 228, 239, 0.74);
+    border-left-color: rgba(113, 234, 223, 0.38);
     font-size: 0.9rem;
   }
 
@@ -1914,7 +1886,7 @@ html.transition *:after {
     align-items: center;
     min-height: 1.5rem;
     margin: 0;
-    color: rgba(215, 221, 230, 0.68);
+    color: rgba(220, 228, 239, 0.68);
     font-size: 0.68rem;
     font-weight: 760;
     letter-spacing: 0.03em;
@@ -1953,7 +1925,7 @@ html.transition *:after {
     z-index: 5;
     margin-right: 0.25rem;
     background:
-      linear-gradient(180deg, rgba(8, 13, 19, 0.98) 0%, rgba(8, 13, 19, 0.94) 72%, rgba(8, 13, 19, 0.78) 100%);
+      linear-gradient(180deg, rgba(7, 11, 16, 0.98) 0%, rgba(7, 11, 16, 0.94) 72%, rgba(7, 11, 16, 0.78) 100%);
     backdrop-filter: blur(8px);
   }
 }
@@ -2042,7 +2014,7 @@ html.transition *:after {
   .contact-info {
     display: block;
     margin-top: 0.78rem;
-    color: rgba(155, 168, 184, 0.74);
+    color: rgba(168, 179, 194, 0.74);
     font-size: 0.68rem;
     text-align: center;
     overflow-wrap: anywhere;
@@ -2106,7 +2078,7 @@ html.transition *:after {
   .news table.table tr {
     padding-top: 0.58rem;
     padding-bottom: 0.62rem;
-    border-bottom: 1px solid rgba(123, 183, 255, 0.08);
+    border-bottom: 1px solid rgba(130, 194, 255, 0.08);
   }
 
   .news table.table tr:last-child {
@@ -2114,7 +2086,7 @@ html.transition *:after {
   }
 
   .news table.table th {
-    color: rgba(155, 168, 184, 0.72);
+    color: rgba(168, 179, 194, 0.72);
     font-size: 0.62rem;
     letter-spacing: 0.02em;
   }

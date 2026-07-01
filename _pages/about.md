@@ -6,7 +6,7 @@ description: Anh Nguyen is an incoming Ph.D. student in Electrical and Computer 
 keywords: Anh Nguyen, Anh Nguyen JHU, Anh Nguyen Johns Hopkins, Johns Hopkins University, ECE Ph.D. student, Qualcomm AI Research, generative modeling, diffusion models, multimodal intelligence
 subtitle: |+
   <div style="font-size: 1.05em; line-height: 1.6; margin-bottom: 20px;">
-    Incoming <span style="color: #7bb7ff; font-weight: bold;">Ph.D. student in Electrical and Computer Engineering</span> at <a href="https://www.jhu.edu/" target="_blank" style="color: #7bb7ff; text-decoration: none;">Johns Hopkins University</a> in Fall 2026. Currently, I am a <span style="color: #7bb7ff; font-weight: bold;">Predoctoral Research Resident</span> at <a href="https://www.qualcomm.com/research/artificial-intelligence" target="_blank" style="color: #7bb7ff; text-decoration: none;">Qualcomm AI Research</a>, advised by Principal Scientist <a href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en" target="_blank" style="color: #7bb7ff; text-decoration: none;">Dr. Anh Tran</a>.
+    Incoming <span style="color: var(--profile-blue); font-weight: bold;">Ph.D. student in Electrical and Computer Engineering</span> at <a href="https://www.jhu.edu/" target="_blank" style="color: var(--profile-blue); text-decoration: none;">Johns Hopkins University</a> in Fall 2026. Currently, I am a <span style="color: var(--profile-blue); font-weight: bold;">Predoctoral Research Resident</span> at <a href="https://www.qualcomm.com/research/artificial-intelligence" target="_blank" style="color: var(--profile-blue); text-decoration: none;">Qualcomm AI Research</a>, advised by Principal Scientist <a href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en" target="_blank" style="color: var(--profile-blue); text-decoration: none;">Dr. Anh Tran</a>.
   </div>
 
   <div class="profile-opportunity-card">
@@ -41,7 +41,7 @@ social: true  # includes social icons at the bottom of a page
       <div class="section-kicker">Research Statement</div>
       My long-term goal is to build systems capable of <span class="rs-goal-em">understanding, reasoning, planning,</span> and <span class="rs-goal-em">acquiring physical intuition</span> about the world, while designed to be <span class="rs-goal-em">efficient, scalable, and controllable</span>.
       <br><br>
-      Toward this goal, my recent work on <a class="rs-link" href="#selected-publications">One-step Generative Modeling & Distillation</a> (<a class="rs-link" href="#selected-publications">ECCV, NeurIPS & ICCV</a>) enables <span class="rs-outcome">real-time, high-fidelity synthesis</span>, while my work on <a class="rs-link" href="#selected-publications">Multimodal Representation</a> (<a class="rs-link" href="#selected-publications">CVPR, ICCV</a>) exposes internal semantics for <span class="rs-outcome">zero-shot, fine-grained control</span>.
+      Toward this goal, my recent work on <a class="rs-link" href="#selected-publications">One-step Generative Modeling & Distillation</a> <span class="rs-badge-group"><a class="rs-badge" href="#selected-publications">ECCV</a><a class="rs-badge" href="#selected-publications">NeurIPS</a><a class="rs-badge" href="#selected-publications">ICCV</a></span> enables <span class="rs-outcome">real-time, high-fidelity synthesis</span>, while my work on <a class="rs-link" href="#selected-publications">Multimodal Representation</a> <span class="rs-badge-group"><a class="rs-badge" href="#selected-publications">CVPR</a><a class="rs-badge" href="#selected-publications">ICCV</a></span> exposes internal semantics for <span class="rs-outcome">zero-shot, fine-grained control</span>.
       <br><br>
       <span class="rs-label">Research Ownership:</span> I can independently lead the entire research lifecycle for top-tier conferences, driving projects from problem formulation and experimentation through final publication.
     </div>
@@ -69,7 +69,14 @@ social: true  # includes social icons at the bottom of a page
             <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
             <td>
               {% if item.inline -%}
-                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                {%- if item.summary -%}
+                  {%- capture news_summary -%}
+                    {{ item.summary | markdownify | remove: '<p>' | remove: '</p>' | emojify }}
+                  {%- endcapture -%}
+                  {{ news_summary | strip }}
+                {%- else -%}
+                  {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                {%- endif -%}
               {%- else -%}
                 <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
               {%- endif %}
