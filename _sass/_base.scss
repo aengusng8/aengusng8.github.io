@@ -1414,18 +1414,18 @@ html.transition *:after {
 
 @media (max-width: 575px) {
   .research-thesis-card {
-    margin-bottom: 1.85rem;
+    margin-bottom: 1.45rem;
   }
 
   .research-thesis-card__inner {
-    padding: 0.9rem 1rem;
+    padding: 0.72rem 0.82rem;
   }
 
   .news {
     table.table {
       tr {
         display: block;
-        padding: 0.72rem 0;
+        padding: 0.58rem 0 0.66rem;
       }
 
       th,
@@ -1437,7 +1437,7 @@ html.transition *:after {
       }
 
       th {
-        padding: 0 0 0.25rem 0;
+        padding: 0 0 0.18rem 0;
         text-align: left;
         background: transparent;
       }
@@ -1667,17 +1667,17 @@ html.transition *:after {
 
   .publications ol.bibliography {
     display: grid;
-    gap: 0.68rem;
+    gap: 0.56rem;
   }
 
   .publications ol.bibliography li {
     margin-bottom: 0;
-    padding: 0.76rem 0.78rem 0.84rem;
-    border: 1px solid rgba(130, 194, 255, 0.12);
-    border-left: 1px solid rgba(225, 189, 115, 0.24);
+    padding: 0.66rem 0.7rem 0.72rem;
+    border: 1px solid rgba(130, 194, 255, 0.105);
+    border-left: 1px solid rgba(225, 189, 115, 0.2);
     border-radius: 7px;
     background:
-      linear-gradient(90deg, rgba(130, 194, 255, 0.038), rgba(130, 194, 255, 0.01) 48%, rgba(7, 11, 16, 0) 100%),
+      linear-gradient(90deg, rgba(130, 194, 255, 0.03), rgba(130, 194, 255, 0.008) 48%, rgba(7, 11, 16, 0) 100%),
       linear-gradient(180deg, rgba(13, 20, 29, 0.2), rgba(7, 11, 16, 0.04));
     scroll-margin-top: calc(3.8rem + env(safe-area-inset-top));
   }
@@ -1703,7 +1703,7 @@ html.transition *:after {
   }
 
   .publications ol.bibliography li .abbr {
-    margin-bottom: 0.58rem;
+    margin-bottom: 0.46rem;
   }
 
   .publications ol.bibliography li .abbr .venue-neurips,
@@ -1711,31 +1711,31 @@ html.transition *:after {
   .publications ol.bibliography li .abbr .venue-iclr,
   .publications ol.bibliography li .abbr .venue-iccv,
   .publications ol.bibliography li .abbr .venue-eccv {
-    min-width: 4.45rem;
-    padding: 0.14rem 0.56rem 0.16rem;
-    font-size: 0.7rem;
+    min-width: 4rem;
+    padding: 0.11rem 0.5rem 0.13rem;
+    font-size: 0.64rem;
     line-height: 1.05;
   }
 
   .publications ol.bibliography li .title {
-    margin-bottom: 0.3rem;
-    font-size: 0.92rem;
+    margin-bottom: 0.26rem;
+    font-size: 0.86rem;
     font-weight: 760;
-    line-height: 1.28;
+    line-height: 1.26;
     overflow-wrap: break-word;
   }
 
   .publications ol.bibliography li .author {
-    font-size: 0.78rem;
-    line-height: 1.42;
+    font-size: 0.74rem;
+    line-height: 1.4;
     overflow-wrap: break-word;
   }
 
   .publications ol.bibliography li .periodical {
-    margin-top: 0.38rem;
-    padding-left: 0.58rem;
-    font-size: 0.76rem;
-    line-height: 1.38;
+    margin-top: 0.34rem;
+    padding-left: 0.52rem;
+    font-size: 0.72rem;
+    line-height: 1.36;
     overflow-wrap: break-word;
   }
 
@@ -1743,8 +1743,8 @@ html.transition *:after {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0.42rem 0.48rem;
-    margin-top: 0.56rem;
+    gap: 0.36rem 0.42rem;
+    margin-top: 0.48rem;
   }
 
   .publications ol.bibliography li .pub-institution-group,
@@ -1759,10 +1759,10 @@ html.transition *:after {
   .publications ol.bibliography li .pub-institution-chip {
     display: inline-flex;
     align-items: center;
-    min-height: 1.35rem;
+    min-height: 1.2rem;
     margin: 0;
-    color: rgba(220, 228, 239, 0.68);
-    font-size: 0.64rem;
+    color: rgba(220, 228, 239, 0.62);
+    font-size: 0.58rem;
     font-weight: 760;
     letter-spacing: 0.03em;
     line-height: 1;
@@ -1774,10 +1774,10 @@ html.transition *:after {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 1.35rem;
+    min-height: 1.22rem;
     margin: 0 !important;
-    padding: 0.14rem 0.44rem;
-    font-size: 0.62rem;
+    padding: 0.12rem 0.4rem;
+    font-size: 0.58rem;
     line-height: 1;
   }
 }
@@ -2005,10 +2005,10 @@ html.transition *:after {
   }
 
   .profile-opportunity-card {
-    margin-bottom: 0.96rem;
-    padding: 0.56rem 0.72rem;
-    font-size: 0.78rem;
-    line-height: 1.46;
+    margin-bottom: 0.86rem;
+    padding: 0.52rem 0.68rem;
+    font-size: 0.75rem;
+    line-height: 1.44;
   }
 
   .contact-info {
@@ -2029,8 +2029,8 @@ html.transition *:after {
     align-items: center;
     justify-content: center;
     gap: 0.72rem;
-    margin-top: 0.58rem;
-    font-size: 1.18rem;
+    margin-top: 0.5rem;
+    font-size: 1.08rem;
   }
 
   .social .contact-icons a {
@@ -2038,18 +2038,18 @@ html.transition *:after {
   }
 
   .research-thesis-card {
-    margin-bottom: 1.18rem;
+    margin-bottom: 1.05rem;
     border-radius: 6px;
   }
 
   .research-thesis-card__inner {
-    padding: 0.72rem 0.78rem;
+    padding: 0.66rem 0.74rem;
     text-align: left;
   }
 
   .research-thesis-line {
-    font-size: 0.84rem;
-    line-height: 1.48;
+    font-size: 0.8rem;
+    line-height: 1.46;
   }
 
   .research-core__statement {
@@ -2066,6 +2066,28 @@ html.transition *:after {
     margin-bottom: 0.12rem;
   }
 
+  .research-core__statement .rs-badge-group {
+    gap: 0.16em;
+    margin: 0 0.04em;
+    vertical-align: 0.04em;
+  }
+
+  .research-core__statement .rs-badge {
+    min-width: 2.25em;
+    padding: 0.035em 0.34em 0.05em;
+    border-color: rgba(225, 189, 115, 0.58);
+    border-radius: 4px;
+    background:
+      linear-gradient(180deg, rgba(76, 55, 24, 0.82), rgba(24, 18, 11, 0.88));
+    box-shadow:
+      0 0 0 1px rgba(5, 12, 22, 0.54),
+      inset 0 1px 0 rgba(255, 245, 220, 0.08);
+    font-size: 0.56em;
+    font-weight: 780;
+    letter-spacing: 0.01em;
+    text-shadow: none;
+  }
+
   .section-kicker {
     margin-bottom: 0.3rem;
     font-size: 0.62rem;
@@ -2076,8 +2098,8 @@ html.transition *:after {
   }
 
   .news table.table tr {
-    padding-top: 0.58rem;
-    padding-bottom: 0.62rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.58rem;
     border-bottom: 1px solid rgba(130, 194, 255, 0.08);
   }
 
@@ -2086,20 +2108,20 @@ html.transition *:after {
   }
 
   .news table.table th {
-    color: rgba(168, 179, 194, 0.72);
-    font-size: 0.62rem;
+    color: rgba(168, 179, 194, 0.66);
+    font-size: 0.58rem;
     letter-spacing: 0.02em;
   }
 
   .news table.table td {
-    font-size: 0.76rem;
-    line-height: 1.46;
+    font-size: 0.72rem;
+    line-height: 1.42;
     overflow-wrap: break-word;
   }
 
   .news .aurora-text {
-    min-width: 2.55em;
-    font-size: 0.74em;
+    min-width: 2.35em;
+    font-size: 0.68em;
   }
 
   .research-signals {
