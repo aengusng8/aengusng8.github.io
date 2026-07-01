@@ -60,8 +60,11 @@
                     {%- endif -%}
                   {%- endif -%}
                   {%- assign coauthor_url = nil -%}
-                  {%- if site.data.coauthors[author.last] -%}
-                    {%- for coauthor in site.data.coauthors[author.last] -%}
+                  {%- if author_is_self -%}
+                    {%- assign coauthor_url = site.url -%}
+                  {%- endif -%}
+                  {%- if site.data.coauthors[last_name] -%}
+                    {%- for coauthor in site.data.coauthors[last_name] -%}
                       {%- if coauthor.firstname contains author.first -%}
                         {%- assign coauthor_url = coauthor.url -%}
                         {%- break -%}
@@ -71,29 +74,33 @@
                   
                   {%- if forloop.length == 1 -%}
                     {%- if author_is_self %}
-                      <em>{{author.first}} {{last_name}}</em>{%- if eq_contrib -%}*{%- endif -%}
+                      <a class="pub-author-link pub-author-self" href="{{ coauthor_url }}"><em>{{author.first}} {{last_name}}</em></a>{%- if eq_contrib -%}*{%- endif -%}
                     {%- else -%}
-                      {{author.first}} {{author.last}}
+                      {%- if coauthor_url -%}
+                        <a class="pub-author-link" href="{{coauthor_url}}">{{author.first}} {{last_name}}</a>
+                      {%- else -%}
+                        <span class="pub-author-name">{{author.first}} {{last_name}}</span>
+                      {%- endif -%}
                     {%- endif -%}
                   {%- else -%}
                     {%- unless forloop.last -%}
-                      {% if author_is_self %}<em>{{author.first}} {{last_name}}</em>{%- if eq_contrib -%}*{%- endif -%},&nbsp;
+                      {% if author_is_self %}<a class="pub-author-link pub-author-self" href="{{ coauthor_url }}"><em>{{author.first}} {{last_name}}</em></a>{%- if eq_contrib -%}*{%- endif -%},&nbsp;
                       {%- else -%}
                         {% if coauthor_url -%}
-                          <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>{% if eq_contrib %}*{% endif %},&nbsp;
+                          <a class="pub-author-link" href="{{coauthor_url}}">{{author.first}} {{last_name}}</a>{% if eq_contrib %}*{% endif %},&nbsp;
                         {%- else -%}
-                          {{author.first}} {{author.last}},&nbsp;
+                          <span class="pub-author-name">{{author.first}} {{last_name}}</span>{% if eq_contrib %}*{% endif %},&nbsp;
                         {%- endif -%}
                       {%- endif -%}
                     {%- else -%}
                       {%- if author_array_limit == author_array_size %}and {% endif %}
                       {% if author_is_self -%}
-                        <em>{{author.first}} {{last_name}}</em>{%- if eq_contrib -%}*{%- endif -%}
+                        <a class="pub-author-link pub-author-self" href="{{ coauthor_url }}"><em>{{author.first}} {{last_name}}</em></a>{%- if eq_contrib -%}*{%- endif -%}
                       {% else -%}
                         {%- if coauthor_url -%}
-                          <a href="{{coauthor_url}}">{{author.first}} {{author.last}}{% if eq_contrib %}*{% endif %}</a>
+                          <a class="pub-author-link" href="{{coauthor_url}}">{{author.first}} {{last_name}}{% if eq_contrib %}*{% endif %}</a>
                         {% else -%}
-                          {{author.first}} {{author.last}}
+                          <span class="pub-author-name">{{author.first}} {{last_name}}{% if eq_contrib %}*{% endif %}</span>
                         {%- endif -%}
                       {%- endif -%}
                     {%- endunless -%}

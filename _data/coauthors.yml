@@ -120,12 +120,22 @@
     url: https://minhchuyentoancbn.github.io/
 
 "Nguyen":
+  - firstname: ["Ngan"]
+    url: https://scholar.google.com/citations?hl=en&user=QCQPEhoAAAAJ
   - firstname: ["Huy"]
     url: https://huynm99.github.io/
+  - firstname: ["Kien"]
+    url: https://scholar.google.com/citations?hl=en&user=FewSoUkAAAAJ
+  - firstname: ["Phong"]
+    url: https://phongnhhn.info/
   - firstname: ["Khoi"]
     url: https://www.khoinguyen.org/
   - firstname: ["Viet"]
     url: https://viettmab.github.io/
+
+"Vu":
+  - firstname: ["Duc"]
+    url: https://danielvu-31.github.io/
 
 "Ho":
   - firstname: ["Nhat"]
@@ -134,13 +144,25 @@
 "Dao":
   - firstname: ["Trung"]
     url: https://trung-dt.com/
+  - firstname: ["Quan"]
+    url: https://quandao10.github.io/
 
 "Tran":
   - firstname: ["Toan"]
     url: https://scholar.google.com.vn/citations?user=PnwSuNMAAAAJ&hl=vi
+  - firstname: ["Chi"]
+    url: https://scholar.google.com/citations?hl=en&user=D6WZnA0AAAAJ
   - firstname: ["Anh"]
     url: https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en
 
 "Pham":
   - firstname: ["Cuong"]
     url: https://sites.google.com/view/cuongpham/home
+
+"Metaxas":
+  - firstname: ["Dimitris"]
+    url: https://scholar.google.com/citations?user=a7VNhCIAAAAJ&hl=en
+
+"Patel":
+  - firstname: ["Vishal M", "Vishal M."]
+    url: https://scholar.google.com/citations?user=AkEXTbIAAAAJ&hl=en

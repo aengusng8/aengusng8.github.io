@@ -650,24 +650,35 @@ footer.sticky-bottom {
         font-size: 1.02rem;
       }
       .author {
-        color: rgba(215, 221, 230, 0.84);
+        color: rgba(155, 168, 184, 0.78);
         line-height: 1.45;
         font-size: 0.9rem;
         a {
           color: inherit;
           border-bottom: 0;
           &:hover {
-            color: inherit;
+            color: rgba(215, 221, 230, 0.9);
             text-decoration: none;
           }
         }
-        > em {
+        .pub-author-name,
+        .pub-author-link {
+          color: rgba(155, 168, 184, 0.78);
+        }
+        .pub-author-link:hover {
+          color: rgba(215, 221, 230, 0.92);
+        }
+        em {
           font-style: normal;
           font-weight: bold;
-          background: linear-gradient(90deg, var(--profile-blue), var(--profile-cyan) 62%, var(--profile-amber));
+          background: linear-gradient(90deg, #8ec5ff, #7fe7dc);
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
+        }
+        .pub-author-self {
+          color: inherit;
+          text-decoration: none;
         }
         > span.more-authors {
           color: var(--global-text-color-light);
@@ -1629,16 +1640,18 @@ html.transition *:after {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #f8fbff;
-  border: 1px solid rgba(132, 200, 255, 0.78);
+  color: #fff5df;
+  border: 1px solid rgba(217, 179, 106, 0.82);
   background:
-    linear-gradient(180deg, rgba(30, 77, 125, 0.88), rgba(8, 26, 46, 0.98)),
-    radial-gradient(120% 90% at 18% 0%, rgba(140, 226, 218, 0.3), transparent 56%);
+    linear-gradient(180deg, rgba(76, 55, 24, 0.95), rgba(30, 22, 12, 0.98)),
+    radial-gradient(120% 90% at 20% 0%, rgba(255, 226, 169, 0.22), transparent 58%),
+    linear-gradient(112deg, rgba(217, 179, 106, 0.42), rgba(255, 242, 202, 0.16));
   box-shadow:
     0 0 0 1px rgba(5, 12, 22, 0.82),
-    0 0 14px rgba(104, 174, 255, 0.28),
-    0 8px 22px rgba(0, 0, 0, 0.18);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.42);
+    0 0 14px rgba(217, 179, 106, 0.22),
+    0 8px 22px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 245, 220, 0.16);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.46);
 }
 
 .news .aurora-text {
@@ -1865,7 +1878,7 @@ html.transition *:after {
 
   .publications ol.bibliography li .author {
     max-width: 92ch;
-    color: rgba(215, 221, 230, 0.82);
+    color: rgba(155, 168, 184, 0.78);
     font-size: 0.89rem;
     line-height: 1.43;
   }
