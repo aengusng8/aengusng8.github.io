@@ -122,5 +122,8 @@
 
     {% include scripts/bootstrap.html %}
     {% include scripts/analytics.html %}
+    {%- if site.enable_visitor_insights -%}
+      <script defer src="{{ '/assets/js/visitor_insights.js' | relative_url }}"></script>
+    {%- endif -%}
   </body>
 </html>

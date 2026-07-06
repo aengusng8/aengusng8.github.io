@@ -1,0 +1,56 @@
+updated: 2026-07-06
+source: Microsoft Clarity
+window: Last 3 days
+sessions: 15
+unique_users: 10
+note: "Privacy-safe snapshot. Clarity does not reveal visitor names. Exact state/province/country rows should be refreshed from Clarity Region exports, Plausible, Umami, Cloudflare Web Analytics, or another consented analytics source."
+countries:
+  - name: Vietnam
+    code: VN
+    sessions: 6
+    x: 76
+    y: 57
+    level: high
+  - name: Other regions
+    code: OTHER
+    sessions: 9
+    x: 44
+    y: 45
+    level: muted
+requested_breakdowns:
+  - name: United States states
+    code: US
+    status: awaiting analytics export
+    description: "Paste exact state rows here, for example CA, MA, NY, WA, TX."
+    regions:
+      - name: Unknown US state
+        code: US-UNK
+        sessions:
+  - name: United Kingdom
+    code: UK
+    status: awaiting analytics export
+    description: "Paste exact country/region rows here, for example England, Scotland, Wales, Northern Ireland."
+    regions:
+      - name: Unknown UK region
+        code: UK-UNK
+        sessions:
+  - name: European Union
+    code: EU
+    status: awaiting analytics export
+    description: "Paste exact EU country rows here, for example Germany, France, Netherlands, Italy, Spain."
+    regions:
+      - name: Unknown EU country
+        code: EU-UNK
+        sessions:
+  - name: China
+    code: CN
+    status: awaiting analytics export
+    description: "Paste exact province/municipality rows here, for example Beijing, Shanghai, Guangdong, Zhejiang."
+    regions:
+      - name: Unknown China region
+        code: CN-UNK
+        sessions:
+insight_setup:
+  identity: "This site does not collect visitor names and does not deanonymize visitors."
+  behavior: "Custom analytics tags track page type, referrer host, UTM campaign, device class, timezone, and link categories."
+  important_clicks: "Email, GitHub, Google Scholar, arXiv, PDFs, posters, slides, code, external links, and section jumps are tracked as privacy-safe events."

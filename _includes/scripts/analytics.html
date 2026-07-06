@@ -16,3 +16,18 @@
     panelbear('config', { site: '{{site.panelbear_analytics}}' });
   </script>
 {%- endif -%}
+
+{%- if site.enable_plausible_analytics and site.plausible_domain -%}
+  <!-- Plausible Analytics -->
+  <script defer data-domain="{{ site.plausible_domain }}" src="https://plausible.io/js/script.js"></script>
+{%- endif -%}
+
+{%- if site.enable_umami_analytics and site.umami_website_id and site.umami_src -%}
+  <!-- Umami Analytics -->
+  <script defer src="{{ site.umami_src }}" data-website-id="{{ site.umami_website_id }}"></script>
+{%- endif -%}
+
+{%- if site.enable_cloudflare_analytics and site.cloudflare_web_analytics_token -%}
+  <!-- Cloudflare Web Analytics -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"{{ site.cloudflare_web_analytics_token }}"}'></script>
+{%- endif -%}

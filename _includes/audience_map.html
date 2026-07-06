@@ -1,0 +1,103 @@
+{%- assign geo = site.data.audience_geo -%}
+{%- if geo and geo.countries and geo.countries.size > 0 -%}
+<section class="audience-map" aria-labelledby="audience-map-title">
+  <div class="audience-map__header">
+    <div>
+      <div class="section-kicker section-kicker--quiet">Audience</div>
+      <h2 id="audience-map-title">Global visitor snapshot</h2>
+    </div>
+    <div class="audience-map__meta">
+      {{ geo.source }} · {{ geo.window }} · updated {{ geo.updated | date: "%b %-d, %Y" }}
+    </div>
+  </div>
+
+  <div class="audience-map__body">
+    <div class="audience-map__canvas" role="img" aria-label="Approximate visitor geography heatmap">
+      <svg viewBox="0 0 100 54" preserveAspectRatio="xMidYMid meet" focusable="false" aria-hidden="true">
+        <defs>
+          <radialGradient id="audienceGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="rgba(130, 194, 255, 0.36)" />
+            <stop offset="100%" stop-color="rgba(130, 194, 255, 0)" />
+          </radialGradient>
+        </defs>
+        <path class="audience-map__continent" d="M8 17c8-6 18-8 28-5 5 2 7 5 4 9-4 5-3 8 3 12 4 3 3 6-2 8-8 3-18 1-25-4C8 31 3 22 8 17Z" />
+        <path class="audience-map__continent" d="M45 13c8-6 21-7 33-3 10 3 17 10 16 17-1 5-7 6-13 4-7-2-10 0-11 5-1 7-9 9-17 6-9-4-14-11-13-19 0-4 2-8 5-10Z" />
+        <path class="audience-map__continent" d="M72 37c7-2 15 0 19 5 3 4 0 8-7 9-7 0-15-3-17-7-1-3 1-6 5-7Z" />
+        <path class="audience-map__continent audience-map__continent--soft" d="M50 35c4 2 7 6 6 10-1 4-4 7-8 6-4-1-6-6-5-10 1-4 3-6 7-6Z" />
+      </svg>
+
+      {%- for country in geo.countries -%}
+        <span class="audience-map__hotspot audience-map__hotspot--{{ country.level | default: 'mid' }}"
+              style="left: {{ country.x }}%; top: {{ country.y }}%;"
+              title="{{ country.name }}: {{ country.sessions }} sessions">
+          <span class="audience-map__pulse"></span>
+          <span class="audience-map__dot"></span>
+        </span>
+      {%- endfor -%}
+    </div>
+
+    <div class="audience-map__stats">
+      <div class="audience-map__stat">
+        <span>Sessions</span>
+        <strong>{{ geo.sessions }}</strong>
+      </div>
+      <div class="audience-map__stat">
+        <span>Unique users</span>
+        <strong>{{ geo.unique_users }}</strong>
+      </div>
+      <ul class="audience-map__countries">
+        {%- assign countries = geo.countries | sort: "sessions" | reverse -%}
+        {%- for country in countries limit: 4 -%}
+          <li>
+            <span>{{ country.name }}</span>
+            <strong>{{ country.sessions }}</strong>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+
+  {%- if geo.requested_breakdowns and geo.requested_breakdowns.size > 0 -%}
+  <div class="audience-map__breakdowns" aria-label="Detailed regional breakdowns">
+    {%- for group in geo.requested_breakdowns -%}
+      {%- assign known_regions = group.regions | where_exp: "region", "region.sessions" -%}
+      <div class="audience-map__breakdown">
+        <div class="audience-map__breakdown-head">
+          <span>{{ group.name }}</span>
+          {%- if known_regions.size > 0 -%}
+            {%- assign group_total = 0 -%}
+            {%- for region in known_regions -%}
+              {%- assign group_total = group_total | plus: region.sessions -%}
+            {%- endfor -%}
+            <strong>{{ group_total }}</strong>
+          {%- else -%}
+            <strong>pending</strong>
+          {%- endif -%}
+        </div>
+        <p>{{ group.description }}</p>
+        <ul>
+          {%- if known_regions.size > 0 -%}
+            {%- assign sorted_regions = known_regions | sort: "sessions" | reverse -%}
+            {%- for region in sorted_regions limit: 5 -%}
+              <li><span>{{ region.name }}</span><strong>{{ region.sessions }}</strong></li>
+            {%- endfor -%}
+          {%- else -%}
+            <li><span>{{ group.status }}</span><strong>--</strong></li>
+          {%- endif -%}
+        </ul>
+      </div>
+    {%- endfor -%}
+  </div>
+  {%- endif -%}
+
+  {%- if geo.insight_setup -%}
+  <div class="audience-map__insights" aria-label="Analytics insight setup">
+    <div><span>Identity</span>{{ geo.insight_setup.identity }}</div>
+    <div><span>Behavior</span>{{ geo.insight_setup.behavior }}</div>
+    <div><span>Clicks</span>{{ geo.insight_setup.important_clicks }}</div>
+  </div>
+  {%- endif -%}
+
+  <p class="audience-map__note">{{ geo.note }}</p>
+</section>
+{%- endif -%}
