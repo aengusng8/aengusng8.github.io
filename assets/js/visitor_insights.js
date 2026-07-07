@@ -37,10 +37,6 @@
       });
     }
 
-    if (typeof window.plausible === "function") {
-      window.plausible(cleanName, { props: cleanProps });
-    }
-
     if (window.umami && typeof window.umami.track === "function") {
       window.umami.track(cleanName, cleanProps);
     }
