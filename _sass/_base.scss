@@ -1058,6 +1058,8 @@ html.transition *:after {
 .research-signals__list {
   display: grid;
   gap: 0.64rem;
+  align-content: start;
+  grid-auto-rows: max-content;
   counter-reset: research-signal;
   min-height: 0;
 }
