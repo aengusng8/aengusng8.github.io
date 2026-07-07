@@ -1065,9 +1065,11 @@ html.transition *:after {
 
 .research-signal-card {
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction: column;
   height: auto;
   min-height: 0;
+  overflow: hidden;
   counter-increment: research-signal;
   border: 1px solid rgba(130, 194, 255, 0.12);
   border-left: 1px solid rgba(130, 194, 255, 0.2);
@@ -1190,8 +1192,10 @@ html.transition *:after {
 .research-signal-card__tags {
   display: flex;
   flex-wrap: wrap;
+  flex: 0 0 auto;
   gap: 0.34rem 0.48rem;
-  margin-top: 0.58rem;
+  margin-top: 0.62rem;
+  padding-bottom: 0.02rem;
 
   span {
     border: 0;
