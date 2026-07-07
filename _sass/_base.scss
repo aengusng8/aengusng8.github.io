@@ -1056,10 +1056,9 @@ html.transition *:after {
 }
 
 .research-signals__list {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 0.64rem;
-  align-content: start;
-  grid-auto-rows: max-content;
   counter-reset: research-signal;
   min-height: 0;
 }
@@ -1067,6 +1066,8 @@ html.transition *:after {
 .research-signal-card {
   position: relative;
   display: block;
+  height: auto;
+  min-height: 0;
   counter-increment: research-signal;
   border: 1px solid rgba(130, 194, 255, 0.12);
   border-left: 1px solid rgba(130, 194, 255, 0.2);
