@@ -11,7 +11,7 @@ subtitle: |+
 
   <div class="profile-opportunity-card">
     <span class="profile-opportunity-card__label">Summer 2027:</span>
-    Seeking research internships and academic–industry collaborations in pre-training, model distillation, and multimodal learning.
+    Seeking research internships and academic–industry collaborations spanning fundamental research and real-world applications in generative modeling, with particular interests in pre-training, distillation, and multimodal generation.
   </div>
 
 profile:
