@@ -82,18 +82,13 @@
           "mainEntityOfPage": {{ site.url | append: "/" | jsonify }},
           "image": {{ "/assets/img/profile.png" | prepend: site.baseurl | prepend: site.url | jsonify }},
           "email": {{ site.email | prepend: "mailto:" | jsonify }},
-          "jobTitle": {{ "Incoming Ph.D. student in Electrical and Computer Engineering at Johns Hopkins University; Predoctoral Research Resident at Qualcomm AI Research" | jsonify }},
+          "jobTitle": {{ "First-year PhD student at Johns Hopkins University" | jsonify }},
           "description": {{ site.description | strip | jsonify }},
           "affiliation": [
             {
               "@type": "CollegeOrUniversity",
               "name": {{ "Johns Hopkins University" | jsonify }},
               "url": {{ "https://www.jhu.edu/" | jsonify }}
-            },
-            {
-              "@type": "Organization",
-              "name": {{ "Qualcomm AI Research" | jsonify }},
-              "url": {{ "https://www.qualcomm.com/research/artificial-intelligence" | jsonify }}
             }
           ],
           "alumniOf": {
