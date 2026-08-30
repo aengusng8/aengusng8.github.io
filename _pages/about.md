@@ -10,8 +10,8 @@ subtitle: |+
   </div>
 
   <div class="profile-opportunity-card">
-    <span class="profile-opportunity-card__label">Summer 2027:</span>
-    Seeking research internships and academic–industry collaborations spanning fundamental research and real-world applications in generative modeling, with particular interests in pre-training, distillation, and multimodal generation.
+    <span class="profile-opportunity-card__label">Collaborations &amp; Internships:</span>
+    Open to research internships and academic–industry collaborations spanning fundamental research and real-world applications in efficient, scalable, and controllable generative modeling.
   </div>
 
 profile:
