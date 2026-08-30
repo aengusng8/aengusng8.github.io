@@ -25,6 +25,9 @@
             {%- if site.quora_username -%}
             <a href="https://www.quora.com/profile/{{ site.quora_username }}" title="Quora"><i class="fab fa-quora" aria-hidden="true"></i><span>Quora</span></a>
             {% endif %}
+            {%- if site.email -%}
+            <a href="mailto:{{ site.email }}" title="Email"><i class="far fa-envelope" aria-hidden="true"></i><span>Email</span></a>
+            {% endif %}
             {%- if site.blogger_url -%}
             <a href="{{ site.blogger_url }}" title="Blogger"><i class="fab fa-blogger-b"></i></a>
             {% endif %}
