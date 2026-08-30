@@ -5,7 +5,7 @@ permalink: /
 description: Research on efficient, scalable, and controllable generative and world models at Johns Hopkins University, advised by Professor Vishal M. Patel.
 keywords: Anh Nguyen, Anh Nguyen JHU, Anh Nguyen Johns Hopkins, Johns Hopkins University, PhD student, Qualcomm AI Research, generative modeling, diffusion models, multimodal intelligence
 subtitle: |+
-  <div style="font-size: 1.05em; line-height: 1.6; margin-bottom: 20px;">
+  <div data-nosnippet style="font-size: 1.05em; line-height: 1.6; margin-bottom: 20px;">
     I am a first-year PhD student at <a href="https://www.jhu.edu/" target="_blank" style="color: var(--profile-blue); text-decoration: none;">Johns Hopkins University</a>, advised by Professor <a href="https://scholar.google.com/citations?user=AkEXTbIAAAAJ&hl=en" target="_blank" style="color: var(--profile-blue); text-decoration: none;">Vishal M. Patel</a>. Prior to my PhD, I spent three years as a predoctoral researcher at <a href="https://www.qualcomm.com/research/artificial-intelligence" target="_blank" style="color: var(--profile-blue); text-decoration: none;">Qualcomm AI Research</a>, where I was advised by Principal Scientist <a href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en" target="_blank" style="color: var(--profile-blue); text-decoration: none;">Dr. Anh Tran</a>.
   </div>
 
