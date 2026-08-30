@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: Anh Nguyen is a first-year PhD student at Johns Hopkins University advised by Professor Vishal M. Patel. His research focuses on generative modeling.
+description: Research on efficient, scalable, and controllable generative and world models at Johns Hopkins University, advised by Professor Vishal M. Patel.
 keywords: Anh Nguyen, Anh Nguyen JHU, Anh Nguyen Johns Hopkins, Johns Hopkins University, PhD student, Qualcomm AI Research, generative modeling, diffusion models, multimodal intelligence
 subtitle: |+
   <div style="font-size: 1.05em; line-height: 1.6; margin-bottom: 20px;">
