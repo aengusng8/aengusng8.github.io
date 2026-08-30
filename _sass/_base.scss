@@ -261,21 +261,22 @@ blockquote {
     a {
       display: inline-flex;
       align-items: center;
-      gap: 0.42rem;
-      min-height: 2.25rem;
+      gap: 0.36rem;
+      min-height: 2rem;
       margin-right: 0;
-      padding: 0.42rem 0.72rem;
-      border: 1px solid rgba(168, 179, 194, 0.28);
-      border-radius: 10px;
-      background: rgba(168, 179, 194, 0.045);
-      color: rgba(220, 228, 239, 0.76);
-      font-size: 0.8rem;
-      font-weight: 500;
+      padding: 0.34rem 0.62rem;
+      border: 1px solid rgba(168, 179, 194, 0.18);
+      border-radius: 9px;
+      background: rgba(168, 179, 194, 0.018);
+      color: rgba(220, 228, 239, 0.68);
+      font-size: 0.76rem;
+      font-weight: 400;
       line-height: 1;
-      transition: border-color 0.18s ease, background-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+      letter-spacing: 0.005em;
+      transition: border-color 0.18s ease, background-color 0.18s ease, color 0.18s ease;
 
       i {
-        font-size: 1rem;
+        font-size: 0.92rem;
       }
 
       i::before {
@@ -283,10 +284,9 @@ blockquote {
       }
 
       &:hover {
-        border-color: rgba(130, 194, 255, 0.58);
-        background: rgba(130, 194, 255, 0.09);
-        color: var(--global-theme-color);
-        transform: translateY(-1px);
+        border-color: rgba(130, 194, 255, 0.38);
+        background: rgba(130, 194, 255, 0.045);
+        color: rgba(159, 206, 255, 0.92);
       }
     }
   }
