@@ -1424,6 +1424,30 @@ html.transition *:after {
       a.news-title:hover {
         color: #ffe2a6;
       }
+
+      .news-milestone__institution {
+        color: rgba(231, 237, 246, 0.96);
+        font-weight: 550;
+      }
+
+      a.news-milestone__advisor {
+        color: var(--profile-blue);
+        font-weight: 400;
+        text-decoration: none;
+      }
+
+      a.news-milestone__advisor:hover {
+        color: #b8dcff;
+        text-decoration: underline;
+        text-decoration-color: rgba(184, 220, 255, 0.45);
+        text-underline-offset: 0.14em;
+      }
+
+      .news-milestone__focus {
+        color: rgba(220, 228, 239, 0.84);
+        font-style: italic;
+        font-weight: 400;
+      }
     }
   }
 
