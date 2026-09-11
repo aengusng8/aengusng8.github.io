@@ -11,7 +11,7 @@ subtitle: |+
 
   <div class="profile-opportunity-card">
     <span class="profile-opportunity-card__label">Collaborations &amp; Internships:</span>
-    Open to research internships and academic–industry collaborations spanning fundamental research and real-world applications in efficient, scalable, and controllable generative modeling.
+    Open to research internships and academic–industry collaborations spanning fundamental research and real-world applications in efficient, scalable, and controllable generative &amp; world models.
   </div>
 
 profile:
