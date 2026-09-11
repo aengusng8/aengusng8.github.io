@@ -31,11 +31,6 @@
           </div>
           <h3>{{ signal.title }}</h3>
           <p>{{ signal.display_text }}</p>
-          <div class="research-signal-card__tags">
-            {%- for tag in signal.tags limit: 2 -%}
-              <span>{{ tag }}</span>
-            {%- endfor -%}
-          </div>
         {%- if signal_url -%}
         </a>
         {%- else -%}
