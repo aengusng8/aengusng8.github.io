@@ -3,12 +3,50 @@
  ******************************************************************************/
 
 :root {
+  /* ---- Design tokens ------------------------------------------------ */
+
+  /* Page shell: one width shared by hero, affiliation band and research core */
+  --shell-max: 1160px;
+  --shell-gutter: 4.5rem;
+  --shell-w: min(var(--shell-max), calc(100vw - var(--shell-gutter) * 2));
+  --shell-pad: 0.9375rem;
+  --shell-gap: 2.25rem;
+  --rail-w: 288px;
+  --band-w: 720px;
+  --band-inset: max(0px, calc((var(--shell-w) - var(--band-w)) / 2));
+
+  /* Spacing scale (8px grid) */
+  --sp-1: 0.5rem;
+  --sp-2: 1rem;
+  --sp-3: 1.5rem;
+  --sp-4: 2rem;
+  --sp-5: 3rem;
+
+  /* Text hierarchy: four levels only */
+  --text-1: #e2eaf5;
+  --text-2: rgba(220, 228, 239, 0.92);
+  --text-3: rgba(220, 228, 239, 0.74);
+  --text-4: rgba(168, 179, 194, 0.6);
+
+  /* Accents: one blue, one amber, each with a single hover step */
+  --accent-blue-hover: #b7dbff;
+  --accent-amber-hover: #ffe2a6;
+
+  /* Section kickers */
+  --kicker-color: rgba(211, 161, 95, 0.92);
+  --kicker-color-quiet: rgba(211, 161, 95, 0.72);
+
+  /* Radii */
+  --r-sm: 4px;
+  --r-md: 8px;
+  --r-pill: 999px;
+
   --global-bg-color: #05090e;
   --global-code-bg-color: #{$code-bg-color-dark};
   --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color-light};
+  --global-text-color-light: var(--text-3);
   --global-theme-color: #d3a15f;
-  --global-hover-color: #a7d8ff;
+  --global-hover-color: var(--accent-blue-hover);
   --global-footer-bg-color: #{$grey-color-light};
   --global-footer-text-color: #{$grey-color-dark};
   --global-footer-link-color: #{$black-color};
@@ -46,5 +84,17 @@
   }
   .repo-img-dark {
     display: block;
+  }
+}
+
+/* Shell tokens step down on narrower desktops so the two columns keep
+   a stable ratio instead of squeezing the main column. */
+@media (min-width: 1080px) and (max-width: 1199.98px) {
+  :root {
+    --shell-max: 1100px;
+    --shell-gutter: 3rem;
+    --shell-gap: 2rem;
+    --rail-w: 268px;
+    --band-w: 680px;
   }
 }

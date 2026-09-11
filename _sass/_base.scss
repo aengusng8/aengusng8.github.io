@@ -266,9 +266,9 @@ blockquote {
       margin-right: 0;
       padding: 0.34rem 0.62rem;
       border: 1px solid rgba(168, 179, 194, 0.18);
-      border-radius: 9px;
+      border-radius: var(--r-md);
       background: rgba(168, 179, 194, 0.018);
-      color: rgba(220, 228, 239, 0.68);
+      color: var(--text-3);
       font-size: 0.76rem;
       font-weight: 400;
       line-height: 1;
@@ -286,7 +286,7 @@ blockquote {
       &:hover {
         border-color: rgba(130, 194, 255, 0.38);
         background: rgba(130, 194, 255, 0.045);
-        color: rgba(159, 206, 255, 0.92);
+        color: var(--accent-blue-hover);
       }
     }
   }
@@ -320,13 +320,13 @@ footer.sticky-bottom {
   border-top: 1px solid rgba(130, 194, 255, 0.08);
   padding-top: 1.1rem;
   padding-bottom: 1.2rem;
-  color: rgba(168, 179, 194, 0.58);
+  color: var(--text-4);
   background:
     linear-gradient(180deg, rgba(7, 11, 16, 0), rgba(7, 11, 16, 0.72));
   font-size: 0.68rem;
 
   a {
-    color: rgba(168, 179, 194, 0.7);
+    color: var(--text-3);
   }
 }
 
@@ -528,7 +528,7 @@ footer.sticky-bottom {
 
   .publications__note {
     margin-bottom: 1.35rem;
-    color: rgba(168, 179, 194, 0.78);
+    color: var(--text-3);
     font-size: 0.82rem;
   }
 
@@ -572,7 +572,7 @@ footer.sticky-bottom {
         object-fit: contain;
         padding: 0.42rem;
         border: 1px solid rgba(130, 194, 255, 0.16);
-        border-radius: 6px !important;
+        border-radius: var(--r-md) !important;
         background:
           linear-gradient(135deg, rgba(13, 20, 29, 0.98), rgba(7, 11, 16, 0.98) 66%, rgba(17, 26, 36, 0.98));
         box-shadow:
@@ -596,8 +596,8 @@ footer.sticky-bottom {
           min-width: 4.55rem;
           padding: 0.13rem 0.54rem 0.14rem;
           border: 1px solid rgba(130, 194, 255, 0.6);
-          border-radius: 5px;
-          color: rgba(246, 250, 255, 0.95);
+          border-radius: var(--r-sm);
+          color: var(--text-1);
           background:
             linear-gradient(180deg, rgba(25, 68, 118, 0.52), rgba(13, 20, 29, 0.94)),
             linear-gradient(90deg, rgba(130, 194, 255, 0.16), rgba(127, 231, 220, 0.07));
@@ -637,7 +637,7 @@ footer.sticky-bottom {
           min-width: 4.35rem;
           padding: 0.14rem 0.62rem 0.155rem;
           border: 1px solid transparent;
-          border-radius: 6px;
+          border-radius: var(--r-sm);
           color: #fff5df;
           overflow: hidden;
           background-image:
@@ -670,28 +670,28 @@ footer.sticky-bottom {
         font-size: 1.02rem;
       }
       .author {
-        color: rgba(190, 200, 213, 0.86);
+        color: var(--text-2);
         line-height: 1.45;
         font-size: 0.9rem;
         a {
           color: inherit;
           border-bottom: 0;
           &:hover {
-            color: rgba(220, 228, 239, 0.9);
+            color: var(--text-2);
             text-decoration: none;
           }
         }
         .pub-author-name,
         .pub-author-link {
-          color: rgba(190, 200, 213, 0.86);
+          color: var(--text-2);
         }
         .pub-author-link:hover {
-          color: rgba(232, 238, 247, 0.94);
+          color: var(--text-1);
         }
         em {
           font-style: normal;
           font-weight: 760;
-          color: #8eddea;
+          color: var(--profile-cyan);
         }
         .pub-author-self {
           color: inherit;
@@ -711,11 +711,11 @@ footer.sticky-bottom {
         margin-top: 0.5rem;
 
         a.btn {
-          color: rgba(220, 228, 239, 0.78);
+          color: var(--text-3);
           border: 1px solid rgba(168, 179, 194, 0.46);
           padding: 0.09rem 0.42rem;
           margin: 0.2rem 0.12rem 0 0;
-          border-radius: 4px;
+          border-radius: var(--r-sm);
           font-size: 0.64rem;
           letter-spacing: 0;
           &:hover {
@@ -732,7 +732,7 @@ footer.sticky-bottom {
 
       .periodical {
         margin-top: 0.14rem;
-        color: rgba(220, 228, 239, 0.78);
+        color: var(--text-3);
         font-size: 0.92rem;
         line-height: 1.38;
       }
@@ -822,7 +822,7 @@ figure.highlight {
 pre {
   color: var(--global-theme-color);
   background-color: var(--global-code-bg-color);
-  border-radius: 6px;
+  border-radius: var(--r-md);
   padding: 6px 12px;
   pre, code {
     background-color: transparent;
@@ -834,7 +834,7 @@ pre {
 code {
   color: var(--global-theme-color);
   background-color: var(--global-code-bg-color);
-  border-radius: 3px;
+  border-radius: var(--r-sm);
   padding: 3px 3px;
 }
 
@@ -917,8 +917,8 @@ html.transition *:after {
 
 .section-kicker {
   display: block;
-  margin-bottom: 0.48rem;
-  color: rgba(211, 161, 95, 0.94);
+  margin: 0 0 var(--sp-1);
+  color: var(--kicker-color);
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -927,7 +927,7 @@ html.transition *:after {
 }
 
 .section-kicker--quiet {
-  color: rgba(211, 161, 95, 0.78);
+  color: var(--kicker-color-quiet);
 }
 
 .research-core {
@@ -953,7 +953,7 @@ html.transition *:after {
 }
 
 .research-core__statement .rs-goal-em {
-  color: rgba(220, 228, 239, 0.88);
+  color: var(--text-2);
   font-style: italic;
   font-weight: 430;
 }
@@ -966,7 +966,7 @@ html.transition *:after {
 }
 
 .research-core__statement .rs-link:hover {
-  color: #b7dbff;
+  color: var(--accent-blue-hover);
   text-decoration: none;
 }
 
@@ -986,7 +986,7 @@ html.transition *:after {
   min-width: 2.6em;
   padding: 0.05em 0.4em 0.065em;
   border: 1px solid rgba(225, 189, 115, 0.78);
-  border-radius: 5px;
+  border-radius: var(--r-sm);
   color: #fff5df;
   background:
     linear-gradient(180deg, rgba(92, 66, 28, 0.96), rgba(35, 25, 13, 0.98)),
@@ -1005,7 +1005,7 @@ html.transition *:after {
 }
 
 .research-core__statement .rs-badge:hover {
-  color: #fff9ea;
+  color: var(--accent-amber-hover);
   border-color: rgba(255, 219, 150, 0.95);
   box-shadow:
     0 0 0 1px rgba(5, 12, 22, 0.72),
@@ -1015,26 +1015,27 @@ html.transition *:after {
 }
 
 .research-core__statement .rs-outcome {
-  color: rgba(220, 228, 239, 0.94);
+  color: var(--text-1);
   font-style: italic;
   font-weight: inherit;
 }
 
 .research-core__statement .rs-label {
-  color: rgba(220, 228, 239, 0.9);
+  color: var(--text-2);
   font-size: inherit;
   font-weight: 400;
   letter-spacing: 0;
 }
 
+.research-core__main > .news,
 .research-core__main > .publications {
-  margin-top: 1.35rem;
+  margin-top: var(--sp-3);
 }
 
 .research-signals {
   position: static;
   min-width: 0;
-  margin-top: 2.1rem;
+  margin-top: var(--sp-5);
 }
 
 .research-signals__header {
@@ -1047,18 +1048,18 @@ html.transition *:after {
 
   h2 {
     margin: 0;
-    color: rgba(211, 161, 95, 0.82);
+    color: var(--kicker-color);
     font-size: 0.72rem;
     font-weight: 800;
     line-height: 1.15;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
   }
 
   p {
     max-width: 100%;
     margin: 0.36rem 0 0;
-    color: rgba(168, 179, 194, 0.78);
+    color: var(--text-3);
     font-size: 0.82rem;
     line-height: 1.42;
     white-space: nowrap;
@@ -1077,13 +1078,14 @@ html.transition *:after {
   position: relative;
   display: flex;
   flex-direction: column;
+  flex: 0 0 auto;
   height: auto;
   min-height: 0;
-  overflow: hidden;
+  overflow: visible;
   counter-increment: research-signal;
   border: 1px solid rgba(130, 194, 255, 0.12);
   border-left: 1px solid rgba(130, 194, 255, 0.2);
-  border-radius: 6px;
+  border-radius: var(--r-md);
   padding: 0.75rem 0.78rem 0.78rem;
   color: inherit;
   background:
@@ -1115,7 +1117,7 @@ html.transition *:after {
 
   p {
     margin: 0;
-    color: rgba(220, 228, 239, 0.82);
+    color: var(--text-2);
     font-size: 0.76rem;
     line-height: 1.42;
   }
@@ -1158,7 +1160,7 @@ html.transition *:after {
   overflow: hidden;
   border: 1px solid rgba(130, 194, 255, 0.18);
   border-radius: 50%;
-  color: rgba(238, 246, 255, 0.84);
+  color: var(--text-2);
   font-size: 0.68rem;
   font-weight: 800;
   background:
@@ -1184,7 +1186,7 @@ html.transition *:after {
 
   span {
     display: block;
-    color: rgba(168, 179, 194, 0.78);
+    color: var(--text-3);
     font-size: 0.64rem;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1193,7 +1195,7 @@ html.transition *:after {
 
 .research-signal-card__x {
   margin-left: auto;
-  color: rgba(220, 228, 239, 0.42);
+  color: var(--text-4);
   font-size: 0.68rem;
   font-weight: 800;
   line-height: 1;
@@ -1211,7 +1213,7 @@ html.transition *:after {
     border: 0;
     border-radius: 0;
     padding: 0;
-    color: rgba(168, 179, 194, 0.78);
+    color: var(--text-3);
     font-size: 0.68rem;
     font-weight: 520;
     line-height: 1.35;
@@ -1224,83 +1226,96 @@ html.transition *:after {
   }
 }
 
-@media (min-width: 992px) {
-  .post article > .clearfix > .research-core {
-    width: min(1100px, calc(100vw - 6rem));
+/* ---------------------------------------------------------------------------
+ * Page shell
+ * One width token drives the hero, the affiliation band and the research core,
+ * so every block on the page shares the same left and right edge.
+ * ------------------------------------------------------------------------- */
+@media (min-width: 1080px) {
+  .post > article > .profile-hero,
+  .post > article > .affiliation-strip,
+  .post > article > .clearfix > .research-thesis-card,
+  .post > article > .clearfix > .research-core {
+    width: var(--shell-w);
     max-width: none;
     margin-left: 50%;
+    margin-right: 0;
     transform: translateX(-50%);
+  }
+
+  /* Hero: avatar in a fixed track, text fills the rest.
+     Content starts at shell + --shell-pad, the same inset as the main column. */
+  .post > article > .profile-hero {
+    display: grid;
+    grid-template-columns: 214px minmax(0, 1fr);
+    gap: var(--sp-4);
+    align-items: center;
+    padding-left: var(--shell-pad);
+    padding-right: 0;
+  }
+
+  .profile-hero > .profile-hero__media,
+  .profile-hero > .profile-hero__body {
+    flex: none;
+    width: auto;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .profile-hero__body .desc {
+    max-width: none;
+  }
+
+  /* Affiliation band: rules span the shell, logos stay in a centred band
+     that matches the thesis card exactly. */
+  .post > article > .affiliation-strip {
+    padding-left: var(--band-inset);
+    padding-right: var(--band-inset);
   }
 
   .research-core {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(238px, 275px);
-    gap: 2.05rem;
-    align-items: stretch;
+    grid-template-columns: minmax(0, 1fr) minmax(240px, var(--rail-w));
+    gap: var(--shell-gap);
+    align-items: start;
   }
 
   .research-core__main {
     display: grid;
-    gap: 1.42rem;
-    padding-left: 0.95rem;
+    gap: var(--sp-3);
+    padding-left: calc(var(--shell-pad) - 1px);
     border-left: 1px solid rgba(211, 161, 95, 0.14);
     background: linear-gradient(90deg, rgba(211, 161, 95, 0.032), rgba(211, 161, 95, 0) 8.5rem);
   }
 
+  /* The rail keeps its natural height: cards are never compressed, and
+     there is no inner scroll region to trap the wheel. */
   .research-signals {
-    align-self: stretch;
+    align-self: start;
     display: flex;
     flex-direction: column;
-    height: 0;
-    min-height: 100%;
-    max-height: 100%;
-    overflow: hidden;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    overflow: visible;
     margin-top: 0;
   }
 
   .research-signals__list {
+    flex: 0 0 auto;
     min-height: 0;
-    flex: 1 1 auto;
-    overflow-y: auto;
-    overscroll-behavior: contain;
-    padding-right: 0.25rem;
-    scrollbar-color: rgba(130, 194, 255, 0.34) rgba(130, 194, 255, 0.06);
-    scrollbar-width: thin;
-
-    &::-webkit-scrollbar {
-      width: 5px;
-    }
-
-    &::-webkit-scrollbar-track {
-      background: rgba(130, 194, 255, 0.045);
-      border-radius: 999px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background: rgba(130, 194, 255, 0.3);
-      border-radius: 999px;
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  .post article > .clearfix > .research-core {
-    width: min(1160px, calc(100vw - 7rem));
-  }
-
-  .research-core {
-    grid-template-columns: minmax(0, 1fr) minmax(250px, 288px);
-    gap: 2.28rem;
+    overflow: visible;
   }
 }
 
 .research-thesis-card {
-  max-width: 680px !important;
-  margin: 0 auto 1.75rem;
+  max-width: var(--band-w) !important;
+  margin: 0 auto var(--sp-4);
   overflow: hidden;
   border: 1px solid rgba(130, 194, 255, 0.2);
   border-left: 2px solid rgba(225, 189, 115, 0.7);
-  border-radius: 5px;
+  border-radius: var(--r-md);
   background:
     linear-gradient(135deg, rgba(21, 34, 49, 0.86), rgba(5, 9, 14, 0.94) 58%, rgba(15, 23, 33, 0.86)),
     radial-gradient(circle at 50% 0%, rgba(113, 234, 223, 0.12), rgba(113, 234, 223, 0) 42%);
@@ -1321,7 +1336,7 @@ html.transition *:after {
   color: var(--profile-text);
   border: 0;
   border-left: 3px solid var(--profile-gold);
-  border-radius: 0 4px 4px 0;
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
   background: linear-gradient(135deg, rgba(211, 161, 95, 0.18), rgba(130, 194, 255, 0.055));
   box-shadow: none;
   font-size: 0.94rem;
@@ -1345,7 +1360,7 @@ html.transition *:after {
   line-height: 1.55;
 
   em {
-    color: rgba(220, 228, 239, 0.92);
+    color: var(--text-2);
     font-style: italic;
     font-weight: 400 !important;
   }
@@ -1403,7 +1418,7 @@ html.transition *:after {
       width: 5.15rem;
       min-width: 5.15rem;
       padding-right: 1.1rem;
-      color: rgba(168, 179, 194, 0.66);
+      color: var(--text-4);
       font-size: 0.74rem;
       font-weight: 700;
       text-align: right;
@@ -1415,20 +1430,20 @@ html.transition *:after {
       font-size: 0.88rem;
       padding-left: 1.35rem;
       position: relative;
-      color: rgba(220, 228, 239, 0.9);
+      color: var(--text-2);
 
       .news-title,
       a.news-title {
-        color: rgba(225, 189, 115, 0.84);
+        color: var(--profile-gold);
         text-decoration: none;
       }
 
       a.news-title:hover {
-        color: #ffe2a6;
+        color: var(--accent-amber-hover);
       }
 
       .news-milestone__institution {
-        color: rgba(231, 237, 246, 0.96);
+        color: var(--text-1);
         font-weight: 550;
       }
 
@@ -1439,14 +1454,14 @@ html.transition *:after {
       }
 
       a.news-milestone__advisor:hover {
-        color: #b8dcff;
+        color: var(--accent-blue-hover);
         text-decoration: underline;
         text-decoration-color: rgba(184, 220, 255, 0.45);
         text-underline-offset: 0.14em;
       }
 
       .news-milestone__focus {
-        color: rgba(220, 228, 239, 0.84);
+        color: var(--text-2);
         font-style: italic;
         font-weight: 400;
       }
@@ -1495,7 +1510,7 @@ html.transition *:after {
 .bridge-symbol {
   display: inline-block;
   margin-left: 0.08em;
-  color: rgba(220, 229, 239, 0.96);
+  color: var(--text-1);
   font-family: "Times New Roman", Times, serif;
   font-size: 1.08em;
   font-style: italic;
@@ -1515,7 +1530,7 @@ html.transition *:after {
   margin-top: 0.3rem;
   padding-left: 0.62rem;
   border-left: 2px solid rgba(113, 234, 223, 0.32);
-  color: rgba(220, 228, 239, 0.78);
+  color: var(--text-3);
   font-size: 0.92rem;
   font-style: italic;
   line-height: 1.42;
@@ -1547,7 +1562,7 @@ html.transition *:after {
   padding: 15px 20px;
   margin: 20px 0;
   border: 4px solid transparent;
-  border-radius: 15px;
+  border-radius: var(--r-md);
   background-image: linear-gradient(#121c27, #121c27),
     linear-gradient(
       45deg,
@@ -1578,7 +1593,7 @@ html.transition *:after {
 
 .research-signals__header p {
   max-width: 100%;
-  color: rgba(220, 228, 239, 0.94);
+  color: var(--text-1);
   font-size: 0.9rem;
   line-height: 1.45;
   white-space: normal;
@@ -1594,8 +1609,8 @@ html.transition *:after {
   display: flex;
   align-items: baseline;
   gap: 0.48rem;
-  margin-top: 0.55rem;
-  margin-bottom: 1.1rem;
+  margin-top: 0;
+  margin-bottom: var(--sp-2);
   color: var(--profile-text);
   font-size: 1.86rem;
   font-weight: 360;
@@ -1672,7 +1687,7 @@ html.transition *:after {
 .news .aurora-text {
   min-width: 3.1em;
   padding: 0.04em 0.42em 0.055em;
-  border-radius: 5px;
+  border-radius: var(--r-sm);
   font-size: 0.88em;
   line-height: 1.05;
   vertical-align: 0.08em;
@@ -1685,7 +1700,7 @@ html.transition *:after {
 .publications ol.bibliography li .abbr .venue-eccv {
   min-width: 4.85rem;
   padding: 0.16rem 0.62rem 0.18rem;
-  border-radius: 6px;
+  border-radius: var(--r-sm);
   font-size: 0.76rem;
   font-weight: 860;
   letter-spacing: 0.028em;
@@ -1718,7 +1733,7 @@ html.transition *:after {
     padding: 0.66rem 0.7rem 0.72rem;
     border: 1px solid rgba(130, 194, 255, 0.105);
     border-left: 1px solid rgba(225, 189, 115, 0.2);
-    border-radius: 7px;
+    border-radius: var(--r-md);
     background:
       linear-gradient(90deg, rgba(130, 194, 255, 0.03), rgba(130, 194, 255, 0.008) 48%, rgba(7, 11, 16, 0) 100%),
       linear-gradient(180deg, rgba(13, 20, 29, 0.2), rgba(7, 11, 16, 0.04));
@@ -1804,7 +1819,7 @@ html.transition *:after {
     align-items: center;
     min-height: 1.2rem;
     margin: 0;
-    color: rgba(220, 228, 239, 0.62);
+    color: var(--text-4);
     font-size: 0.58rem;
     font-weight: 760;
     letter-spacing: 0.03em;
@@ -1836,7 +1851,7 @@ html.transition *:after {
     padding: 0.98rem 1.12rem 1.02rem;
     border: 1px solid rgba(130, 194, 255, 0.115);
     border-left: 1px solid rgba(225, 189, 115, 0.26);
-    border-radius: 7px;
+    border-radius: var(--r-md);
     background:
       linear-gradient(90deg, rgba(130, 194, 255, 0.04), rgba(130, 194, 255, 0.01) 38%, rgba(7, 11, 16, 0) 100%),
       linear-gradient(180deg, rgba(13, 20, 29, 0.2), rgba(7, 11, 16, 0.04));
@@ -1885,7 +1900,7 @@ html.transition *:after {
 
   .publications ol.bibliography li .title {
     margin-bottom: 0.34rem;
-    color: rgba(225, 232, 241, 0.96);
+    color: var(--text-1);
     font-size: 1.05rem;
     font-weight: 760;
     line-height: 1.28;
@@ -1893,7 +1908,7 @@ html.transition *:after {
 
   .publications ol.bibliography li .author {
     max-width: 92ch;
-    color: rgba(190, 200, 213, 0.86);
+    color: var(--text-2);
     font-size: 0.89rem;
     line-height: 1.43;
   }
@@ -1901,7 +1916,7 @@ html.transition *:after {
   .publications ol.bibliography li .periodical {
     margin-top: 0.42rem;
     padding-left: 0.68rem;
-    color: rgba(220, 228, 239, 0.74);
+    color: var(--text-3);
     border-left-color: rgba(113, 234, 223, 0.38);
     font-size: 0.9rem;
   }
@@ -1929,7 +1944,7 @@ html.transition *:after {
     align-items: center;
     min-height: 1.5rem;
     margin: 0;
-    color: rgba(220, 228, 239, 0.68);
+    color: var(--text-3);
     font-size: 0.68rem;
     font-weight: 760;
     letter-spacing: 0.03em;
@@ -1961,17 +1976,6 @@ html.transition *:after {
   }
 }
 
-@media (min-width: 992px) {
-  .research-signals__header {
-    position: sticky;
-    top: 0;
-    z-index: 5;
-    margin-right: 0.25rem;
-    background:
-      linear-gradient(180deg, rgba(7, 11, 16, 0.98) 0%, rgba(7, 11, 16, 0.94) 72%, rgba(7, 11, 16, 0.78) 100%);
-    backdrop-filter: blur(8px);
-  }
-}
 
 @media (max-width: 575.98px) {
   html,
@@ -2073,8 +2077,8 @@ html.transition *:after {
   }
 
   .research-thesis-card {
-    margin-bottom: 1.05rem;
-    border-radius: 6px;
+    margin-bottom: var(--sp-3);
+    border-radius: var(--r-md);
   }
 
   .research-thesis-card__inner {
@@ -2111,7 +2115,7 @@ html.transition *:after {
     min-width: 2.25em;
     padding: 0.035em 0.34em 0.05em;
     border-color: rgba(225, 189, 115, 0.58);
-    border-radius: 4px;
+    border-radius: var(--r-sm);
     background:
       linear-gradient(180deg, rgba(76, 55, 24, 0.82), rgba(24, 18, 11, 0.88));
     box-shadow:
@@ -2143,7 +2147,7 @@ html.transition *:after {
   }
 
   .news table.table th {
-    color: rgba(168, 179, 194, 0.66);
+    color: var(--text-4);
     font-size: 0.58rem;
     letter-spacing: 0.02em;
   }
@@ -2179,7 +2183,7 @@ html.transition *:after {
 
   .research-signal-card {
     padding: 0.72rem 0.76rem;
-    border-radius: 7px;
+    border-radius: var(--r-md);
   }
 
   .research-signal-card__body {
