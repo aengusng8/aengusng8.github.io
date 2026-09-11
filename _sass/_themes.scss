@@ -5,15 +5,13 @@
 :root {
   /* ---- Design tokens ------------------------------------------------ */
 
-  /* Page shell: one width shared by hero, affiliation band and research core */
-  --shell-max: 1160px;
-  --shell-gutter: 4.5rem;
-  --shell-w: min(var(--shell-max), calc(100vw - var(--shell-gutter) * 2));
+  /* Page shell.
+     NOTE: jekyll-minifier (cssminify2) corrupts var() when it appears inside
+     calc(), min() or max() -- it reads "--name" as two minus signs. So shell
+     widths are written as literal values at each breakpoint, never as tokens
+     inside those functions. Only whole-value tokens are safe here. */
   --shell-pad: 0.9375rem;
-  --shell-gap: 2.25rem;
-  --rail-w: 288px;
   --band-w: 720px;
-  --band-inset: max(0px, calc((var(--shell-w) - var(--band-w)) / 2));
 
   /* Spacing scale (8px grid) */
   --sp-1: 0.5rem;
@@ -39,7 +37,6 @@
   /* Radii */
   --r-sm: 4px;
   --r-md: 8px;
-  --r-pill: 999px;
 
   --global-bg-color: #05090e;
   --global-code-bg-color: #{$code-bg-color-dark};
@@ -87,14 +84,9 @@
   }
 }
 
-/* Shell tokens step down on narrower desktops so the two columns keep
-   a stable ratio instead of squeezing the main column. */
+/* The centred band narrows with the shell on smaller desktops. */
 @media (min-width: 1080px) and (max-width: 1199.98px) {
   :root {
-    --shell-max: 1100px;
-    --shell-gutter: 3rem;
-    --shell-gap: 2rem;
-    --rail-w: 268px;
     --band-w: 680px;
   }
 }
