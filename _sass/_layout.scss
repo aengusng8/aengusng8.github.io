@@ -161,7 +161,7 @@ body.sticky-bottom-footer {
   }
 
   .profile-hero__name {
-    margin-bottom: 0.36rem;
+    margin-bottom: 0.8rem;
     font-size: 1.5em;
     line-height: 1.08;
   }
@@ -170,8 +170,9 @@ body.sticky-bottom-footer {
     margin-left: auto;
     margin-right: auto;
     max-width: 34rem;
-    font-size: 0.8rem;
-    line-height: 1.44;
+    font-size: 14px;
+    line-height: 1.55;
+    text-align: left;
   }
 }
 
@@ -223,12 +224,12 @@ body.sticky-bottom-footer {
 
 @media (max-width: 575px) {
   .affiliation-strip { margin-bottom: 1rem; padding: 0.6rem 0; }
-  .affiliation-strip__item { padding: 0.25rem 0.65rem; }
-  .affiliation-strip__logo { height: 48px; }
-  .affiliation-strip__logo img { max-height: 48px; }
+  .affiliation-strip__item { padding: 0.15rem 0.5rem; gap: 0.2rem; }
+  .affiliation-strip__logo { height: 42px; margin-bottom: 0.25rem; }
+  .affiliation-strip__logo img { max-height: 42px; }
   .affiliation-strip__qualcomm { width: 140px; }
-  .affiliation-strip__role { font-size: 0.65rem; min-height: 2.9em; }
-  .affiliation-strip__date { font-size: 0.65rem; }
+  .affiliation-strip__role { font-size: 11px; line-height: 1.4; }
+  .affiliation-strip__date { font-size: 11px; margin-top: auto; padding-top: 0.2rem; }
 }
 
 // TODO: redefine content layout.
