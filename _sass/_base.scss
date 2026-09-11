@@ -1236,7 +1236,7 @@ html.transition *:after {
   .post > article > .affiliation-strip,
   .post > article > .clearfix > .research-thesis-card,
   .post > article > .clearfix > .research-core {
-    width: min(1100px, calc(100vw - 6rem));
+    width: var(--shell-w);
     max-width: none;
     margin-left: 50%;
     margin-right: 0;
@@ -1268,25 +1268,23 @@ html.transition *:after {
   }
 
   /* Affiliation band: rules span the shell, logos stay in a centred band
-     that matches the thesis card exactly. Centred with fixed track widths
-     rather than calc() padding, because the CSS minifier corrupts var()
-     inside calc(). */
+     that matches the thesis card exactly. */
   .post > article > .affiliation-strip {
-    grid-template-columns: repeat(2, 340px);
-    justify-content: center;
+    padding-left: var(--band-inset);
+    padding-right: var(--band-inset);
   }
 
   .research-core {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(240px, 268px);
-    gap: 2rem;
+    grid-template-columns: minmax(0, 1fr) minmax(240px, var(--rail-w));
+    gap: var(--shell-gap);
     align-items: start;
   }
 
   .research-core__main {
     display: grid;
     gap: var(--sp-3);
-    padding-left: 0.875rem;
+    padding-left: calc(var(--shell-pad) - 1px);
     border-left: 1px solid rgba(211, 161, 95, 0.14);
     background: linear-gradient(90deg, rgba(211, 161, 95, 0.032), rgba(211, 161, 95, 0) 8.5rem);
   }
@@ -1308,24 +1306,6 @@ html.transition *:after {
     flex: 0 0 auto;
     min-height: 0;
     overflow: visible;
-  }
-}
-
-@media (min-width: 1200px) {
-  .post > article > .profile-hero,
-  .post > article > .affiliation-strip,
-  .post > article > .clearfix > .research-thesis-card,
-  .post > article > .clearfix > .research-core {
-    width: min(1160px, calc(100vw - 9rem));
-  }
-
-  .post > article > .affiliation-strip {
-    grid-template-columns: repeat(2, 360px);
-  }
-
-  .research-core {
-    grid-template-columns: minmax(0, 1fr) minmax(250px, 288px);
-    gap: 2.25rem;
   }
 }
 
