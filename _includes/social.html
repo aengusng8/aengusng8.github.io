@@ -28,6 +28,9 @@
             {%- if site.email -%}
             <a href="mailto:{{ site.email }}" title="Email"><i class="far fa-envelope" aria-hidden="true"></i><span>Email</span></a>
             {% endif %}
+            {%- if site.wechat_qr -%}
+            <a href="{{ site.wechat_qr | relative_url }}" title="Scan my WeChat QR code" target="_blank" rel="noopener noreferrer"><i class="fab fa-weixin" aria-hidden="true"></i><span>WeChat</span></a>
+            {% endif %}
             {%- if site.blogger_url -%}
             <a href="{{ site.blogger_url }}" title="Blogger"><i class="fab fa-blogger-b"></i></a>
             {% endif %}
