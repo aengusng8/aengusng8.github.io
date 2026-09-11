@@ -1295,7 +1295,7 @@ html.transition *:after {
 }
 
 .research-thesis-card {
-  max-width: 900px !important;
+  max-width: 680px !important;
   margin: 0 auto 1.75rem;
   overflow: hidden;
   border: 1px solid rgba(130, 194, 255, 0.2);
@@ -1334,6 +1334,8 @@ html.transition *:after {
 }
 
 .research-thesis-line {
+  display: block;
+  text-wrap: balance;
   color: var(--profile-text);
   font-family: inherit;
   font-size: 1.06em;

@@ -28,7 +28,7 @@ social: true  # includes social icons at the bottom of a page
 <div class="research-thesis-card">
     <div class="research-thesis-card__inner">
         <span class="research-thesis-line">
-            I develop <span class="research-thesis-line__focus">efficient, scalable, and controllable</span> generative models as a foundation for <span class="research-thesis-line__focus">more capable machine intelligence</span>.
+            Toward <span class="research-thesis-line__focus">superhuman intelligence</span> through <span class="research-thesis-line__focus">efficient, scalable, and controllable</span> generative &amp; world models.
         </span>
     </div>
 </div>
