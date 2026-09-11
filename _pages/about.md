@@ -38,7 +38,7 @@ social: true  # includes social icons at the bottom of a page
 <div class="research-core">
   <div class="research-core__main">
     <div class="research-core__statement" style="text-align: justify;">
-      <h2 class="section-kicker">Research Statement</h2>
+      <div class="section-kicker">Research Statement</div>
       My long-term goal is to build systems that can <span class="rs-goal-em">understand, reason, plan,</span> and <span class="rs-goal-em">develop physical intuition</span> about the world while remaining <span class="rs-goal-em">efficient, scalable, and controllable</span>.
       <br><br>
       Toward this goal, my work on <a class="rs-link" href="#selected-publications">one-step generative modeling and distillation</a> <span class="rs-badge-group"><a class="rs-badge" href="#selected-publications">ECCV</a><a class="rs-badge" href="#selected-publications">NeurIPS</a><a class="rs-badge" href="#selected-publications">ICCV</a></span> enables <span class="rs-outcome">real-time, high-fidelity synthesis</span>, while my work on <a class="rs-link" href="#selected-publications">multimodal representation learning</a> <span class="rs-badge-group"><a class="rs-badge" href="#selected-publications">CVPR</a><a class="rs-badge" href="#selected-publications">ICCV</a></span> uncovers internal semantics for <span class="rs-outcome">zero-shot, fine-grained control</span>.
@@ -48,7 +48,7 @@ social: true  # includes social icons at the bottom of a page
 
     <!-- OUTSIDE THE LAB SECTION -->
     <div>
-      <h2 class="section-kicker section-kicker--quiet">Outside the Lab</h2>
+      <div class="section-kicker section-kicker--quiet">Outside the Lab</div>
       Long-distance running is my favorite way to clear my head and reset. 🏃‍♂️
     </div>
 
