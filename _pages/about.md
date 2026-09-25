@@ -5,7 +5,7 @@ permalink: /
 description: Research on efficient, scalable, and controllable generative and world models at Johns Hopkins University, advised by Professor Vishal M. Patel.
 keywords: Anh Nguyen, Anh Nguyen JHU, Anh Nguyen Johns Hopkins, Johns Hopkins University, PhD student, Qualcomm AI Research, generative modeling, diffusion models, multimodal intelligence
 subtitle: |+
-  <div data-nosnippet style="font-size: 1.05em; line-height: 1.6; margin-bottom: 20px;">
+  <div class="profile-intro" data-nosnippet style="font-size: 1.05em; line-height: 1.6; margin-bottom: 20px;">
     I am a first-year PhD student at <a href="https://www.jhu.edu/" target="_blank" style="color: var(--profile-blue); text-decoration: none;">Johns Hopkins University</a>, advised by Professor <a href="https://scholar.google.com/citations?user=AkEXTbIAAAAJ&hl=en" target="_blank" style="color: var(--profile-blue); text-decoration: none;">Vishal M. Patel</a>. Prior to my PhD, I spent three wonderful years as a predoctoral researcher at <a href="https://www.qualcomm.com/research/artificial-intelligence" target="_blank" style="color: var(--profile-blue); text-decoration: none;">Qualcomm</a> under the mentorship of <a href="https://scholar.google.com/citations?user=FYZ5ODQAAAAJ&hl=en" target="_blank" style="color: var(--profile-blue); text-decoration: none;">Principal Scientist Dr. Anh Tran</a>, publishing <strong>six papers</strong> across ECCV, CVPR, ICLR, 2 x NeurIPS, and ICCV with <strong>five first-authored</strong>, co-inventing <strong>two U.S. patents</strong>, and receiving the <strong>Outstanding Resident Award</strong>.
   </div>
 
@@ -28,7 +28,7 @@ social: true  # includes social icons at the bottom of a page
 <div class="research-thesis-card">
     <div class="research-thesis-card__inner">
         <span class="research-thesis-line">
-            Toward <span class="research-thesis-line__focus">superhuman intelligence</span> through <span class="research-thesis-line__focus">efficient, scalable, and controllable</span> generative &amp; world models.
+            Toward <span class="research-thesis-line__focus">superhuman intelligence</span> through efficient, scalable, and controllable generative &amp; world models.
         </span>
     </div>
 </div>
