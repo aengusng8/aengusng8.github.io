@@ -970,6 +970,16 @@ html.transition *:after {
   text-decoration: none;
 }
 
+// Secondary methods remain links without competing with the research pillars.
+.research-core__statement .rs-link--secondary {
+  font-weight: 400;
+}
+
+.research-core__statement .rs-result {
+  color: var(--profile-text);
+  font-weight: 500;
+}
+
 .research-core__statement .rs-badge-group {
   display: inline-flex;
   align-items: baseline;
@@ -1329,12 +1339,29 @@ html.transition *:after {
 }
 
 .profile-intro strong {
-  font-weight: 600;
+  color: var(--profile-text);
+  font-weight: 500;
+  font-style: normal;
+}
+
+.profile-intro a {
+  color: #9bbddd;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.profile-intro a:hover,
+.profile-intro a:focus-visible {
+  color: var(--profile-blue);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
 }
 
 .profile-opportunity-card__label {
   color: var(--profile-gold);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .research-thesis-line {
