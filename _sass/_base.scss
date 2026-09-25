@@ -985,17 +985,22 @@ html.transition *:after {
   justify-content: center;
   min-width: 2.6em;
   padding: 0.05em 0.4em 0.065em;
-  border: 1px solid rgba(225, 189, 115, 0.4);
+  border: 1px solid rgba(225, 189, 115, 0.78);
   border-radius: 5px;
-  color: #ddc79f;
-  background: rgba(211, 161, 95, 0.08);
-  box-shadow: none;
+  color: #fff5df;
+  background:
+    linear-gradient(180deg, rgba(92, 66, 28, 0.96), rgba(35, 25, 13, 0.98)),
+    radial-gradient(120% 90% at 20% 0%, rgba(255, 230, 177, 0.28), transparent 58%);
+  box-shadow:
+    0 0 0 1px rgba(5, 12, 22, 0.68),
+    0 0 8px rgba(225, 189, 115, 0.14),
+    inset 0 1px 0 rgba(255, 245, 220, 0.12);
   font-size: 0.7em;
-  font-weight: 600;
+  font-weight: 820;
   letter-spacing: 0.02em;
   line-height: 1.12;
   text-decoration: none;
-  text-shadow: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.42);
   white-space: nowrap;
 }
 
