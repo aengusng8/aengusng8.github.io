@@ -3,36 +3,44 @@
  ******************************************************************************/
 
 :root {
-  --global-bg-color: #05090e;
+  // Original dark backgrounds; unified text/link colors and selective warm emphasis.
+  // Conference seals use their existing literal palette and remain unchanged.
+  --global-bg-color: var(--profile-bg);
   --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color-light};
-  --global-theme-color: #d3a15f;
-  --global-hover-color: #a7d8ff;
+  --global-text-color: var(--profile-body);
+  --global-text-color-light: var(--profile-muted);
+  --global-theme-color: var(--profile-blue);
+  --global-hover-color: var(--profile-link-hover);
   --global-footer-bg-color: #{$grey-color-light};
   --global-footer-text-color: #{$grey-color-dark};
   --global-footer-link-color: #{$black-color};
   --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #31445d;
+  --global-divider-color: var(--profile-border);
   --global-card-bg-color: #121c27;
   --profile-bg: #05090e;
   --profile-surface: #0f1721;
   --profile-surface-soft: #152231;
   --profile-border: #31445d;
-  --profile-text: #e2eaf5;
-  --profile-muted: #adbac8;
-  --profile-blue: #82c2ff;
-  --profile-blue-deep: #4a8bd2;
-  --profile-blue-soft: rgba(130, 194, 255, 0.18);
-  --profile-cyan: #71eadf;
-  --profile-cyan-soft: rgba(113, 234, 223, 0.14);
-  --profile-amber: #d3a15f;
-  --profile-amber-soft: rgba(211, 161, 95, 0.18);
-  --profile-gold: #e1bd73;
-  --profile-gold-soft: rgba(225, 189, 115, 0.22);
-  --profile-gold-muted: rgba(225, 189, 115, 0.72);
-  --profile-line-soft: rgba(130, 194, 255, 0.14);
-  --profile-violet: #a99ac7;
+  --profile-border-strong: #476280;
+  --profile-control-border: #657d96;
+  --profile-text: #edf3fc;
+  --profile-body: #ced9e7;
+  --profile-muted: #a3b3c7;
+  --profile-faint: #8e9fb5;
+  --profile-blue: #97c9f6;
+  --profile-link-quiet: #adcae7;
+  --profile-link-hover: #d2e9ff;
+  --profile-blue-deep: #668eb8;
+  --profile-blue-soft: rgba(151, 201, 246, 0.12);
+  --profile-cyan: var(--profile-blue);
+  --profile-cyan-soft: var(--profile-blue-soft);
+  --profile-amber: var(--profile-gold);
+  --profile-amber-soft: rgba(226, 193, 133, 0.10);
+  --profile-gold: #e2c185;
+  --profile-gold-soft: rgba(226, 193, 133, 0.16);
+  --profile-gold-muted: #c8b28a;
+  --profile-line-soft: var(--profile-border);
+  --profile-violet: var(--profile-link-quiet);
 
   .fa-sun {
     display : none;

@@ -70,7 +70,7 @@ body.sticky-bottom-footer {
 
 .profile-hero__name-light {
   font-weight: 300;
-  color: rgba(220, 228, 239, 0.82);
+  color: var(--profile-body);
 }
 
 .profile-hero__slash {
@@ -81,7 +81,7 @@ body.sticky-bottom-footer {
 }
 
 .profile-hero__alias {
-  color: #9fceff;
+  color: var(--profile-blue);
   font-size: 0.7em;
   vertical-align: middle;
 }
@@ -182,8 +182,8 @@ body.sticky-bottom-footer {
   max-width: 680px;
   margin: 0 auto 1.35rem;
   padding: 0.85rem 0;
-  border-top: 1px solid rgba(130, 194, 255, 0.14);
-  border-bottom: 1px solid rgba(130, 194, 255, 0.14);
+  border-top: 1px solid var(--profile-border);
+  border-bottom: 1px solid var(--profile-border);
 }
 
 .affiliation-strip__item {
@@ -197,7 +197,7 @@ body.sticky-bottom-footer {
   color: var(--profile-text);
   text-decoration: none;
 
-  & + & { border-left: 1px solid rgba(130, 194, 255, 0.14); }
+  & + & { border-left: 1px solid var(--profile-border); }
   &:hover { color: var(--profile-blue); text-decoration: none; }
   &:focus-visible { outline: 2px solid var(--profile-blue); outline-offset: 4px; }
 }

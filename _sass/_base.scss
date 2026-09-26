@@ -24,7 +24,7 @@ table {
 a, table.table a {
   color: var(--global-theme-color);
   &:hover {
-    color: var(--global-theme-color);
+    color: var(--global-hover-color);
     text-decoration: underline;
   }
   &:hover:after :not(.nav-item.dropdown) {
@@ -265,10 +265,10 @@ blockquote {
       min-height: 2rem;
       margin-right: 0;
       padding: 0.34rem 0.62rem;
-      border: 1px solid rgba(168, 179, 194, 0.18);
+      border: 1px solid var(--profile-control-border);
       border-radius: 9px;
       background: rgba(168, 179, 194, 0.018);
-      color: rgba(220, 228, 239, 0.68);
+      color: var(--profile-muted);
       font-size: 0.76rem;
       font-weight: 400;
       line-height: 1;
@@ -283,10 +283,14 @@ blockquote {
         color: currentColor;
       }
 
+      span {
+        color: inherit;
+      }
+
       &:hover {
-        border-color: rgba(130, 194, 255, 0.38);
+        border-color: var(--profile-blue);
         background: rgba(130, 194, 255, 0.045);
-        color: rgba(159, 206, 255, 0.92);
+        color: var(--profile-link-hover);
       }
     }
   }
@@ -317,16 +321,16 @@ footer.fixed-bottom {
 
 footer.sticky-bottom {
   margin-top: 4.4rem !important;
-  border-top: 1px solid rgba(130, 194, 255, 0.08);
+  border-top: 1px solid var(--profile-border);
   padding-top: 1.1rem;
   padding-bottom: 1.2rem;
-  color: rgba(168, 179, 194, 0.58);
+  color: var(--profile-faint);
   background:
     linear-gradient(180deg, rgba(7, 11, 16, 0), rgba(7, 11, 16, 0.72));
   font-size: 0.68rem;
 
   a {
-    color: rgba(168, 179, 194, 0.7);
+    color: var(--profile-link-quiet);
   }
 }
 
@@ -522,13 +526,13 @@ footer.sticky-bottom {
       width: 3.25rem;
       height: 1px;
       margin-top: 0.52rem;
-      background: linear-gradient(90deg, rgba(211, 161, 95, 0.52), rgba(130, 194, 255, 0.28), rgba(211, 161, 95, 0));
+      background: var(--profile-border-strong);
     }
   }
 
   .publications__note {
     margin-bottom: 1.35rem;
-    color: rgba(168, 179, 194, 0.78);
+    color: var(--profile-faint);
     font-size: 0.82rem;
   }
 
@@ -670,28 +674,28 @@ footer.sticky-bottom {
         font-size: 1.02rem;
       }
       .author {
-        color: rgba(190, 200, 213, 0.86);
+        color: var(--profile-muted);
         line-height: 1.45;
         font-size: 0.9rem;
         a {
           color: inherit;
           border-bottom: 0;
           &:hover {
-            color: rgba(220, 228, 239, 0.9);
+            color: var(--profile-link-hover);
             text-decoration: none;
           }
         }
         .pub-author-name,
         .pub-author-link {
-          color: rgba(190, 200, 213, 0.86);
+          color: var(--profile-muted);
         }
         .pub-author-link:hover {
-          color: rgba(232, 238, 247, 0.94);
+          color: var(--profile-link-hover);
         }
         em {
           font-style: normal;
           font-weight: 760;
-          color: #8eddea;
+          color: var(--profile-blue);
         }
         .pub-author-self {
           color: inherit;
@@ -711,16 +715,16 @@ footer.sticky-bottom {
         margin-top: 0.5rem;
 
         a.btn {
-          color: rgba(220, 228, 239, 0.78);
-          border: 1px solid rgba(168, 179, 194, 0.46);
+          color: var(--profile-body);
+          border: 1px solid var(--profile-control-border);
           padding: 0.09rem 0.42rem;
           margin: 0.2rem 0.12rem 0 0;
           border-radius: 4px;
           font-size: 0.64rem;
           letter-spacing: 0;
           &:hover {
-            color: var(--profile-blue);
-            border-color: rgba(130, 194, 255, 0.72);
+            color: var(--profile-link-hover);
+            border-color: var(--profile-blue);
             background: rgba(130, 194, 255, 0.06);
           }
         }
@@ -732,7 +736,7 @@ footer.sticky-bottom {
 
       .periodical {
         margin-top: 0.14rem;
-        color: rgba(220, 228, 239, 0.78);
+        color: var(--profile-muted);
         font-size: 0.92rem;
         line-height: 1.38;
       }
@@ -918,7 +922,7 @@ html.transition *:after {
 .section-kicker {
   display: block;
   margin-bottom: 0.48rem;
-  color: rgba(211, 161, 95, 0.94);
+  color: var(--profile-gold);
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -927,7 +931,7 @@ html.transition *:after {
 }
 
 .section-kicker--quiet {
-  color: rgba(211, 161, 95, 0.78);
+  color: var(--profile-gold-muted);
 }
 
 .research-core {
@@ -953,7 +957,7 @@ html.transition *:after {
 }
 
 .research-core__statement .rs-goal-em {
-  color: rgba(220, 228, 239, 0.88);
+  color: var(--profile-body);
   font-style: italic;
   font-weight: 400;
 }
@@ -966,7 +970,7 @@ html.transition *:after {
 }
 
 .research-core__statement .rs-link:hover {
-  color: #b7dbff;
+  color: var(--profile-link-hover);
   text-decoration: none;
 }
 
@@ -1025,13 +1029,13 @@ html.transition *:after {
 }
 
 .research-core__statement .rs-outcome {
-  color: rgba(220, 228, 239, 0.94);
+  color: var(--profile-body);
   font-style: italic;
   font-weight: inherit;
 }
 
 .research-core__statement .rs-label {
-  color: rgba(220, 228, 239, 0.9);
+  color: var(--profile-body);
   font-size: inherit;
   font-weight: 400;
   letter-spacing: 0;
@@ -1051,13 +1055,13 @@ html.transition *:after {
   flex: 0 0 auto;
   margin-bottom: 0.76rem;
   padding-bottom: 0.58rem;
-  border-bottom: 1px solid rgba(130, 194, 255, 0.16);
+  border-bottom: 1px solid var(--profile-border);
   background:
     linear-gradient(180deg, rgba(7, 11, 16, 0.98), rgba(7, 11, 16, 0.92));
 
   h2 {
     margin: 0;
-    color: rgba(211, 161, 95, 0.82);
+    color: var(--profile-gold-muted);
     font-size: 0.72rem;
     font-weight: 800;
     line-height: 1.15;
@@ -1068,7 +1072,7 @@ html.transition *:after {
   p {
     max-width: 100%;
     margin: 0.36rem 0 0;
-    color: rgba(168, 179, 194, 0.78);
+    color: var(--profile-muted);
     font-size: 0.82rem;
     line-height: 1.42;
     white-space: nowrap;
@@ -1091,8 +1095,8 @@ html.transition *:after {
   min-height: 0;
   overflow: hidden;
   counter-increment: research-signal;
-  border: 1px solid rgba(130, 194, 255, 0.12);
-  border-left: 1px solid rgba(130, 194, 255, 0.2);
+  border: 1px solid var(--profile-border);
+  border-left: 1px solid var(--profile-border);
   border-radius: 6px;
   padding: 0.75rem 0.78rem 0.78rem;
   color: inherit;
@@ -1109,7 +1113,7 @@ html.transition *:after {
     position: absolute;
     top: 0.78rem;
     right: 0.78rem;
-    color: rgba(130, 194, 255, 0.38);
+    color: var(--profile-faint);
     font-size: 0.64rem;
     font-weight: 800;
     letter-spacing: 0.04em;
@@ -1117,7 +1121,7 @@ html.transition *:after {
 
   h3 {
     margin: 0.62rem 1.65rem 0.32rem 0;
-    color: var(--profile-text);
+    color: var(--profile-body);
     font-size: 0.82rem;
     font-weight: 800;
     line-height: 1.3;
@@ -1125,7 +1129,7 @@ html.transition *:after {
 
   p {
     margin: 0;
-    color: rgba(220, 228, 239, 0.82);
+    color: var(--profile-muted);
     font-size: 0.76rem;
     line-height: 1.42;
   }
@@ -1133,8 +1137,8 @@ html.transition *:after {
 
 .research-signal-card:hover,
 .research-signal-card:focus {
-  border-color: rgba(130, 194, 255, 0.26);
-  border-left-color: rgba(113, 234, 223, 0.32);
+  border-color: var(--profile-border-strong);
+  border-left-color: var(--profile-blue);
   background:
     linear-gradient(145deg, rgba(21, 34, 49, 0.99), rgba(5, 9, 14, 0.99) 68%, rgba(22, 36, 51, 0.99));
   box-shadow:
@@ -1145,7 +1149,7 @@ html.transition *:after {
 }
 
 .research-signal-card:focus-visible {
-  outline: 2px solid rgba(130, 194, 255, 0.62);
+  outline: 2px solid var(--profile-blue);
   outline-offset: 3px;
 }
 
@@ -1166,9 +1170,9 @@ html.transition *:after {
   height: 1.62rem;
   flex: 0 0 1.62rem;
   overflow: hidden;
-  border: 1px solid rgba(130, 194, 255, 0.18);
+  border: 1px solid var(--profile-border-strong);
   border-radius: 50%;
-  color: rgba(238, 246, 255, 0.84);
+  color: var(--profile-body);
   font-size: 0.68rem;
   font-weight: 800;
   background:
@@ -1194,7 +1198,7 @@ html.transition *:after {
 
   span {
     display: block;
-    color: rgba(168, 179, 194, 0.78);
+    color: var(--profile-faint);
     font-size: 0.64rem;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1203,7 +1207,7 @@ html.transition *:after {
 
 .research-signal-card__x {
   margin-left: auto;
-  color: rgba(220, 228, 239, 0.42);
+  color: var(--profile-faint);
   font-size: 0.68rem;
   font-weight: 800;
   line-height: 1;
@@ -1221,7 +1225,7 @@ html.transition *:after {
     border: 0;
     border-radius: 0;
     padding: 0;
-    color: rgba(168, 179, 194, 0.78);
+    color: var(--profile-faint);
     font-size: 0.68rem;
     font-weight: 520;
     line-height: 1.35;
@@ -1229,7 +1233,7 @@ html.transition *:after {
 
     &::before {
       content: "#";
-      color: rgba(130, 194, 255, 0.46);
+      color: var(--profile-muted);
     }
   }
 }
@@ -1253,7 +1257,7 @@ html.transition *:after {
     display: grid;
     gap: 1.42rem;
     padding-left: 0.95rem;
-    border-left: 1px solid rgba(211, 161, 95, 0.14);
+    border-left: 1px solid var(--profile-border);
     background: linear-gradient(90deg, rgba(211, 161, 95, 0.032), rgba(211, 161, 95, 0) 8.5rem);
   }
 
@@ -1274,7 +1278,7 @@ html.transition *:after {
     overflow-y: auto;
     overscroll-behavior: contain;
     padding-right: 0.25rem;
-    scrollbar-color: rgba(130, 194, 255, 0.34) rgba(130, 194, 255, 0.06);
+    scrollbar-color: var(--profile-border-strong) var(--profile-bg);
     scrollbar-width: thin;
 
     &::-webkit-scrollbar {
@@ -1282,12 +1286,12 @@ html.transition *:after {
     }
 
     &::-webkit-scrollbar-track {
-      background: rgba(130, 194, 255, 0.045);
+      background: var(--profile-bg);
       border-radius: 999px;
     }
 
     &::-webkit-scrollbar-thumb {
-      background: rgba(130, 194, 255, 0.3);
+      background: var(--profile-border-strong);
       border-radius: 999px;
     }
   }
@@ -1308,8 +1312,8 @@ html.transition *:after {
   max-width: 680px !important;
   margin: 0 auto 1.75rem;
   overflow: hidden;
-  border: 1px solid rgba(130, 194, 255, 0.2);
-  border-left: 2px solid rgba(225, 189, 115, 0.7);
+  border: 1px solid var(--profile-border);
+  border-left: 2px solid var(--profile-gold-muted);
   border-radius: 5px;
   background:
     linear-gradient(135deg, rgba(21, 34, 49, 0.86), rgba(5, 9, 14, 0.94) 58%, rgba(15, 23, 33, 0.86)),
@@ -1321,7 +1325,7 @@ html.transition *:after {
 
 .research-thesis-card__inner {
   padding: 0.6rem 1.1rem;
-  border-left: 1px solid rgba(211, 161, 95, 0.12);
+  border-left: 1px solid transparent;
   text-align: center;
 }
 
@@ -1344,8 +1348,13 @@ html.transition *:after {
   font-style: normal;
 }
 
+// One warm focal point emphasizes research ownership without coloring every metric.
+.profile-intro strong.profile-intro__lead {
+  color: var(--profile-gold);
+}
+
 .profile-intro a {
-  color: #9bbddd;
+  color: var(--profile-link-quiet);
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
@@ -1353,7 +1362,7 @@ html.transition *:after {
 
 .profile-intro a:hover,
 .profile-intro a:focus-visible {
-  color: var(--profile-blue);
+  color: var(--profile-link-hover);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.15em;
@@ -1376,7 +1385,7 @@ html.transition *:after {
   line-height: 1.55;
 
   em {
-    color: rgba(220, 228, 239, 0.92);
+    color: var(--profile-body);
     font-style: italic;
     font-weight: 400 !important;
   }
@@ -1404,7 +1413,7 @@ html.transition *:after {
       width: 3.25rem;
       height: 1px;
       margin-top: 0.52rem;
-      background: linear-gradient(90deg, rgba(211, 161, 95, 0.52), rgba(130, 194, 255, 0.28), rgba(211, 161, 95, 0));
+      background: var(--profile-border-strong);
     }
   }
 
@@ -1434,7 +1443,7 @@ html.transition *:after {
       width: 5.15rem;
       min-width: 5.15rem;
       padding-right: 1.1rem;
-      color: rgba(168, 179, 194, 0.66);
+      color: var(--profile-faint);
       font-size: 0.74rem;
       font-weight: 700;
       text-align: right;
@@ -1446,20 +1455,20 @@ html.transition *:after {
       font-size: 0.88rem;
       padding-left: 1.35rem;
       position: relative;
-      color: rgba(220, 228, 239, 0.9);
+      color: var(--profile-body);
 
       .news-title,
       a.news-title {
-        color: rgba(225, 189, 115, 0.84);
+        color: var(--profile-blue);
         text-decoration: none;
       }
 
       a.news-title:hover {
-        color: #ffe2a6;
+        color: var(--profile-link-hover);
       }
 
       .news-milestone__institution {
-        color: rgba(231, 237, 246, 0.96);
+        color: var(--profile-text);
         font-weight: 550;
       }
 
@@ -1470,14 +1479,14 @@ html.transition *:after {
       }
 
       a.news-milestone__advisor:hover {
-        color: #b8dcff;
+        color: var(--profile-link-hover);
         text-decoration: underline;
-        text-decoration-color: rgba(184, 220, 255, 0.45);
+        text-decoration-color: currentColor;
         text-underline-offset: 0.14em;
       }
 
       .news-milestone__focus {
-        color: rgba(220, 228, 239, 0.84);
+        color: var(--profile-body);
         font-style: italic;
         font-weight: 400;
       }
@@ -1545,12 +1554,27 @@ html.transition *:after {
   width: fit-content;
   margin-top: 0.3rem;
   padding-left: 0.62rem;
-  border-left: 2px solid rgba(113, 234, 223, 0.32);
-  color: rgba(220, 228, 239, 0.78);
+  border-left: 2px solid var(--profile-border-strong);
+  color: var(--profile-muted);
   font-size: 0.92rem;
   font-style: italic;
   line-height: 1.42;
   letter-spacing: 0;
+
+  em {
+    color: inherit;
+  }
+}
+
+// Visible interaction states without altering any conference badge styles.
+.profile-intro a:focus-visible,
+.social .contact-icons a:focus-visible,
+.research-core__statement .rs-link:focus-visible,
+.news td a:not(.aurora-text):focus-visible,
+.publications .pub-author-link:focus-visible,
+.publications .links a.btn:focus-visible {
+  outline: 2px solid var(--profile-blue);
+  outline-offset: 3px;
 }
 
 @media (min-width: 576px) {
@@ -1609,7 +1633,7 @@ html.transition *:after {
 
 .research-signals__header p {
   max-width: 100%;
-  color: rgba(220, 228, 239, 0.94);
+  color: var(--profile-muted);
   font-size: 0.9rem;
   line-height: 1.45;
   white-space: normal;
@@ -1660,11 +1684,11 @@ html.transition *:after {
 .publications h2::after {
   width: 5.4rem;
   margin-top: 0.62rem;
-  background: linear-gradient(90deg, rgba(225, 189, 115, 0.86), rgba(130, 194, 255, 0.44), rgba(113, 234, 223, 0));
+  background: var(--profile-border-strong);
 }
 
 .publications h2 a {
-  color: var(--profile-amber);
+  color: var(--profile-blue);
   font-size: 0.82em;
   font-weight: 360;
   text-decoration: none;
@@ -1747,8 +1771,8 @@ html.transition *:after {
   .publications ol.bibliography li {
     margin-bottom: 0;
     padding: 0.66rem 0.7rem 0.72rem;
-    border: 1px solid rgba(130, 194, 255, 0.105);
-    border-left: 1px solid rgba(225, 189, 115, 0.2);
+    border: 1px solid var(--profile-border);
+    border-left: 1px solid var(--profile-border);
     border-radius: 7px;
     background:
       linear-gradient(90deg, rgba(130, 194, 255, 0.03), rgba(130, 194, 255, 0.008) 48%, rgba(7, 11, 16, 0) 100%),
@@ -1835,7 +1859,7 @@ html.transition *:after {
     align-items: center;
     min-height: 1.2rem;
     margin: 0;
-    color: rgba(220, 228, 239, 0.62);
+    color: var(--profile-muted);
     font-size: 0.58rem;
     font-weight: 760;
     letter-spacing: 0.03em;
@@ -1865,8 +1889,8 @@ html.transition *:after {
   .publications ol.bibliography li {
     margin-bottom: 0;
     padding: 0.98rem 1.12rem 1.02rem;
-    border: 1px solid rgba(130, 194, 255, 0.115);
-    border-left: 1px solid rgba(225, 189, 115, 0.26);
+    border: 1px solid var(--profile-border);
+    border-left: 1px solid var(--profile-border);
     border-radius: 7px;
     background:
       linear-gradient(90deg, rgba(130, 194, 255, 0.04), rgba(130, 194, 255, 0.01) 38%, rgba(7, 11, 16, 0) 100%),
@@ -1916,7 +1940,7 @@ html.transition *:after {
 
   .publications ol.bibliography li .title {
     margin-bottom: 0.34rem;
-    color: rgba(225, 232, 241, 0.96);
+    color: var(--profile-text);
     font-size: 1.05rem;
     font-weight: 760;
     line-height: 1.28;
@@ -1924,7 +1948,7 @@ html.transition *:after {
 
   .publications ol.bibliography li .author {
     max-width: 92ch;
-    color: rgba(190, 200, 213, 0.86);
+    color: var(--profile-muted);
     font-size: 0.89rem;
     line-height: 1.43;
   }
@@ -1932,8 +1956,8 @@ html.transition *:after {
   .publications ol.bibliography li .periodical {
     margin-top: 0.42rem;
     padding-left: 0.68rem;
-    color: rgba(220, 228, 239, 0.74);
-    border-left-color: rgba(113, 234, 223, 0.38);
+    color: var(--profile-muted);
+    border-left-color: var(--profile-border-strong);
     font-size: 0.9rem;
   }
 
@@ -1960,7 +1984,7 @@ html.transition *:after {
     align-items: center;
     min-height: 1.5rem;
     margin: 0;
-    color: rgba(220, 228, 239, 0.68);
+    color: var(--profile-muted);
     font-size: 0.68rem;
     font-weight: 760;
     letter-spacing: 0.03em;
@@ -2183,7 +2207,7 @@ html.transition *:after {
   .news table.table tr {
     padding-top: 0.5rem;
     padding-bottom: 0.58rem;
-    border-bottom: 1px solid rgba(130, 194, 255, 0.08);
+    border-bottom: 1px solid var(--profile-border);
   }
 
   .news table.table tr:last-child {
@@ -2191,7 +2215,7 @@ html.transition *:after {
   }
 
   .news table.table th {
-    color: rgba(168, 179, 194, 0.66);
+    color: var(--profile-faint);
     font-size: 0.58rem;
     letter-spacing: 0.02em;
   }
