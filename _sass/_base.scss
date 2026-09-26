@@ -1330,8 +1330,8 @@ html.transition *:after {
 }
 
 .profile-opportunity-card {
-  margin: 0 0 1.55rem;
-  padding: 0.72rem 1rem;
+  margin: 0 0 1.25rem;
+  padding: 0.6rem 0.85rem;
   color: var(--profile-text);
   border: 0;
   border-left: 3px solid var(--profile-gold);
@@ -1339,7 +1339,7 @@ html.transition *:after {
   background: linear-gradient(135deg, rgba(211, 161, 95, 0.18), rgba(130, 194, 255, 0.055));
   box-shadow: none;
   font-size: 0.94rem;
-  line-height: 1.58;
+  line-height: 1.55;
 }
 
 .profile-intro strong {
@@ -2104,7 +2104,7 @@ html.transition *:after {
 
   .profile-opportunity-card {
     margin-bottom: 0.86rem;
-    padding: 0.65rem 0.75rem;
+    padding: 0.6rem 0.7rem;
     font-size: 13px;
     line-height: 1.55;
     text-align: left;
@@ -2121,7 +2121,7 @@ html.transition *:after {
 
   .social .contact-icons {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     align-items: center;
     justify-content: center;
     gap: 0.35rem;

@@ -6,8 +6,8 @@ layout: default
       <div class="post">        
         <article>
           {% if page.profile -%}
-          <div class="row profile-hero">
-            <div class="col-sm-3 profile-hero__media">
+          <div class="profile-hero">
+            <div class="profile-hero__media">
               {%- if page.profile.image %}
                 {% if page.profile.image_cicular %}
                   <div class="profile-avatar profile-avatar--circle">
@@ -30,7 +30,7 @@ layout: default
                 {% endif %}
               {% endif -%}
             </div>                                   
-            <div class="col-sm-9 profile-hero__body">
+            <div class="profile-hero__body">
               <h1 class="profile-hero__name">
                 <span class="profile-hero__name-strong">Anh</span>
                 <span class="profile-hero__name-light">Nguyen</span>
