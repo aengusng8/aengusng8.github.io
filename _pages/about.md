@@ -28,7 +28,7 @@ social: true  # includes social icons at the bottom of a page
 <div class="research-thesis-card">
     <div class="research-thesis-card__inner">
         <span class="research-thesis-line">
-            Toward <span class="research-thesis-line__focus">superhuman intelligence</span> through efficient, scalable, and controllable generative &amp; world models.
+            Toward superhuman intelligence through <span class="research-thesis-line__focus">efficient, scalable, and controllable</span> generative &amp; world models.
         </span>
     </div>
 </div>
