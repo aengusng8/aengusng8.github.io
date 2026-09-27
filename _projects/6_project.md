@@ -5,6 +5,8 @@ description: a project with no image
 img:
 importance: 4
 category: fun
+sitemap: false
+robots: "noindex, follow"
 ---
 
 Every project has a beautiful feature showcase page.

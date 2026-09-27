@@ -2,7 +2,8 @@
 layout: about
 title: about
 permalink: /
-description: Research on efficient, scalable, and controllable generative and world models at Johns Hopkins University, advised by Professor Vishal M. Patel.
+last_modified_at: 2026-09-27
+description: "Toward superhuman intelligence through efficient, scalable, and controllable generative & world models."
 keywords: Anh Nguyen, Anh Nguyen JHU, Anh Nguyen Johns Hopkins, Johns Hopkins University, PhD student, Qualcomm AI Research, generative modeling, diffusion models, multimodal intelligence
 subtitle: |+
   <div class="profile-intro" data-nosnippet style="font-size: 1.05em; line-height: 1.6; margin-bottom: 16px;">

@@ -5,6 +5,8 @@ title: repositories
 description: Most of my research has code open-sourced at GitHub.
 nav: false
 nav_order: 3
+sitemap: false
+robots: "noindex, follow"
 ---
 
 ## GitHub Account

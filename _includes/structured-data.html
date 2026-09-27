@@ -1,0 +1,71 @@
+{%- assign home_url = '/' | absolute_url -%}
+{%- assign person_id = home_url | append: '#person' -%}
+{%- assign website_id = home_url | append: '#website' -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {% if page.url == '/' %}
+    {
+      "@type": "WebSite",
+      "@id": {{ website_id | jsonify }},
+      "url": {{ home_url | jsonify }},
+      "name": {{ site_name | jsonify }},
+      "alternateName": {{ site.site_alternate_name | jsonify }},
+      "description": {{ meta_description | jsonify }},
+      "inLanguage": {{ site.lang | jsonify }},
+      "publisher": { "@id": {{ person_id | jsonify }} }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": {{ home_url | append: '#profilepage' | jsonify }},
+      "url": {{ home_url | jsonify }},
+      "name": {{ document_title | jsonify }},
+      "description": {{ meta_description | jsonify }},
+      {% if page.last_modified_at %}
+      "dateModified": {{ page.last_modified_at | date_to_xmlschema | jsonify }},
+      {% endif %}
+      "isPartOf": { "@id": {{ website_id | jsonify }} },
+      "mainEntity": {
+        "@type": "Person",
+        "@id": {{ person_id | jsonify }},
+        "name": {{ person_name | jsonify }},
+        "givenName": {{ site.first_name | jsonify }},
+        "familyName": {{ site.last_name | jsonify }},
+        "alternateName": "Aengus",
+        "url": {{ home_url | jsonify }},
+        "mainEntityOfPage": { "@id": {{ home_url | append: '#profilepage' | jsonify }} },
+        "image": {{ '/assets/img/profile.png' | absolute_url | jsonify }},
+        "email": {{ site.email | prepend: 'mailto:' | jsonify }},
+        "jobTitle": "PhD Student",
+        "description": {{ site.description | strip | jsonify }},
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "Johns Hopkins University",
+          "url": "https://www.jhu.edu/"
+        },
+        "knowsAbout": ["Generative models", "World models", "Diffusion models", "Pretraining", "Distillation", "Controllability", "AI safety"],
+        "sameAs": [
+          {{ site.institutional_profile | jsonify }}
+          {% if site.linkedin_username %}, {{ site.linkedin_username | prepend: 'https://www.linkedin.com/in/' | append: '/' | jsonify }}{% endif %}
+          {% if site.twitter_username %}, {{ site.twitter_username | prepend: 'https://x.com/' | jsonify }}{% endif %}
+          {% if site.quora_username %}, {{ site.quora_username | prepend: 'https://www.quora.com/profile/' | jsonify }}{% endif %}
+          {% if site.scholar_userid %}, {{ site.scholar_userid | prepend: 'https://scholar.google.com/citations?user=' | jsonify }}{% endif %}
+          {% if site.orcid_id %}, {{ site.orcid_id | prepend: 'https://orcid.org/' | jsonify }}{% endif %}
+        ]
+      }
+    }
+    {% else %}
+    {
+      "@type": "WebPage",
+      "@id": {{ canonical_url | append: '#webpage' | jsonify }},
+      "url": {{ canonical_url | jsonify }},
+      "name": {{ document_title | jsonify }},
+      "description": {{ meta_description | jsonify }},
+      "isPartOf": { "@id": {{ website_id | jsonify }} },
+      "about": { "@id": {{ person_id | jsonify }} }
+    }
+    {% endif %}
+  ]
+}
+</script>

@@ -2,13 +2,16 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: "Anh Nguyen • phd • generative & world models" # the website title (if blank, full name will be used instead)
+title: "Anh Nguyen • phd • generative & world models"
+site_name: "Anh Nguyen"
+site_alternate_name: "Anh Nguyen / Aengus"
+institutional_profile: "https://engineering.jhu.edu/vpatel36/team/anh-nguyen/"
 first_name: Anh
 middle_name: 
 last_name: Nguyen
 email: aengus.ng8@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Research on efficient, scalable, and controllable generative and world models at Johns Hopkins University, advised by Professor Vishal M. Patel.
+  Anh Nguyen is a PhD student at Johns Hopkins University researching generative and world models with Vishal M. Patel. Previously at Qualcomm AI Research.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: Anh Nguyen, Anh Nguyen JHU, Anh Nguyen Johns Hopkins, Johns Hopkins University, PhD student, Qualcomm AI Research, machine learning, AI, artificial intelligence, deep learning, generative models, diffusion models, multimodal intelligence  # add your own keywords or leave empty
@@ -169,6 +172,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - scripts
+  - docs
+  - .design-backup
 keep_files:
   - CNAME
   - .nojekyll
@@ -193,6 +199,10 @@ plugins:
 defaults:
   - scope:
       path: "assets/**/*.*"
+    values:
+      sitemap: false
+  - scope:
+      path: "googled1b40b095773bc83.html"
     values:
       sitemap: false
 
