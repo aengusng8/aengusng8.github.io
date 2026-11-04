@@ -1398,6 +1398,27 @@ html.transition *:after {
 }
 
 .news {
+  .news-label--coming-soon {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    white-space: nowrap;
+    color: var(--profile-gold);
+
+    &::before {
+      content: "";
+      width: 0.45em;
+      height: 0.45em;
+      border-radius: 50%;
+      background: currentColor;
+      box-shadow: 0 0 0 0.15em var(--profile-gold-soft);
+
+      @media (prefers-reduced-motion: no-preference) {
+        animation: news-coming-soon-pulse 3.6s ease-out infinite;
+      }
+    }
+  }
+
   h2 {
     margin-bottom: 0.9rem;
     color: var(--profile-text);
@@ -1493,6 +1514,12 @@ html.transition *:after {
     }
   }
 
+}
+
+@keyframes news-coming-soon-pulse {
+  0%, 55%, 100% { box-shadow: 0 0 0 0 transparent; }
+  65% { box-shadow: 0 0 0 0.12em var(--profile-gold-soft); }
+  95% { box-shadow: 0 0 0 0.48em transparent; }
 }
 
 @media (max-width: 575px) {
