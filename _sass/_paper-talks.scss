@@ -58,15 +58,18 @@
 // Anchor each talk to its paper, even when another abstract expands.
 @media (min-width: 1440px) {
   #selected-publications li:has(> .paper-talk) {
-    --talk-width: min(19rem, calc(50vw - 580px - 1.25rem));
-    min-height: calc(var(--talk-width) * 0.5625 + 1.8rem);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: center;
+    > .row { grid-area: 1 / 1; }
     > .paper-talk {
-      position: absolute;
-      right: calc(100% + 1.8rem);
-      top: 50%;
-      transform: translateY(-50%);
-      width: var(--talk-width);
-      margin: 0;
+      grid-area: 1 / 1;
+      justify-self: start;
+      position: relative;
+      right: 3rem;
+      transform: translateX(-100%);
+      width: min(19rem, calc(50vw - 580px - 1.25rem));
+      margin: -0.8rem 0;
     }
   }
 }
