@@ -42,8 +42,20 @@
   font-variant-numeric: tabular-nums;
 }
 
+@media (max-width: 767.98px) {
+  .paper-talk {
+    display: grid;
+    grid-template-columns: 5.5rem minmax(0, 1fr);
+    align-items: center;
+    width: 100%;
+    margin-top: 0.65rem;
+    box-shadow: none;
+  }
+  .paper-talk__caption { padding: 0.5rem 0.75rem; font-size: 0.875rem; }
+}
+
 // Use the left side of the card if the outer margin cannot fit a thumbnail.
-@media (min-width: 576px) and (max-width: 1439.98px) {
+@media (min-width: 768px) and (max-width: 1439.98px) {
   #selected-publications li:has(> .paper-talk-slot) {
     display: grid;
     grid-template-columns: clamp(8rem, 13vw, 12rem) minmax(0, 1fr);
@@ -103,4 +115,18 @@
     cursor: pointer;
   }
   video { display: block; width: 100%; max-height: 72vh; aspect-ratio: 16 / 9; background: #000; }
+}
+
+@media (max-width: 767.98px), (pointer: coarse) {
+  .paper-talk-player[open] {
+    display: flex;
+    flex-direction: column;
+    inset: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    max-width: calc(100vw - 1rem - env(safe-area-inset-left) - env(safe-area-inset-right));
+    max-height: calc(100dvh - 1rem - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+
+    header { flex: none; gap: 0.75rem; padding: 0.4rem 0.65rem; }
+    button { min-width: 44px; min-height: 44px; }
+    video { min-height: 0; max-height: none; object-fit: contain; }
+  }
 }
