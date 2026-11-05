@@ -1,0 +1,95 @@
+// The thumbnail is a regular MP4 link, including without JavaScript.
+.paper-talk {
+  display: block;
+  width: min(100%, 20rem);
+  margin-top: 0.85rem;
+  overflow: hidden;
+  border: 1px solid var(--profile-border-strong);
+  border-radius: 7px;
+  background: var(--profile-surface);
+  color: var(--profile-text);
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.28);
+
+  &:hover, &:focus-visible {
+    color: var(--profile-text);
+    text-decoration: none;
+    border-color: var(--profile-blue);
+  }
+  &:focus-visible { outline: 2px solid var(--profile-blue); outline-offset: 3px; }
+}
+
+.paper-talk__poster { display: block; width: 100%; height: auto; }
+.paper-talk__caption {
+  display: flex;
+  align-items: center;
+  gap: 0.45em;
+  padding: 0.38em 0.8em;
+  font-size: 0.72rem;
+  font-weight: 550;
+  line-height: 1.35;
+  white-space: nowrap;
+
+  &::before {
+    content: "";
+    border-block: 0.34em solid transparent;
+    border-left: 0.55em solid var(--profile-blue);
+  }
+}
+.paper-talk__duration {
+  margin-left: auto;
+  color: var(--profile-muted);
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+}
+
+// Use the left side of the card if the outer margin cannot fit a thumbnail.
+@media (min-width: 576px) and (max-width: 1439.98px) {
+  #selected-publications li:has(> .paper-talk) {
+    display: grid;
+    grid-template-columns: clamp(8rem, 13vw, 12rem) minmax(0, 1fr);
+    align-items: start;
+    column-gap: 1rem;
+    > .row { grid-column: 2; grid-row: 1; }
+    > .paper-talk { grid-column: 1; grid-row: 1; margin: 0; }
+  }
+}
+
+// The homepage research grid is centered and 1160px wide at this breakpoint.
+// Anchor each talk to its paper, even when another abstract expands.
+@media (min-width: 1440px) {
+  #selected-publications li:has(> .paper-talk) {
+    --talk-width: min(19rem, calc(50vw - 580px - 1.25rem));
+    min-height: calc(var(--talk-width) * 0.5625 + 1.8rem);
+    > .paper-talk {
+      position: absolute;
+      right: calc(100% + 1.8rem);
+      top: 50%;
+      transform: translateY(-50%);
+      width: var(--talk-width);
+      margin: 0;
+    }
+  }
+}
+
+.paper-talk-player {
+  width: min(60rem, 94vw);
+  max-height: 92vh;
+  padding: 0;
+  margin: auto;
+  border: 1px solid var(--profile-border-strong);
+  border-radius: 9px;
+  background: var(--profile-surface);
+  color: var(--profile-text);
+  &::backdrop { background: rgba(2, 5, 9, 0.86); }
+  header { display: flex; align-items: center; gap: 1rem; padding: 0.65rem 0.85rem; }
+  h3 { flex: 1; margin: 0; color: inherit; font-size: 1rem; line-height: 1.35; }
+  button {
+    padding: 0.4rem 0.6rem;
+    color: var(--profile-text);
+    background: transparent;
+    border: 1px solid var(--profile-control-border);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  video { display: block; width: 100%; max-height: 72vh; aspect-ratio: 16 / 9; background: #000; }
+}
