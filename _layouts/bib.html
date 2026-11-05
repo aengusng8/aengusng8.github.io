@@ -222,9 +222,11 @@
         </div>
       </div>
       {%- if entry.talk and page.url == '/' %}
-      <a class="paper-talk" href="{{ entry.talk | relative_url }}" data-title="{{ entry.title | escape }}"
-         aria-label="Watch talk: {{ entry.title | escape }} ({{ entry.talk_duration }})">
-        <img class="paper-talk__poster" src="{{ entry.talk | replace: '.mp4', '.jpg' | relative_url }}" width="800" height="450" alt="" loading="lazy" decoding="async">
-        <span class="paper-talk__caption"><span>Watch talk</span><span class="paper-talk__duration">{{ entry.talk_duration }}</span></span>
-      </a>
+      <div class="paper-talk-slot">
+        <a class="paper-talk" href="{{ entry.talk | relative_url }}" data-title="{{ entry.title | escape }}"
+           aria-label="Watch talk: {{ entry.title | escape }} ({{ entry.talk_duration }})">
+          <img class="paper-talk__poster" src="{{ entry.talk | replace: '.mp4', '.jpg' | relative_url }}" width="800" height="450" alt="" loading="lazy" decoding="async">
+          <span class="paper-talk__caption"><span>Watch talk</span><span class="paper-talk__duration">{{ entry.talk_duration }}</span></span>
+        </a>
+      </div>
       {%- endif %}

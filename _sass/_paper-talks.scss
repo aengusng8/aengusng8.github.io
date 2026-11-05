@@ -44,32 +44,40 @@
 
 // Use the left side of the card if the outer margin cannot fit a thumbnail.
 @media (min-width: 576px) and (max-width: 1439.98px) {
-  #selected-publications li:has(> .paper-talk) {
+  #selected-publications li:has(> .paper-talk-slot) {
     display: grid;
     grid-template-columns: clamp(8rem, 13vw, 12rem) minmax(0, 1fr);
     align-items: start;
     column-gap: 1rem;
     > .row { grid-column: 2; grid-row: 1; }
-    > .paper-talk { grid-column: 1; grid-row: 1; margin: 0; }
+    > .paper-talk-slot { grid-column: 1; grid-row: 1; }
+    .paper-talk { margin: 0; }
   }
 }
 
 // The homepage research grid is centered and 1160px wide at this breakpoint.
-// Anchor each talk to its paper, even when another abstract expands.
+// Keep the rail out of flow: the paper sets the height, not the thumbnail.
 @media (min-width: 1440px) {
-  #selected-publications li:has(> .paper-talk) {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
+  #selected-publications .paper-talk-slot {
+    position: absolute;
+    inset-block: 0;
+    right: calc(100% + 1.8rem);
+    width: min(19rem, calc(50vw - 580px - 1.25rem));
+    container-type: size;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    > .row { grid-area: 1 / 1; }
-    > .paper-talk {
-      grid-area: 1 / 1;
-      justify-self: start;
-      position: relative;
-      right: 3rem;
-      transform: translateX(-100%);
-      width: min(19rem, calc(50vw - 580px - 1.25rem));
-      margin: -0.8rem 0;
+
+    .paper-talk {
+      width: fit-content;
+      max-width: 100%;
+      margin: 0;
+    }
+    .paper-talk__poster {
+      width: auto;
+      max-width: 100%;
+      // Reserve space for the caption and border; keep the slide uncropped.
+      max-height: calc(100cqh - 1.75rem);
     }
   }
 }
