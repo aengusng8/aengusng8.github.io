@@ -182,3 +182,21 @@
   tweet_url: "https://x.com/giffmana/status/1918764792720007292"
   primary_url: "https://x.com/giffmana/status/1918764792720007292"
   confidence: "high"
+
+- id: data-repetition-across-training-scales
+  rank: 11
+  section: research_signals
+  source_type: external_x_repost
+  include: true
+  author_name: "Jiawei Yang"
+  author_handle: "JiaweiYang118"
+  author_avatar_url: "https://unavatar.io/twitter/JiaweiYang118"
+  date: "2026-11-11"
+  title: "How often should a model see the same data?"
+  insight: "Microsoft AI estimates memorization per source from validation loss gains on tokens predicted with near-certainty, then sets tighter mid-training epoch caps for sources with higher scores."
+  why_selected: "Matching data repetition makes small-scale pretraining experiments more representative of the full run."
+  display_text: "Microsoft AI limits mid-training passes over sources that show signs of memorization. In smaller scaling experiments, it repeats each dataset as often as it will in the full run."
+  tags: ["pretraining", "data-mixtures", "memorization", "scaling"]
+  tweet_url: "https://x.com/JiaweiYang118/status/2120431487178989644"
+  primary_url: "https://x.com/JiaweiYang118/status/2120431487178989644"
+  confidence: "high"

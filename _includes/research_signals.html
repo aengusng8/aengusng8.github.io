@@ -8,10 +8,10 @@
       </div>
     </div>
     <div class="research-signals__list">
-      {%- for signal in research_signals limit: 10 -%}
+      {%- for signal in research_signals -%}
         {%- assign signal_url = signal.tweet_url | default: signal.x_search_url | default: signal.primary_url -%}
         {%- if signal_url -%}
-        <a class="research-signal-card" href="{{ signal_url }}" target="_blank" rel="noopener noreferrer" aria-label="View {{ signal.title | escape }} on X">
+        <a id="{{ signal.id | escape }}" class="research-signal-card" href="{{ signal_url }}" target="_blank" rel="noopener noreferrer" aria-label="View {{ signal.title | escape }} on X">
         {%- else -%}
         <article class="research-signal-card">
         {%- endif -%}
