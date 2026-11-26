@@ -1,5 +1,22 @@
-- id: world-modeling-second-pretraining-paradigm
+- id: bullish-on-human-intelligence
   rank: 1
+  section: research_signals
+  source_type: external_blog
+  source_label: "Blog"
+  include: true
+  author_name: "Jiaxin Wen"
+  author_site: "jiaxin-wen.github.io"
+  date: "2026-11"
+  title: "Bullish on Human Intelligence"
+  insight: "Wen argues that human sample efficiency remains valuable where experiments are expensive, and that leading the research process develops judgment that transfers to future problems."
+  why_selected: "A perspective on developing research judgment through hypothesis formation and experiment design."
+  display_text: "Wen argues that researchers' sample efficiency matters most when experiments are costly. Forming hypotheses and choosing informative experiments ourselves builds judgment that carries into future research."
+  tags: ["research", "sample-efficiency", "human-intelligence", "ai"]
+  primary_url: "https://jiaxin-wen.github.io/blog/bullish-on-human-intelligence.html"
+  confidence: "high"
+
+- id: world-modeling-second-pretraining-paradigm
+  rank: 2
   section: research_signals
   source_type: external_x_repost
   include: true
@@ -17,7 +34,7 @@
   confidence: "high"
 
 - id: vision-as-perception-action-loop
-  rank: 2
+  rank: 3
   section: research_signals
   source_type: external_x_repost
   include: true
@@ -35,7 +52,7 @@
   confidence: "high"
 
 - id: diffusion-video-linear-probe-physics
-  rank: 3
+  rank: 4
   section: research_signals
   source_type: external_x_repost
   include: true
@@ -55,7 +72,7 @@
   confidence: "high"
 
 - id: temporal-video-diffusion-layer-specialization
-  rank: 4
+  rank: 5
   section: research_signals
   source_type: external_x_repost
   include: true
@@ -73,7 +90,7 @@
   confidence: "high"
 
 - id: deep-supervision-for-useful-diffusion-representations
-  rank: 5
+  rank: 6
   section: research_signals
   source_type: external_x_repost
   include: true
@@ -91,7 +108,7 @@
   confidence: "high"
 
 - id: leapalign-diffusion-post-training
-  rank: 6
+  rank: 7
   section: research_signals
   source_type: external_x_repost
   include: true
@@ -109,7 +126,7 @@
   confidence: "high"
 
 - id: against-mandatory-3d-intermediate
-  rank: 7
+  rank: 8
   section: research_signals
   source_type: external_x_repost
   include: true
@@ -128,7 +145,7 @@
   confidence: "high"
 
 - id: latent-manifold-over-action-dim
-  rank: 8
+  rank: 9
   section: research_signals
   source_type: external_x_repost
   include: true
@@ -147,7 +164,7 @@
   confidence: "high"
 
 - id: multimodal-generation-as-structured-code
-  rank: 9
+  rank: 10
   section: research_signals
   source_type: external_x_repost
   include: true
@@ -166,7 +183,7 @@
   confidence: "medium_exact_status_not_verified"
 
 - id: long-context-evals-and-scaling
-  rank: 10
+  rank: 11
   section: research_signals
   source_type: external_x_repost
   include: true
@@ -184,7 +201,7 @@
   confidence: "high"
 
 - id: data-repetition-across-training-scales
-  rank: 11
+  rank: 12
   section: research_signals
   source_type: external_x_repost
   include: true

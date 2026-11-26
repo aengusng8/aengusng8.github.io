@@ -11,7 +11,7 @@
       {%- for signal in research_signals -%}
         {%- assign signal_url = signal.tweet_url | default: signal.x_search_url | default: signal.primary_url -%}
         {%- if signal_url -%}
-        <a id="{{ signal.id | escape }}" class="research-signal-card" href="{{ signal_url }}" target="_blank" rel="noopener noreferrer" aria-label="View {{ signal.title | escape }} on X">
+        <a id="{{ signal.id | escape }}" class="research-signal-card" href="{{ signal_url }}" target="_blank" rel="noopener noreferrer" aria-label="Read {{ signal.title | escape }} by {{ signal.author_name | escape }}">
         {%- else -%}
         <article class="research-signal-card">
         {%- endif -%}
@@ -25,9 +25,13 @@
             </div>
             <div class="research-signal-card__author">
               <strong>{{ signal.author_name }}</strong>
+              {%- if signal.author_handle -%}
               <span>@{{ signal.author_handle }}</span>
+              {%- elsif signal.author_site -%}
+              <span>{{ signal.author_site }}</span>
+              {%- endif -%}
             </div>
-            <span class="research-signal-card__x" aria-hidden="true">X</span>
+            <span class="research-signal-card__x" aria-hidden="true">{{ signal.source_label | default: "X" }}</span>
           </div>
           <h3>{{ signal.title }}</h3>
           <p>{{ signal.display_text }}</p>
