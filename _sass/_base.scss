@@ -1342,14 +1342,14 @@ html.transition *:after {
   line-height: 1.55;
 }
 
-.profile-intro strong {
+.profile-intro__metric {
   color: var(--profile-text);
-  font-weight: 500;
+  font-weight: inherit;
   font-style: normal;
 }
 
 // One warm focal point emphasizes research ownership without coloring every metric.
-.profile-intro strong.profile-intro__lead {
+.profile-intro__metric.profile-intro__lead {
   color: var(--profile-gold);
 }
 
