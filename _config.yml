@@ -20,7 +20,8 @@ lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 # -----------------------------------------------------------------------------
 # Favicon
 # -----------------------------------------------------------------------------
-icon: site-icon.png # the favicon image in /assets/img/
+icon: flow-favicon.png # the static favicon in /assets/img/
+icon_animation: flow-favicon-frames.png # 41 horizontal 32px frames, 100ms each
 
 url: https://aengusng8.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
